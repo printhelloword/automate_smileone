@@ -1,0 +1,734 @@
+15:00:17,404  INFO loginGmailOneClick:33 - /*-------------START LOGIN PROCESS-----------------*/
+15:00:22,589  INFO loginGmailOneClick:42 - /*-------------FINISHED LOGIN PROCESS---------------*/
+15:00:39,168  INFO loginGmailOneClick:33 - /*-------------START LOGIN PROCESS-----------------*/
+15:00:43,887  INFO loginGmailOneClick:42 - /*-------------FINISHED LOGIN PROCESS---------------*/
+15:06:36,126  INFO loginGmailOneClick:33 - /*-------------START LOGIN PROCESS-----------------*/
+15:06:41,821  INFO loginGmailOneClick:42 - /*-------------FINISHED LOGIN PROCESS---------------*/
+15:06:41,821  INFO loginGmailOneClick:47 - /*-------------START PURCHASE PROCESS-----------------*/
+15:11:00,768  INFO loginGmailOneClick:33 - /*-------------START LOGIN PROCESS-----------------*/
+15:11:28,080  INFO loginGmailOneClick:33 - /*-------------START LOGIN PROCESS-----------------*/
+15:11:52,608  INFO loginGmailOneClick:33 - /*-------------START LOGIN PROCESS-----------------*/
+15:12:56,512  INFO loginGmailOneClick:33 - /*-------------START LOGIN PROCESS-----------------*/
+15:13:00,527  INFO loginGmailOneClick:42 - /*-------------FINISHED LOGIN PROCESS---------------*/
+15:13:00,527  INFO loginGmailOneClick:47 - /*-------------START PURCHASE PROCESS-----------------*/
+15:13:38,046  INFO loginGmailOneClick:33 - /*-------------START LOGIN PROCESS-----------------*/
+15:13:42,213  INFO loginGmailOneClick:42 - /*-------------FINISHED LOGIN PROCESS---------------*/
+15:13:42,213  INFO loginGmailOneClick:47 - /*-------------START PURCHASE PROCESS-----------------*/
+15:14:02,502  INFO loginGmailOneClick:33 - /*-------------START LOGIN PROCESS-----------------*/
+15:14:06,933  INFO loginGmailOneClick:42 - /*-------------FINISHED LOGIN PROCESS---------------*/
+15:14:06,933  INFO loginGmailOneClick:47 - /*-------------START PURCHASE PROCESS-----------------*/
+15:14:06,933  INFO loginGmailOneClick:56 - /*-------------FINISHED PURCHASE PROCESS---------------*/
+15:14:17,577  INFO loginGmailOneClick:33 - /*-------------START LOGIN PROCESS-----------------*/
+15:14:21,446  INFO loginGmailOneClick:42 - /*-------------FINISHED LOGIN PROCESS---------------*/
+15:14:21,446  INFO loginGmailOneClick:47 - /*-------------START PURCHASE PROCESS-----------------*/
+15:14:21,446  INFO loginGmailOneClick:56 - /*-------------FINISHED PURCHASE PROCESS---------------*/
+15:14:57,883  INFO loginGmailOneClick:33 - /*-------------START LOGIN PROCESS-----------------*/
+15:15:04,282  INFO loginGmailOneClick:42 - /*-------------FINISHED LOGIN PROCESS---------------*/
+15:15:04,283  INFO loginGmailOneClick:47 - /*-------------START PURCHASE PROCESS-----------------*/
+15:15:04,283  INFO loginGmailOneClick:56 - /*-------------FINISHED PURCHASE PROCESS---------------*/
+15:16:30,246  INFO loginGmailOneClick:33 - /*-------------START LOGIN PROCESS-----------------*/
+15:17:08,357  INFO loginGmailOneClick:33 - /*-------------START LOGIN PROCESS-----------------*/
+15:17:12,972  INFO loginGmailOneClick:42 - /*-------------FINISHED LOGIN PROCESS---------------*/
+15:17:15,978  INFO loginGmailOneClick:52 - /*-------------START PURCHASE PROCESS-----------------*/
+15:19:01,083  INFO loginGmailOneClick:33 - /*-------------START LOGIN PROCESS-----------------*/
+15:19:05,093  INFO loginGmailOneClick:42 - /*-------------FINISHED LOGIN PROCESS---------------*/
+15:19:08,099  INFO loginGmailOneClick:52 - /*-------------START PURCHASE PROCESS-----------------*/
+15:19:36,013  INFO loginGmailOneClick:33 - /*-------------START LOGIN PROCESS-----------------*/
+15:19:40,295  INFO loginGmailOneClick:42 - /*-------------FINISHED LOGIN PROCESS---------------*/
+15:19:40,295  INFO loginGmailOneClick:52 - /*-------------START PURCHASE PROCESS-----------------*/
+15:19:40,295  INFO loginGmailOneClick:61 - /*-------------FINISHED PURCHASE PROCESS---------------*/
+15:20:09,804  INFO loginGmailOneClick:33 - /*-------------START LOGIN PROCESS-----------------*/
+15:20:14,092  INFO loginGmailOneClick:42 - /*-------------FINISHED LOGIN PROCESS---------------*/
+15:20:14,092  INFO loginGmailOneClick:52 - /*-------------START PURCHASE PROCESS-----------------*/
+15:20:14,092  INFO loginGmailOneClick:61 - /*-------------FINISHED PURCHASE PROCESS---------------*/
+15:20:40,312  INFO loginGmailOneClick:33 - /*-------------START LOGIN PROCESS-----------------*/
+15:20:45,389  INFO loginGmailOneClick:42 - /*-------------FINISHED LOGIN PROCESS---------------*/
+15:20:45,390  INFO loginGmailOneClick:52 - /*-------------START PURCHASE PROCESS-----------------*/
+15:20:45,390  INFO loginGmailOneClick:61 - /*-------------FINISHED PURCHASE PROCESS---------------*/
+15:21:09,479  INFO loginGmailOneClick:33 - /*-------------START LOGIN PROCESS-----------------*/
+15:21:13,868  INFO loginGmailOneClick:42 - /*-------------FINISHED LOGIN PROCESS---------------*/
+15:21:13,868  INFO loginGmailOneClick:52 - /*-------------START PURCHASE PROCESS-----------------*/
+15:21:13,868  INFO loginGmailOneClick:61 - /*-------------FINISHED PURCHASE PROCESS---------------*/
+15:21:45,362  INFO loginGmailOneClick:33 - /*-------------START LOGIN PROCESS-----------------*/
+15:22:00,470  INFO loginGmailOneClick:42 - /*-------------FINISHED LOGIN PROCESS---------------*/
+15:22:00,470  INFO loginGmailOneClick:52 - /*-------------START PURCHASE PROCESS-----------------*/
+15:22:00,470  INFO loginGmailOneClick:61 - /*-------------FINISHED PURCHASE PROCESS---------------*/
+15:22:16,518  INFO loginGmailOneClick:33 - /*-------------START LOGIN PROCESS-----------------*/
+15:22:20,532  INFO loginGmailOneClick:42 - /*-------------FINISHED LOGIN PROCESS---------------*/
+15:22:20,532  INFO loginGmailOneClick:52 - /*-------------START PURCHASE PROCESS-----------------*/
+15:22:20,532  INFO loginGmailOneClick:61 - /*-------------FINISHED PURCHASE PROCESS---------------*/
+15:22:35,087  INFO loginGmailOneClick:33 - /*-------------START LOGIN PROCESS-----------------*/
+15:22:39,612  INFO loginGmailOneClick:42 - /*-------------FINISHED LOGIN PROCESS---------------*/
+15:22:39,613  INFO loginGmailOneClick:52 - /*-------------START PURCHASE PROCESS-----------------*/
+15:23:50,974  INFO loginGmailOneClick:33 - /*-------------START LOGIN PROCESS-----------------*/
+15:23:50,976  INFO loginGmailOneClick:44 - /*-------------FINISHED LOGIN PROCESS---------------*/
+15:23:50,976  INFO loginGmailOneClick:49 - /*-------------START PURCHASE PROCESS-----------------*/
+15:24:12,695  INFO loginGmailOneClick:33 - /*-------------START LOGIN PROCESS-----------------*/
+15:24:12,696  INFO loginGmailOneClick:44 - /*-------------FINISHED LOGIN PROCESS---------------*/
+15:24:12,697  INFO loginGmailOneClick:49 - /*-------------START PURCHASE PROCESS-----------------*/
+15:24:14,103  INFO loginGmailOneClick:61 - /*-------------FINISHED PURCHASE PROCESS---------------*/
+15:24:27,007  INFO loginGmailOneClick:33 - /*-------------START LOGIN PROCESS-----------------*/
+15:24:27,009  INFO loginGmailOneClick:44 - /*-------------FINISHED LOGIN PROCESS---------------*/
+15:24:27,009  INFO loginGmailOneClick:49 - /*-------------START PURCHASE PROCESS-----------------*/
+15:24:28,385  INFO loginGmailOneClick:61 - /*-------------FINISHED PURCHASE PROCESS---------------*/
+15:25:07,112  INFO loginGmailOneClick:33 - /*-------------START LOGIN PROCESS-----------------*/
+15:25:11,577  INFO loginGmailOneClick:44 - /*-------------FINISHED LOGIN PROCESS---------------*/
+15:25:11,578  INFO loginGmailOneClick:49 - /*-------------START PURCHASE PROCESS-----------------*/
+15:25:12,636  INFO loginGmailOneClick:61 - /*-------------FINISHED PURCHASE PROCESS---------------*/
+15:32:21,433  INFO loginGmailOneClick:33 - /*-------------START LOGIN PROCESS-----------------*/
+15:32:25,639  INFO loginGmailOneClick:44 - /*-------------FINISHED LOGIN PROCESS---------------*/
+15:33:13,692  INFO loginGmailOneClick:33 - /*-------------START LOGIN PROCESS-----------------*/
+15:33:17,912  INFO loginGmailOneClick:44 - /*-------------FINISHED LOGIN PROCESS---------------*/
+15:33:59,089  INFO loginGmailOneClick:33 - /*-------------START LOGIN PROCESS-----------------*/
+15:34:03,281  INFO loginGmailOneClick:44 - /*-------------FINISHED LOGIN PROCESS---------------*/
+15:35:29,830  INFO loginGmailOneClick:33 - /*-------------START LOGIN PROCESS-----------------*/
+15:35:34,291  INFO loginGmailOneClick:44 - /*-------------FINISHED LOGIN PROCESS---------------*/
+15:36:07,835  INFO loginGmailOneClick:33 - /*-------------START LOGIN PROCESS-----------------*/
+15:36:12,484  INFO loginGmailOneClick:44 - /*-------------FINISHED LOGIN PROCESS---------------*/
+15:36:34,506  INFO loginGmailOneClick:33 - /*-------------START LOGIN PROCESS-----------------*/
+15:36:39,229  INFO loginGmailOneClick:44 - /*-------------FINISHED LOGIN PROCESS---------------*/
+15:37:25,555  INFO loginGmailOneClick:33 - /*-------------START LOGIN PROCESS-----------------*/
+15:37:30,044  INFO loginGmailOneClick:44 - /*-------------FINISHED LOGIN PROCESS---------------*/
+15:38:10,001  INFO loginGmailOneClick:33 - /*-------------START LOGIN PROCESS-----------------*/
+15:38:14,117  INFO loginGmailOneClick:44 - /*-------------FINISHED LOGIN PROCESS---------------*/
+15:38:46,036  INFO loginGmailOneClick:33 - /*-------------START LOGIN PROCESS-----------------*/
+15:38:50,142  INFO loginGmailOneClick:44 - /*-------------FINISHED LOGIN PROCESS---------------*/
+15:39:22,687  INFO loginGmailOneClick:33 - /*-------------START LOGIN PROCESS-----------------*/
+15:39:26,699  INFO loginGmailOneClick:44 - /*-------------FINISHED LOGIN PROCESS---------------*/
+15:52:43,794  INFO loginGmailOneClick:33 - /*-------------START LOGIN PROCESS-----------------*/
+15:52:48,326  INFO loginGmailOneClick:44 - /*-------------FINISHED LOGIN PROCESS---------------*/
+15:53:46,595  INFO loginGmailOneClick:33 - /*-------------START LOGIN PROCESS-----------------*/
+15:53:46,596  INFO loginGmailOneClick:44 - /*-------------FINISHED LOGIN PROCESS---------------*/
+15:55:32,954  INFO loginGmailOneClick:33 - /*-------------START LOGIN PROCESS-----------------*/
+15:55:32,955  INFO loginGmailOneClick:44 - /*-------------FINISHED LOGIN PROCESS---------------*/
+15:56:09,501  INFO loginGmailOneClick:33 - /*-------------START LOGIN PROCESS-----------------*/
+15:56:09,504  INFO loginGmailOneClick:44 - /*-------------FINISHED LOGIN PROCESS---------------*/
+15:57:49,769  INFO loginGmailOneClick:33 - /*-------------START LOGIN PROCESS-----------------*/
+15:57:49,770  INFO loginGmailOneClick:44 - /*-------------FINISHED LOGIN PROCESS---------------*/
+15:58:49,194  INFO loginGmailOneClick:33 - /*-------------START LOGIN PROCESS-----------------*/
+15:58:49,197  INFO loginGmailOneClick:44 - /*-------------FINISHED LOGIN PROCESS---------------*/
+15:59:03,648  INFO loginGmailOneClick:33 - /*-------------START LOGIN PROCESS-----------------*/
+15:59:03,650  INFO loginGmailOneClick:44 - /*-------------FINISHED LOGIN PROCESS---------------*/
+16:28:36,082  INFO loginGmailOneClick:33 - /*-------------START LOGIN PROCESS-----------------*/
+16:28:36,085  INFO loginGmailOneClick:44 - /*-------------FINISHED LOGIN PROCESS---------------*/
+16:32:18,403  INFO loginGmailOneClick:33 - /*-------------START LOGIN PROCESS-----------------*/
+16:32:18,405  INFO loginGmailOneClick:44 - /*-------------FINISHED LOGIN PROCESS---------------*/
+16:32:39,798  INFO loginGmailOneClick:33 - /*-------------START LOGIN PROCESS-----------------*/
+16:32:39,800  INFO loginGmailOneClick:44 - /*-------------FINISHED LOGIN PROCESS---------------*/
+16:33:13,187  INFO loginGmailOneClick:33 - /*-------------START LOGIN PROCESS-----------------*/
+16:33:17,682  INFO loginGmailOneClick:44 - /*-------------FINISHED LOGIN PROCESS---------------*/
+16:33:17,682  INFO loginGmailOneClick:49 - /*-------------START PURCHASE PROCESS-----------------*/
+16:33:17,683  INFO loginGmailOneClick:51 - /*-------------FINISHED PURCHASE PROCESS---------------*/
+16:33:39,083  INFO loginGmailOneClick:33 - /*-------------START LOGIN PROCESS-----------------*/
+16:33:43,740  INFO loginGmailOneClick:44 - /*-------------FINISHED LOGIN PROCESS---------------*/
+16:33:43,740  INFO loginGmailOneClick:49 - /*-------------START PURCHASE PROCESS-----------------*/
+16:33:43,740  INFO loginGmailOneClick:51 - /*-------------FINISHED PURCHASE PROCESS---------------*/
+16:35:33,807  INFO loginGmailOneClick:33 - /*-------------START LOGIN PROCESS-----------------*/
+16:35:51,104  INFO loginGmailOneClick:33 - /*-------------START LOGIN PROCESS-----------------*/
+16:36:32,661  INFO loginGmailOneClick:33 - /*-------------START LOGIN PROCESS-----------------*/
+16:36:37,119  INFO loginGmailOneClick:44 - /*-------------FINISHED LOGIN PROCESS---------------*/
+16:36:37,119  INFO loginGmailOneClick:49 - /*-------------START PURCHASE PROCESS-----------------*/
+16:36:38,119  INFO loginGmailOneClick:61 - /*-------------FINISHED PURCHASE PROCESS---------------*/
+16:36:58,909  INFO loginGmailOneClick:33 - /*-------------START LOGIN PROCESS-----------------*/
+16:37:03,244  INFO loginGmailOneClick:44 - /*-------------FINISHED LOGIN PROCESS---------------*/
+16:37:03,245  INFO loginGmailOneClick:49 - /*-------------START PURCHASE PROCESS-----------------*/
+16:37:03,245  INFO loginGmailOneClick:61 - /*-------------FINISHED PURCHASE PROCESS---------------*/
+16:37:33,275  INFO loginGmailOneClick:33 - /*-------------START LOGIN PROCESS-----------------*/
+16:37:37,780  INFO loginGmailOneClick:44 - /*-------------FINISHED LOGIN PROCESS---------------*/
+16:40:15,777  INFO loginGmailOneClick:33 - /*-------------START LOGIN PROCESS-----------------*/
+16:46:32,187  INFO loginGmailOneClick:33 - /*-------------START LOGIN PROCESS-----------------*/
+16:47:00,132  INFO loginGmailOneClick:33 - /*-------------START LOGIN PROCESS-----------------*/
+16:49:49,334  INFO loginGmailOneClick:33 - /*-------------START LOGIN PROCESS-----------------*/
+16:49:53,558  INFO loginGmailOneClick:63 - /*-------------FINISHED LOGIN PROCESS---------------*/
+17:04:21,883  INFO loginGmailOneClick:33 - /*-------------START LOGIN PROCESS-----------------*/
+17:04:26,465  INFO loginGmailOneClick:63 - /*-------------FINISHED LOGIN PROCESS---------------*/
+17:04:41,738  INFO loginGmailOneClick:33 - /*-------------START LOGIN PROCESS-----------------*/
+17:04:45,904  INFO loginGmailOneClick:63 - /*-------------FINISHED LOGIN PROCESS---------------*/
+17:14:06,110  INFO loginGmailOneClick:33 - /*-------------START LOGIN PROCESS-----------------*/
+17:14:10,192  INFO loginGmailOneClick:63 - /*-------------FINISHED LOGIN PROCESS---------------*/
+17:14:40,357  INFO loginGmailOneClick:33 - /*-------------START LOGIN PROCESS-----------------*/
+17:14:44,755  INFO loginGmailOneClick:63 - /*-------------FINISHED LOGIN PROCESS---------------*/
+15:09:02,690  INFO loginGmailOneClick:34 - /*-------------START LOGIN PROCESS-----------------*/
+15:36:02,596  INFO loginGmailOneClick:33 - /*-------------START LOGIN PROCESS-----------------*/
+15:36:27,744  INFO loginGmailOneClick:33 - /*-------------START LOGIN PROCESS-----------------*/
+15:36:37,855  INFO loginGmailOneClick:70 - /*-------------FINISHED LOGIN PROCESS---------------*/
+15:39:39,003  INFO loginGmailOneClick:33 - /*-------------START LOGIN PROCESS-----------------*/
+15:40:58,205  INFO loginGmailOneClick:33 - /*-------------START LOGIN PROCESS-----------------*/
+15:41:08,134  INFO loginGmailOneClick:70 - /*-------------FINISHED LOGIN PROCESS---------------*/
+15:41:20,609  INFO loginGmailOneClick:33 - /*-------------START LOGIN PROCESS-----------------*/
+15:41:31,060  INFO loginGmailOneClick:70 - /*-------------FINISHED LOGIN PROCESS---------------*/
+15:45:07,827  INFO loginGmailOneClick:35 - /*-------------START LOGIN PROCESS-----------------*/
+15:47:13,366  INFO loginGmailOneClick:35 - /*-------------START LOGIN PROCESS-----------------*/
+15:47:42,773  INFO loginGmailOneClick:35 - /*-------------START LOGIN PROCESS-----------------*/
+15:49:56,881  INFO loginGmailOneClick:35 - /*-------------START LOGIN PROCESS-----------------*/
+16:02:06,674  INFO loginGmailOneClick:35 - /*-------------START LOGIN PROCESS-----------------*/
+16:07:32,383  INFO loginGmailOneClick:32 - /*-------------START LOGIN PROCESS-----------------*/
+16:08:03,742  INFO loginGmailOneClick:32 - /*-------------START LOGIN PROCESS-----------------*/
+16:10:55,573  INFO loginGmailOneClick:33 - /*-------------START LOGIN PROCESS-----------------*/
+16:26:20,442  INFO loginGmailOneClick:30 - /*-------------START LOGIN PROCESS-----------------*/
+16:27:03,164  INFO loginGmailOneClick:30 - /*-------------START LOGIN PROCESS-----------------*/
+16:27:45,392  INFO loginGmailOneClick:30 - /*-------------START LOGIN PROCESS-----------------*/
+16:27:56,122  INFO loginGmailOneClick:66 - /*-------------FINISHED LOGIN PROCESS---------------*/
+16:28:25,942  INFO loginGmailOneClick:30 - /*-------------START LOGIN PROCESS-----------------*/
+16:29:10,537  INFO loginGmailOneClick:30 - /*-------------START LOGIN PROCESS-----------------*/
+16:29:42,163  INFO loginGmailOneClick:30 - /*-------------START LOGIN PROCESS-----------------*/
+16:29:54,877  INFO loginGmailOneClick:73 - /*-------------FINISHED LOGIN PROCESS---------------*/
+16:30:17,083  INFO loginGmailOneClick:30 - /*-------------START LOGIN PROCESS-----------------*/
+16:30:26,878  INFO loginGmailOneClick:73 - /*-------------FINISHED LOGIN PROCESS---------------*/
+16:30:43,399  INFO loginGmailOneClick:30 - /*-------------START LOGIN PROCESS-----------------*/
+16:30:53,093  INFO loginGmailOneClick:73 - /*-------------FINISHED LOGIN PROCESS---------------*/
+16:33:27,412  INFO loginGmailOneClick:30 - /*-------------START LOGIN PROCESS-----------------*/
+16:43:46,828  INFO loginGmailOneClick:32 - /*-------------START LOGIN PROCESS-----------------*/
+16:44:40,863  INFO loginGmailOneClick:32 - /*-------------START LOGIN PROCESS-----------------*/
+16:46:11,666  INFO loginGmailOneClick:32 - /*-------------START LOGIN PROCESS-----------------*/
+16:46:34,921  INFO loginGmailOneClick:32 - /*-------------START LOGIN PROCESS-----------------*/
+16:47:53,140  INFO loginGmailOneClick:32 - /*-------------START LOGIN PROCESS-----------------*/
+16:48:17,955  INFO loginGmailOneClick:32 - /*-------------START LOGIN PROCESS-----------------*/
+16:49:05,960  INFO loginGmailOneClick:31 - /*-------------START LOGIN PROCESS-----------------*/
+16:49:34,306  INFO loginGmailOneClick:31 - /*-------------START LOGIN PROCESS-----------------*/
+16:49:51,398  INFO loginGmailOneClick:31 - /*-------------START LOGIN PROCESS-----------------*/
+16:50:09,789  INFO loginGmailOneClick:31 - /*-------------START LOGIN PROCESS-----------------*/
+16:51:13,129  INFO loginGmailOneClick:31 - /*-------------START LOGIN PROCESS-----------------*/
+16:51:57,231  INFO loginGmailOneClick:32 - /*-------------START LOGIN PROCESS-----------------*/
+16:52:27,178  INFO loginGmailOneClick:32 - /*-------------START LOGIN PROCESS-----------------*/
+16:52:38,776  INFO loginGmailOneClick:57 - /*-------------FINISHED LOGIN PROCESS---------------*/
+16:53:21,526  INFO loginGmailOneClick:31 - /*-------------START LOGIN PROCESS-----------------*/
+16:53:32,955  INFO loginGmailOneClick:56 - /*-------------FINISHED LOGIN PROCESS---------------*/
+16:54:01,754  INFO loginGmailOneClick:31 - /*-------------START LOGIN PROCESS-----------------*/
+16:54:13,270  INFO loginGmailOneClick:56 - /*-------------FINISHED LOGIN PROCESS---------------*/
+16:54:28,109  INFO loginGmailOneClick:31 - /*-------------START LOGIN PROCESS-----------------*/
+16:54:39,530  INFO loginGmailOneClick:56 - /*-------------FINISHED LOGIN PROCESS---------------*/
+16:54:50,730  INFO loginGmailOneClick:31 - /*-------------START LOGIN PROCESS-----------------*/
+16:55:02,288  INFO loginGmailOneClick:56 - /*-------------FINISHED LOGIN PROCESS---------------*/
+17:31:41,457  INFO loginGmailOneClick:31 - /*-------------START LOGIN PROCESS-----------------*/
+17:31:53,115  INFO loginGmailOneClick:56 - /*-------------FINISHED LOGIN PROCESS---------------*/
+17:32:39,044  INFO loginGmailOneClick:31 - /*-------------START LOGIN PROCESS-----------------*/
+17:32:48,657  INFO loginGmailOneClick:57 - /*-------------FINISHED LOGIN PROCESS---------------*/
+17:33:04,655  INFO loginGmailOneClick:31 - /*-------------START LOGIN PROCESS-----------------*/
+17:33:14,158  INFO loginGmailOneClick:57 - /*-------------FINISHED LOGIN PROCESS---------------*/
+17:33:38,238  INFO loginGmailOneClick:31 - /*-------------START LOGIN PROCESS-----------------*/
+17:33:47,874  INFO loginGmailOneClick:57 - /*-------------FINISHED LOGIN PROCESS---------------*/
+17:34:40,510  INFO loginGmailOneClick:31 - /*-------------START LOGIN PROCESS-----------------*/
+17:34:50,193  INFO loginGmailOneClick:58 - /*-------------FINISHED LOGIN PROCESS---------------*/
+17:35:07,459  INFO loginGmailOneClick:31 - /*-------------START LOGIN PROCESS-----------------*/
+17:35:17,443  INFO loginGmailOneClick:58 - /*-------------FINISHED LOGIN PROCESS---------------*/
+17:35:35,634  INFO loginGmailOneClick:31 - /*-------------START LOGIN PROCESS-----------------*/
+17:35:45,418  INFO loginGmailOneClick:58 - /*-------------FINISHED LOGIN PROCESS---------------*/
+17:37:26,488  INFO loginGmailOneClick:31 - /*-------------START LOGIN PROCESS-----------------*/
+17:37:36,275  INFO loginGmailOneClick:59 - /*-------------FINISHED LOGIN PROCESS---------------*/
+17:53:26,077  INFO loginGmailOneClick:31 - /*-------------START LOGIN PROCESS-----------------*/
+17:53:35,840  INFO loginGmailOneClick:58 - /*-------------FINISHED LOGIN PROCESS---------------*/
+18:04:20,651  INFO loginGmailOneClick:31 - /*-------------START LOGIN PROCESS-----------------*/
+18:04:31,429  INFO loginGmailOneClick:55 - /*-------------LOGIN PROCESS FINISHED---------------*/
+18:04:31,430  INFO loginGmailOneClick:62 - /*-------------START PURCHASE PROCESS---------------*/
+18:05:21,394  INFO loginGmailOneClick:31 - /*-------------START LOGIN PROCESS-----------------*/
+18:05:30,978  INFO loginGmailOneClick:55 - /*-------------LOGIN PROCESS FINISHED---------------*/
+18:05:30,978  INFO loginGmailOneClick:62 - /*-------------START PURCHASE PROCESS---------------*/
+18:06:34,973  INFO loginGmailOneClick:31 - /*-------------START LOGIN PROCESS-----------------*/
+18:06:44,636  INFO loginGmailOneClick:55 - /*-------------LOGIN PROCESS FINISHED---------------*/
+18:06:44,636  INFO loginGmailOneClick:62 - /*-------------START PURCHASE PROCESS---------------*/
+18:11:41,792  INFO loginGmailOneClick:33 - /*-------------START LOGIN PROCESS-----------------*/
+18:11:52,146  INFO loginGmailOneClick:57 - /*-------------LOGIN PROCESS FINISHED---------------*/
+18:11:52,147  INFO loginGmailOneClick:64 - /*-------------START PURCHASE PROCESS---------------*/
+18:18:09,591  INFO loginGmailOneClick:33 - /*-------------START LOGIN PROCESS-----------------*/
+18:18:19,770  INFO loginGmailOneClick:57 - /*-------------LOGIN PROCESS FINISHED---------------*/
+18:18:19,770  INFO loginGmailOneClick:64 - /*-------------START PURCHASE PROCESS---------------*/
+18:19:54,603  INFO loginGmailOneClick:33 - /*-------------START LOGIN PROCESS-----------------*/
+18:20:04,113  INFO loginGmailOneClick:57 - /*-------------LOGIN PROCESS FINISHED---------------*/
+18:20:04,113  INFO loginGmailOneClick:64 - /*-------------START PURCHASE PROCESS---------------*/
+18:22:18,622  INFO loginGmailOneClick:35 - /*-------------START LOGIN PROCESS-----------------*/
+18:22:28,473  INFO loginGmailOneClick:59 - /*-------------LOGIN PROCESS FINISHED---------------*/
+18:22:28,473  INFO loginGmailOneClick:66 - /*-------------START PURCHASE PROCESS---------------*/
+18:23:25,405  INFO loginGmailOneClick:35 - /*-------------START LOGIN PROCESS-----------------*/
+18:23:35,332  INFO loginGmailOneClick:59 - /*-------------LOGIN PROCESS FINISHED---------------*/
+18:23:35,332  INFO loginGmailOneClick:66 - /*-------------START PURCHASE PROCESS---------------*/
+18:25:24,946  INFO loginGmailOneClick:35 - /*-------------START LOGIN PROCESS-----------------*/
+18:25:34,622  INFO loginGmailOneClick:59 - /*-------------LOGIN PROCESS FINISHED---------------*/
+18:25:34,623  INFO loginGmailOneClick:66 - /*-------------START PURCHASE PROCESS---------------*/
+18:26:44,899  INFO loginGmailOneClick:35 - /*-------------START LOGIN PROCESS-----------------*/
+18:26:54,420  INFO loginGmailOneClick:59 - /*-------------LOGIN PROCESS FINISHED---------------*/
+18:26:54,421  INFO loginGmailOneClick:66 - /*-------------START PURCHASE PROCESS---------------*/
+18:28:08,496  INFO loginGmailOneClick:35 - /*-------------START LOGIN PROCESS-----------------*/
+18:28:18,268  INFO loginGmailOneClick:59 - /*-------------LOGIN PROCESS FINISHED---------------*/
+18:28:18,268  INFO loginGmailOneClick:66 - /*-------------START PURCHASE PROCESS---------------*/
+18:32:43,828  INFO loginGmailOneClick:35 - /*-------------START LOGIN PROCESS-----------------*/
+18:32:53,624  INFO loginGmailOneClick:59 - /*-------------LOGIN PROCESS FINISHED---------------*/
+18:32:53,624  INFO loginGmailOneClick:66 - /*-------------START PURCHASE PROCESS---------------*/
+18:37:01,041  INFO loginGmailOneClick:35 - /*-------------START LOGIN PROCESS-----------------*/
+18:37:11,266  INFO loginGmailOneClick:59 - /*-------------LOGIN PROCESS FINISHED---------------*/
+18:37:11,267  INFO loginGmailOneClick:66 - /*-------------START PURCHASE PROCESS---------------*/
+18:40:39,710  INFO loginGmailOneClick:35 - /*-------------START LOGIN PROCESS-----------------*/
+18:40:49,292  INFO loginGmailOneClick:59 - /*-------------LOGIN PROCESS FINISHED---------------*/
+18:40:49,292  INFO loginGmailOneClick:66 - /*-------------START PURCHASE PROCESS---------------*/
+18:42:14,493  INFO loginGmailOneClick:35 - /*-------------START LOGIN PROCESS-----------------*/
+18:42:24,574  INFO loginGmailOneClick:59 - /*-------------LOGIN PROCESS FINISHED---------------*/
+18:42:24,574  INFO loginGmailOneClick:66 - /*-------------START PURCHASE PROCESS---------------*/
+18:42:32,973  INFO loginGmailOneClick:92 - /*-------------PURCHASE PROCESS FINISHED---------------*/
+18:43:34,593  INFO loginGmailOneClick:35 - /*-------------START LOGIN PROCESS-----------------*/
+18:43:45,362  INFO loginGmailOneClick:59 - /*-------------LOGIN PROCESS FINISHED---------------*/
+18:43:45,362  INFO loginGmailOneClick:66 - /*-------------START PURCHASE PROCESS---------------*/
+18:48:38,540  INFO loginGmailOneClick:35 - /*-------------START LOGIN PROCESS-----------------*/
+18:48:48,694  INFO loginGmailOneClick:59 - /*-------------LOGIN PROCESS FINISHED---------------*/
+18:48:48,694  INFO loginGmailOneClick:66 - /*-------------START PURCHASE PROCESS---------------*/
+18:48:57,416  INFO loginGmailOneClick:92 - /*-------------PURCHASE PROCESS FINISHED---------------*/
+18:49:12,810  INFO loginGmailOneClick:35 - /*-------------START LOGIN PROCESS-----------------*/
+18:49:35,830  INFO loginGmailOneClick:35 - /*-------------START LOGIN PROCESS-----------------*/
+18:49:53,199  INFO loginGmailOneClick:35 - /*-------------START LOGIN PROCESS-----------------*/
+18:50:02,626  INFO loginGmailOneClick:59 - /*-------------LOGIN PROCESS FINISHED---------------*/
+18:50:02,626  INFO loginGmailOneClick:66 - /*-------------START PURCHASE PROCESS---------------*/
+18:50:11,519  INFO loginGmailOneClick:92 - /*-------------PURCHASE PROCESS FINISHED---------------*/
+19:59:48,053  INFO loginGmailOneClick:36 - /*-------------START LOGIN PROCESS-----------------*/
+19:59:58,751  INFO loginGmailOneClick:60 - /*-------------LOGIN PROCESS FINISHED---------------*/
+19:59:58,752  INFO loginGmailOneClick:67 - /*-------------START PURCHASE PROCESS---------------*/
+20:00:03,091  INFO loginGmailOneClick:75 - FOUND MLBB MENU
+20:01:33,995  INFO loginGmailOneClick:36 - /*-------------START LOGIN PROCESS-----------------*/
+20:01:43,758  INFO loginGmailOneClick:60 - /*-------------LOGIN PROCESS FINISHED---------------*/
+20:01:43,758  INFO loginGmailOneClick:67 - /*-------------START PURCHASE PROCESS---------------*/
+20:01:47,446  INFO loginGmailOneClick:75 - FOUND MLBB MENU
+20:05:15,178  INFO loginGmailOneClick:36 - /*-------------START LOGIN PROCESS-----------------*/
+20:05:24,964  INFO loginGmailOneClick:60 - /*-------------LOGIN PROCESS FINISHED---------------*/
+20:05:24,964  INFO loginGmailOneClick:67 - /*-------------START PURCHASE PROCESS---------------*/
+20:05:28,620  INFO loginGmailOneClick:75 - FOUND MLBB MENU
+20:07:33,241  INFO loginGmailOneClick:36 - /*-------------START LOGIN PROCESS-----------------*/
+20:07:42,766  INFO loginGmailOneClick:60 - /*-------------LOGIN PROCESS FINISHED---------------*/
+20:07:42,767  INFO loginGmailOneClick:67 - /*-------------START PURCHASE PROCESS---------------*/
+20:07:46,354  INFO loginGmailOneClick:75 - FOUND MLBB MENU
+20:10:11,679  INFO loginGmailOneClick:36 - /*-------------START LOGIN PROCESS-----------------*/
+20:10:21,267  INFO loginGmailOneClick:60 - /*-------------LOGIN PROCESS FINISHED---------------*/
+20:10:21,267  INFO loginGmailOneClick:67 - /*-------------START PURCHASE PROCESS---------------*/
+20:10:25,408  INFO loginGmailOneClick:75 - FOUND MLBB MENU
+20:10:41,239  INFO loginGmailOneClick:90 - FOUND DIAMOND DENOM NOT FOUND.. STILL LOOKING FOR
+20:10:43,276  INFO loginGmailOneClick:90 - FOUND DIAMOND DENOM NOT FOUND.. STILL LOOKING FOR
+20:10:49,768  INFO loginGmailOneClick:36 - /*-------------START LOGIN PROCESS-----------------*/
+20:10:59,172  INFO loginGmailOneClick:60 - /*-------------LOGIN PROCESS FINISHED---------------*/
+20:10:59,173  INFO loginGmailOneClick:67 - /*-------------START PURCHASE PROCESS---------------*/
+20:10:59,203  INFO loginGmailOneClick:78 - MLBB MENU NOT FOUND.. STILL LOOKING FOR
+20:11:02,552  INFO loginGmailOneClick:75 - FOUND MLBB MENU
+20:11:02,568  INFO loginGmailOneClick:90 - FOUND DIAMOND DENOM NOT FOUND.. STILL LOOKING FOR
+20:11:04,599  INFO loginGmailOneClick:90 - FOUND DIAMOND DENOM NOT FOUND.. STILL LOOKING FOR
+20:11:06,636  INFO loginGmailOneClick:90 - FOUND DIAMOND DENOM NOT FOUND.. STILL LOOKING FOR
+20:11:08,675  INFO loginGmailOneClick:90 - FOUND DIAMOND DENOM NOT FOUND.. STILL LOOKING FOR
+20:11:10,717  INFO loginGmailOneClick:90 - FOUND DIAMOND DENOM NOT FOUND.. STILL LOOKING FOR
+20:11:12,742  INFO loginGmailOneClick:90 - FOUND DIAMOND DENOM NOT FOUND.. STILL LOOKING FOR
+20:11:14,774  INFO loginGmailOneClick:90 - FOUND DIAMOND DENOM NOT FOUND.. STILL LOOKING FOR
+20:11:16,810  INFO loginGmailOneClick:90 - FOUND DIAMOND DENOM NOT FOUND.. STILL LOOKING FOR
+20:11:18,844  INFO loginGmailOneClick:90 - FOUND DIAMOND DENOM NOT FOUND.. STILL LOOKING FOR
+20:11:20,873  INFO loginGmailOneClick:90 - FOUND DIAMOND DENOM NOT FOUND.. STILL LOOKING FOR
+20:11:22,905  INFO loginGmailOneClick:90 - FOUND DIAMOND DENOM NOT FOUND.. STILL LOOKING FOR
+20:11:24,934  INFO loginGmailOneClick:90 - FOUND DIAMOND DENOM NOT FOUND.. STILL LOOKING FOR
+20:11:26,959  INFO loginGmailOneClick:90 - FOUND DIAMOND DENOM NOT FOUND.. STILL LOOKING FOR
+20:11:28,992  INFO loginGmailOneClick:90 - FOUND DIAMOND DENOM NOT FOUND.. STILL LOOKING FOR
+20:11:31,032  INFO loginGmailOneClick:90 - FOUND DIAMOND DENOM NOT FOUND.. STILL LOOKING FOR
+20:11:33,059  INFO loginGmailOneClick:90 - FOUND DIAMOND DENOM NOT FOUND.. STILL LOOKING FOR
+20:11:35,088  INFO loginGmailOneClick:90 - FOUND DIAMOND DENOM NOT FOUND.. STILL LOOKING FOR
+20:11:52,538  INFO loginGmailOneClick:36 - /*-------------START LOGIN PROCESS-----------------*/
+20:12:02,171  INFO loginGmailOneClick:60 - /*-------------LOGIN PROCESS FINISHED---------------*/
+20:12:02,171  INFO loginGmailOneClick:67 - /*-------------START PURCHASE PROCESS---------------*/
+20:12:02,200  INFO loginGmailOneClick:78 - MLBB MENU NOT FOUND.. STILL LOOKING FOR
+20:12:06,109  INFO loginGmailOneClick:75 - FOUND MLBB MENU
+20:12:06,130  INFO loginGmailOneClick:90 - FOUND DIAMOND DENOM NOT FOUND.. STILL LOOKING FOR
+20:12:08,161  INFO loginGmailOneClick:90 - FOUND DIAMOND DENOM NOT FOUND.. STILL LOOKING FOR
+20:12:10,200  INFO loginGmailOneClick:90 - FOUND DIAMOND DENOM NOT FOUND.. STILL LOOKING FOR
+20:12:12,228  INFO loginGmailOneClick:90 - FOUND DIAMOND DENOM NOT FOUND.. STILL LOOKING FOR
+20:12:14,264  INFO loginGmailOneClick:90 - FOUND DIAMOND DENOM NOT FOUND.. STILL LOOKING FOR
+20:12:16,302  INFO loginGmailOneClick:90 - FOUND DIAMOND DENOM NOT FOUND.. STILL LOOKING FOR
+20:12:18,340  INFO loginGmailOneClick:90 - FOUND DIAMOND DENOM NOT FOUND.. STILL LOOKING FOR
+20:12:20,374  INFO loginGmailOneClick:90 - FOUND DIAMOND DENOM NOT FOUND.. STILL LOOKING FOR
+20:12:22,408  INFO loginGmailOneClick:90 - FOUND DIAMOND DENOM NOT FOUND.. STILL LOOKING FOR
+20:12:24,435  INFO loginGmailOneClick:90 - FOUND DIAMOND DENOM NOT FOUND.. STILL LOOKING FOR
+20:12:26,463  INFO loginGmailOneClick:90 - FOUND DIAMOND DENOM NOT FOUND.. STILL LOOKING FOR
+20:12:28,497  INFO loginGmailOneClick:90 - FOUND DIAMOND DENOM NOT FOUND.. STILL LOOKING FOR
+20:12:30,534  INFO loginGmailOneClick:90 - FOUND DIAMOND DENOM NOT FOUND.. STILL LOOKING FOR
+20:12:32,568  INFO loginGmailOneClick:90 - FOUND DIAMOND DENOM NOT FOUND.. STILL LOOKING FOR
+20:12:34,602  INFO loginGmailOneClick:90 - FOUND DIAMOND DENOM NOT FOUND.. STILL LOOKING FOR
+20:12:36,628  INFO loginGmailOneClick:90 - FOUND DIAMOND DENOM NOT FOUND.. STILL LOOKING FOR
+20:12:38,655  INFO loginGmailOneClick:90 - FOUND DIAMOND DENOM NOT FOUND.. STILL LOOKING FOR
+20:12:40,683  INFO loginGmailOneClick:90 - FOUND DIAMOND DENOM NOT FOUND.. STILL LOOKING FOR
+20:12:42,716  INFO loginGmailOneClick:90 - FOUND DIAMOND DENOM NOT FOUND.. STILL LOOKING FOR
+20:12:44,743  INFO loginGmailOneClick:90 - FOUND DIAMOND DENOM NOT FOUND.. STILL LOOKING FOR
+20:12:46,781  INFO loginGmailOneClick:90 - FOUND DIAMOND DENOM NOT FOUND.. STILL LOOKING FOR
+20:12:48,812  INFO loginGmailOneClick:90 - FOUND DIAMOND DENOM NOT FOUND.. STILL LOOKING FOR
+20:13:45,682  INFO loginGmailOneClick:36 - /*-------------START LOGIN PROCESS-----------------*/
+20:13:55,393  INFO loginGmailOneClick:60 - /*-------------LOGIN PROCESS FINISHED---------------*/
+20:13:55,393  INFO loginGmailOneClick:67 - /*-------------START PURCHASE PROCESS---------------*/
+20:13:55,427  INFO loginGmailOneClick:78 - MLBB MENU NOT FOUND.. STILL LOOKING FOR
+20:13:59,239  INFO loginGmailOneClick:75 - FOUND MLBB MENU
+20:13:59,273  INFO loginGmailOneClick:90 - FOUND DIAMOND DENOM NOT FOUND.. STILL LOOKING FOR
+20:14:01,314  INFO loginGmailOneClick:90 - FOUND DIAMOND DENOM NOT FOUND.. STILL LOOKING FOR
+20:14:03,342  INFO loginGmailOneClick:90 - FOUND DIAMOND DENOM NOT FOUND.. STILL LOOKING FOR
+20:14:05,371  INFO loginGmailOneClick:90 - FOUND DIAMOND DENOM NOT FOUND.. STILL LOOKING FOR
+20:14:07,405  INFO loginGmailOneClick:90 - FOUND DIAMOND DENOM NOT FOUND.. STILL LOOKING FOR
+20:14:09,440  INFO loginGmailOneClick:90 - FOUND DIAMOND DENOM NOT FOUND.. STILL LOOKING FOR
+20:14:11,464  INFO loginGmailOneClick:90 - FOUND DIAMOND DENOM NOT FOUND.. STILL LOOKING FOR
+20:14:13,496  INFO loginGmailOneClick:90 - FOUND DIAMOND DENOM NOT FOUND.. STILL LOOKING FOR
+20:14:15,534  INFO loginGmailOneClick:90 - FOUND DIAMOND DENOM NOT FOUND.. STILL LOOKING FOR
+20:14:17,568  INFO loginGmailOneClick:90 - FOUND DIAMOND DENOM NOT FOUND.. STILL LOOKING FOR
+20:14:19,606  INFO loginGmailOneClick:90 - FOUND DIAMOND DENOM NOT FOUND.. STILL LOOKING FOR
+20:14:21,641  INFO loginGmailOneClick:90 - FOUND DIAMOND DENOM NOT FOUND.. STILL LOOKING FOR
+20:14:23,677  INFO loginGmailOneClick:90 - FOUND DIAMOND DENOM NOT FOUND.. STILL LOOKING FOR
+20:14:25,714  INFO loginGmailOneClick:90 - FOUND DIAMOND DENOM NOT FOUND.. STILL LOOKING FOR
+20:14:27,746  INFO loginGmailOneClick:90 - FOUND DIAMOND DENOM NOT FOUND.. STILL LOOKING FOR
+20:14:29,784  INFO loginGmailOneClick:90 - FOUND DIAMOND DENOM NOT FOUND.. STILL LOOKING FOR
+20:14:31,813  INFO loginGmailOneClick:90 - FOUND DIAMOND DENOM NOT FOUND.. STILL LOOKING FOR
+20:16:23,731  INFO loginGmailOneClick:36 - /*-------------START LOGIN PROCESS-----------------*/
+20:16:36,616  INFO loginGmailOneClick:60 - /*-------------LOGIN PROCESS FINISHED---------------*/
+20:16:36,616  INFO loginGmailOneClick:67 - /*-------------START PURCHASE PROCESS---------------*/
+20:16:36,649  INFO loginGmailOneClick:78 - MLBB MENU NOT FOUND.. STILL LOOKING FOR
+20:16:40,103  INFO loginGmailOneClick:75 - FOUND MLBB MENU
+20:16:40,120  INFO loginGmailOneClick:90 - DIAMOND DENOM NOT FOUND.. STILL LOOKING FOR
+20:16:42,150  INFO loginGmailOneClick:90 - DIAMOND DENOM NOT FOUND.. STILL LOOKING FOR
+20:16:44,178  INFO loginGmailOneClick:90 - DIAMOND DENOM NOT FOUND.. STILL LOOKING FOR
+20:16:46,216  INFO loginGmailOneClick:90 - DIAMOND DENOM NOT FOUND.. STILL LOOKING FOR
+20:16:48,243  INFO loginGmailOneClick:90 - DIAMOND DENOM NOT FOUND.. STILL LOOKING FOR
+20:16:50,271  INFO loginGmailOneClick:90 - DIAMOND DENOM NOT FOUND.. STILL LOOKING FOR
+20:16:52,294  INFO loginGmailOneClick:90 - DIAMOND DENOM NOT FOUND.. STILL LOOKING FOR
+20:16:54,324  INFO loginGmailOneClick:90 - DIAMOND DENOM NOT FOUND.. STILL LOOKING FOR
+20:16:56,358  INFO loginGmailOneClick:90 - DIAMOND DENOM NOT FOUND.. STILL LOOKING FOR
+20:16:58,388  INFO loginGmailOneClick:90 - DIAMOND DENOM NOT FOUND.. STILL LOOKING FOR
+20:17:00,421  INFO loginGmailOneClick:90 - DIAMOND DENOM NOT FOUND.. STILL LOOKING FOR
+20:17:02,449  INFO loginGmailOneClick:90 - DIAMOND DENOM NOT FOUND.. STILL LOOKING FOR
+20:17:04,480  INFO loginGmailOneClick:90 - DIAMOND DENOM NOT FOUND.. STILL LOOKING FOR
+20:17:06,504  INFO loginGmailOneClick:90 - DIAMOND DENOM NOT FOUND.. STILL LOOKING FOR
+20:17:08,531  INFO loginGmailOneClick:90 - DIAMOND DENOM NOT FOUND.. STILL LOOKING FOR
+20:17:10,569  INFO loginGmailOneClick:90 - DIAMOND DENOM NOT FOUND.. STILL LOOKING FOR
+20:17:12,596  INFO loginGmailOneClick:90 - DIAMOND DENOM NOT FOUND.. STILL LOOKING FOR
+20:17:14,625  INFO loginGmailOneClick:90 - DIAMOND DENOM NOT FOUND.. STILL LOOKING FOR
+20:17:16,655  INFO loginGmailOneClick:90 - DIAMOND DENOM NOT FOUND.. STILL LOOKING FOR
+20:17:49,901  INFO loginGmailOneClick:36 - /*-------------START LOGIN PROCESS-----------------*/
+20:17:59,588  INFO loginGmailOneClick:60 - /*-------------LOGIN PROCESS FINISHED---------------*/
+20:17:59,588  INFO loginGmailOneClick:67 - /*-------------START PURCHASE PROCESS---------------*/
+20:17:59,618  INFO loginGmailOneClick:78 - MLBB MENU NOT FOUND.. STILL LOOKING FOR
+20:18:03,390  INFO loginGmailOneClick:75 - FOUND MLBB MENU
+20:18:03,410  INFO loginGmailOneClick:90 - DIAMOND DENOM NOT FOUND.. STILL LOOKING FOR
+20:18:05,438  INFO loginGmailOneClick:90 - DIAMOND DENOM NOT FOUND.. STILL LOOKING FOR
+20:18:07,465  INFO loginGmailOneClick:90 - DIAMOND DENOM NOT FOUND.. STILL LOOKING FOR
+20:18:09,505  INFO loginGmailOneClick:90 - DIAMOND DENOM NOT FOUND.. STILL LOOKING FOR
+20:18:11,540  INFO loginGmailOneClick:90 - DIAMOND DENOM NOT FOUND.. STILL LOOKING FOR
+20:18:13,574  INFO loginGmailOneClick:90 - DIAMOND DENOM NOT FOUND.. STILL LOOKING FOR
+20:18:15,612  INFO loginGmailOneClick:90 - DIAMOND DENOM NOT FOUND.. STILL LOOKING FOR
+20:18:17,635  INFO loginGmailOneClick:90 - DIAMOND DENOM NOT FOUND.. STILL LOOKING FOR
+20:18:19,663  INFO loginGmailOneClick:90 - DIAMOND DENOM NOT FOUND.. STILL LOOKING FOR
+20:18:21,699  INFO loginGmailOneClick:90 - DIAMOND DENOM NOT FOUND.. STILL LOOKING FOR
+20:18:23,728  INFO loginGmailOneClick:90 - DIAMOND DENOM NOT FOUND.. STILL LOOKING FOR
+20:18:25,764  INFO loginGmailOneClick:90 - DIAMOND DENOM NOT FOUND.. STILL LOOKING FOR
+20:18:27,785  INFO loginGmailOneClick:90 - DIAMOND DENOM NOT FOUND.. STILL LOOKING FOR
+20:18:29,815  INFO loginGmailOneClick:90 - DIAMOND DENOM NOT FOUND.. STILL LOOKING FOR
+20:18:31,851  INFO loginGmailOneClick:90 - DIAMOND DENOM NOT FOUND.. STILL LOOKING FOR
+20:18:33,886  INFO loginGmailOneClick:90 - DIAMOND DENOM NOT FOUND.. STILL LOOKING FOR
+20:18:35,916  INFO loginGmailOneClick:90 - DIAMOND DENOM NOT FOUND.. STILL LOOKING FOR
+20:18:37,956  INFO loginGmailOneClick:90 - DIAMOND DENOM NOT FOUND.. STILL LOOKING FOR
+20:18:39,993  INFO loginGmailOneClick:90 - DIAMOND DENOM NOT FOUND.. STILL LOOKING FOR
+20:18:42,020  INFO loginGmailOneClick:90 - DIAMOND DENOM NOT FOUND.. STILL LOOKING FOR
+20:18:44,044  INFO loginGmailOneClick:90 - DIAMOND DENOM NOT FOUND.. STILL LOOKING FOR
+20:18:46,073  INFO loginGmailOneClick:90 - DIAMOND DENOM NOT FOUND.. STILL LOOKING FOR
+20:18:48,103  INFO loginGmailOneClick:90 - DIAMOND DENOM NOT FOUND.. STILL LOOKING FOR
+20:18:50,136  INFO loginGmailOneClick:90 - DIAMOND DENOM NOT FOUND.. STILL LOOKING FOR
+20:18:52,167  INFO loginGmailOneClick:90 - DIAMOND DENOM NOT FOUND.. STILL LOOKING FOR
+20:18:54,201  INFO loginGmailOneClick:90 - DIAMOND DENOM NOT FOUND.. STILL LOOKING FOR
+20:18:56,224  INFO loginGmailOneClick:90 - DIAMOND DENOM NOT FOUND.. STILL LOOKING FOR
+20:18:58,260  INFO loginGmailOneClick:90 - DIAMOND DENOM NOT FOUND.. STILL LOOKING FOR
+20:19:00,289  INFO loginGmailOneClick:90 - DIAMOND DENOM NOT FOUND.. STILL LOOKING FOR
+20:19:02,316  INFO loginGmailOneClick:90 - DIAMOND DENOM NOT FOUND.. STILL LOOKING FOR
+20:19:04,401  INFO loginGmailOneClick:90 - DIAMOND DENOM NOT FOUND.. STILL LOOKING FOR
+20:19:06,437  INFO loginGmailOneClick:90 - DIAMOND DENOM NOT FOUND.. STILL LOOKING FOR
+20:23:08,573  INFO loginGmailOneClick:36 - /*-------------START LOGIN PROCESS-----------------*/
+20:23:18,276  INFO loginGmailOneClick:60 - /*-------------LOGIN PROCESS FINISHED---------------*/
+20:23:18,276  INFO loginGmailOneClick:67 - /*-------------START PURCHASE PROCESS---------------*/
+20:23:18,308  INFO loginGmailOneClick:78 - MLBB MENU NOT FOUND.. STILL LOOKING FOR
+20:23:21,854  INFO loginGmailOneClick:75 - FOUND MLBB MENU
+20:23:21,867  INFO loginGmailOneClick:90 - DIAMOND DENOM NOT FOUND.. STILL LOOKING FOR
+20:23:23,441  INFO loginGmailOneClick:90 - DIAMOND DENOM NOT FOUND.. STILL LOOKING FOR
+20:23:24,475  INFO loginGmailOneClick:90 - DIAMOND DENOM NOT FOUND.. STILL LOOKING FOR
+20:23:25,503  INFO loginGmailOneClick:90 - DIAMOND DENOM NOT FOUND.. STILL LOOKING FOR
+20:23:26,527  INFO loginGmailOneClick:90 - DIAMOND DENOM NOT FOUND.. STILL LOOKING FOR
+20:23:27,564  INFO loginGmailOneClick:90 - DIAMOND DENOM NOT FOUND.. STILL LOOKING FOR
+20:23:28,595  INFO loginGmailOneClick:90 - DIAMOND DENOM NOT FOUND.. STILL LOOKING FOR
+20:23:29,631  INFO loginGmailOneClick:90 - DIAMOND DENOM NOT FOUND.. STILL LOOKING FOR
+20:23:30,664  INFO loginGmailOneClick:90 - DIAMOND DENOM NOT FOUND.. STILL LOOKING FOR
+20:23:31,695  INFO loginGmailOneClick:90 - DIAMOND DENOM NOT FOUND.. STILL LOOKING FOR
+20:23:32,725  INFO loginGmailOneClick:90 - DIAMOND DENOM NOT FOUND.. STILL LOOKING FOR
+20:23:33,763  INFO loginGmailOneClick:90 - DIAMOND DENOM NOT FOUND.. STILL LOOKING FOR
+20:23:34,794  INFO loginGmailOneClick:90 - DIAMOND DENOM NOT FOUND.. STILL LOOKING FOR
+20:23:35,820  INFO loginGmailOneClick:90 - DIAMOND DENOM NOT FOUND.. STILL LOOKING FOR
+20:23:36,857  INFO loginGmailOneClick:90 - DIAMOND DENOM NOT FOUND.. STILL LOOKING FOR
+20:23:37,889  INFO loginGmailOneClick:90 - DIAMOND DENOM NOT FOUND.. STILL LOOKING FOR
+20:23:38,914  INFO loginGmailOneClick:90 - DIAMOND DENOM NOT FOUND.. STILL LOOKING FOR
+20:23:39,946  INFO loginGmailOneClick:90 - DIAMOND DENOM NOT FOUND.. STILL LOOKING FOR
+20:23:40,985  INFO loginGmailOneClick:90 - DIAMOND DENOM NOT FOUND.. STILL LOOKING FOR
+20:23:42,019  INFO loginGmailOneClick:90 - DIAMOND DENOM NOT FOUND.. STILL LOOKING FOR
+20:23:43,056  INFO loginGmailOneClick:90 - DIAMOND DENOM NOT FOUND.. STILL LOOKING FOR
+20:23:44,095  INFO loginGmailOneClick:90 - DIAMOND DENOM NOT FOUND.. STILL LOOKING FOR
+20:23:45,126  INFO loginGmailOneClick:90 - DIAMOND DENOM NOT FOUND.. STILL LOOKING FOR
+20:23:46,154  INFO loginGmailOneClick:90 - DIAMOND DENOM NOT FOUND.. STILL LOOKING FOR
+20:24:06,205  INFO loginGmailOneClick:36 - /*-------------START LOGIN PROCESS-----------------*/
+20:24:15,676  INFO loginGmailOneClick:60 - /*-------------LOGIN PROCESS FINISHED---------------*/
+20:24:15,677  INFO loginGmailOneClick:67 - /*-------------START PURCHASE PROCESS---------------*/
+20:24:15,706  INFO loginGmailOneClick:78 - MLBB MENU NOT FOUND.. STILL LOOKING FOR
+20:24:19,384  INFO loginGmailOneClick:75 - FOUND MLBB MENU
+20:24:19,413  INFO loginGmailOneClick:90 - DIAMOND DENOM NOT FOUND.. STILL LOOKING FOR
+20:24:20,450  INFO loginGmailOneClick:90 - DIAMOND DENOM NOT FOUND.. STILL LOOKING FOR
+20:24:21,476  INFO loginGmailOneClick:90 - DIAMOND DENOM NOT FOUND.. STILL LOOKING FOR
+20:24:22,502  INFO loginGmailOneClick:90 - DIAMOND DENOM NOT FOUND.. STILL LOOKING FOR
+20:24:23,531  INFO loginGmailOneClick:90 - DIAMOND DENOM NOT FOUND.. STILL LOOKING FOR
+20:24:24,557  INFO loginGmailOneClick:90 - DIAMOND DENOM NOT FOUND.. STILL LOOKING FOR
+20:24:25,587  INFO loginGmailOneClick:90 - DIAMOND DENOM NOT FOUND.. STILL LOOKING FOR
+20:24:26,612  INFO loginGmailOneClick:90 - DIAMOND DENOM NOT FOUND.. STILL LOOKING FOR
+20:24:27,642  INFO loginGmailOneClick:90 - DIAMOND DENOM NOT FOUND.. STILL LOOKING FOR
+20:24:28,667  INFO loginGmailOneClick:90 - DIAMOND DENOM NOT FOUND.. STILL LOOKING FOR
+20:24:29,692  INFO loginGmailOneClick:90 - DIAMOND DENOM NOT FOUND.. STILL LOOKING FOR
+20:24:30,720  INFO loginGmailOneClick:90 - DIAMOND DENOM NOT FOUND.. STILL LOOKING FOR
+20:24:31,751  INFO loginGmailOneClick:90 - DIAMOND DENOM NOT FOUND.. STILL LOOKING FOR
+20:24:32,777  INFO loginGmailOneClick:90 - DIAMOND DENOM NOT FOUND.. STILL LOOKING FOR
+20:24:33,808  INFO loginGmailOneClick:90 - DIAMOND DENOM NOT FOUND.. STILL LOOKING FOR
+20:24:34,843  INFO loginGmailOneClick:90 - DIAMOND DENOM NOT FOUND.. STILL LOOKING FOR
+20:24:35,876  INFO loginGmailOneClick:90 - DIAMOND DENOM NOT FOUND.. STILL LOOKING FOR
+20:24:36,915  INFO loginGmailOneClick:90 - DIAMOND DENOM NOT FOUND.. STILL LOOKING FOR
+20:24:38,026  INFO loginGmailOneClick:90 - DIAMOND DENOM NOT FOUND.. STILL LOOKING FOR
+20:24:39,062  INFO loginGmailOneClick:90 - DIAMOND DENOM NOT FOUND.. STILL LOOKING FOR
+20:24:40,088  INFO loginGmailOneClick:90 - DIAMOND DENOM NOT FOUND.. STILL LOOKING FOR
+20:24:41,127  INFO loginGmailOneClick:90 - DIAMOND DENOM NOT FOUND.. STILL LOOKING FOR
+20:24:42,169  INFO loginGmailOneClick:90 - DIAMOND DENOM NOT FOUND.. STILL LOOKING FOR
+20:24:43,200  INFO loginGmailOneClick:90 - DIAMOND DENOM NOT FOUND.. STILL LOOKING FOR
+20:24:44,226  INFO loginGmailOneClick:90 - DIAMOND DENOM NOT FOUND.. STILL LOOKING FOR
+20:24:45,266  INFO loginGmailOneClick:90 - DIAMOND DENOM NOT FOUND.. STILL LOOKING FOR
+20:24:46,294  INFO loginGmailOneClick:90 - DIAMOND DENOM NOT FOUND.. STILL LOOKING FOR
+20:25:15,044  INFO loginGmailOneClick:36 - /*-------------START LOGIN PROCESS-----------------*/
+20:25:24,638  INFO loginGmailOneClick:60 - /*-------------LOGIN PROCESS FINISHED---------------*/
+20:25:24,638  INFO loginGmailOneClick:67 - /*-------------START PURCHASE PROCESS---------------*/
+20:25:24,669  INFO loginGmailOneClick:78 - MLBB MENU NOT FOUND.. STILL LOOKING FOR
+20:25:28,042  INFO loginGmailOneClick:75 - FOUND MLBB MENU
+20:25:28,061  INFO loginGmailOneClick:90 - DIAMOND DENOM NOT FOUND.. STILL LOOKING FOR
+20:25:29,136  INFO loginGmailOneClick:90 - DIAMOND DENOM NOT FOUND.. STILL LOOKING FOR
+20:25:30,174  INFO loginGmailOneClick:90 - DIAMOND DENOM NOT FOUND.. STILL LOOKING FOR
+20:25:31,201  INFO loginGmailOneClick:90 - DIAMOND DENOM NOT FOUND.. STILL LOOKING FOR
+20:25:32,233  INFO loginGmailOneClick:90 - DIAMOND DENOM NOT FOUND.. STILL LOOKING FOR
+20:25:33,267  INFO loginGmailOneClick:90 - DIAMOND DENOM NOT FOUND.. STILL LOOKING FOR
+20:25:34,298  INFO loginGmailOneClick:90 - DIAMOND DENOM NOT FOUND.. STILL LOOKING FOR
+20:25:35,327  INFO loginGmailOneClick:90 - DIAMOND DENOM NOT FOUND.. STILL LOOKING FOR
+20:25:36,357  INFO loginGmailOneClick:90 - DIAMOND DENOM NOT FOUND.. STILL LOOKING FOR
+20:25:37,386  INFO loginGmailOneClick:90 - DIAMOND DENOM NOT FOUND.. STILL LOOKING FOR
+20:25:38,418  INFO loginGmailOneClick:90 - DIAMOND DENOM NOT FOUND.. STILL LOOKING FOR
+20:25:39,453  INFO loginGmailOneClick:90 - DIAMOND DENOM NOT FOUND.. STILL LOOKING FOR
+20:25:40,478  INFO loginGmailOneClick:90 - DIAMOND DENOM NOT FOUND.. STILL LOOKING FOR
+20:25:41,502  INFO loginGmailOneClick:90 - DIAMOND DENOM NOT FOUND.. STILL LOOKING FOR
+20:25:42,542  INFO loginGmailOneClick:90 - DIAMOND DENOM NOT FOUND.. STILL LOOKING FOR
+20:25:43,576  INFO loginGmailOneClick:90 - DIAMOND DENOM NOT FOUND.. STILL LOOKING FOR
+20:25:44,612  INFO loginGmailOneClick:90 - DIAMOND DENOM NOT FOUND.. STILL LOOKING FOR
+20:25:45,649  INFO loginGmailOneClick:90 - DIAMOND DENOM NOT FOUND.. STILL LOOKING FOR
+20:25:46,681  INFO loginGmailOneClick:90 - DIAMOND DENOM NOT FOUND.. STILL LOOKING FOR
+20:25:47,710  INFO loginGmailOneClick:90 - DIAMOND DENOM NOT FOUND.. STILL LOOKING FOR
+20:25:48,746  INFO loginGmailOneClick:90 - DIAMOND DENOM NOT FOUND.. STILL LOOKING FOR
+20:26:16,060  INFO loginGmailOneClick:36 - /*-------------START LOGIN PROCESS-----------------*/
+20:26:25,501  INFO loginGmailOneClick:60 - /*-------------LOGIN PROCESS FINISHED---------------*/
+20:26:25,501  INFO loginGmailOneClick:67 - /*-------------START PURCHASE PROCESS---------------*/
+20:26:25,531  INFO loginGmailOneClick:78 - MLBB MENU NOT FOUND.. STILL LOOKING FOR
+20:26:28,671  INFO loginGmailOneClick:75 - FOUND MLBB MENU
+20:26:28,693  INFO loginGmailOneClick:90 - DIAMOND DENOM NOT FOUND.. STILL LOOKING FOR
+20:26:29,828  INFO loginGmailOneClick:90 - DIAMOND DENOM NOT FOUND.. STILL LOOKING FOR
+20:26:30,865  INFO loginGmailOneClick:90 - DIAMOND DENOM NOT FOUND.. STILL LOOKING FOR
+20:26:31,900  INFO loginGmailOneClick:90 - DIAMOND DENOM NOT FOUND.. STILL LOOKING FOR
+20:26:32,931  INFO loginGmailOneClick:90 - DIAMOND DENOM NOT FOUND.. STILL LOOKING FOR
+20:26:33,964  INFO loginGmailOneClick:90 - DIAMOND DENOM NOT FOUND.. STILL LOOKING FOR
+20:26:34,997  INFO loginGmailOneClick:90 - DIAMOND DENOM NOT FOUND.. STILL LOOKING FOR
+20:26:36,025  INFO loginGmailOneClick:90 - DIAMOND DENOM NOT FOUND.. STILL LOOKING FOR
+20:26:37,052  INFO loginGmailOneClick:90 - DIAMOND DENOM NOT FOUND.. STILL LOOKING FOR
+20:26:38,078  INFO loginGmailOneClick:90 - DIAMOND DENOM NOT FOUND.. STILL LOOKING FOR
+20:26:39,111  INFO loginGmailOneClick:90 - DIAMOND DENOM NOT FOUND.. STILL LOOKING FOR
+20:26:40,143  INFO loginGmailOneClick:90 - DIAMOND DENOM NOT FOUND.. STILL LOOKING FOR
+20:26:41,181  INFO loginGmailOneClick:90 - DIAMOND DENOM NOT FOUND.. STILL LOOKING FOR
+20:28:37,214  INFO loginGmailOneClick:36 - /*-------------START LOGIN PROCESS-----------------*/
+20:31:39,271  INFO loginGmailOneClick:36 - /*-------------START LOGIN PROCESS-----------------*/
+20:31:48,712  INFO loginGmailOneClick:60 - /*-------------LOGIN PROCESS FINISHED---------------*/
+20:31:48,712  INFO loginGmailOneClick:67 - /*-------------START PURCHASE PROCESS---------------*/
+20:31:48,745  INFO loginGmailOneClick:78 - MLBB MENU NOT FOUND.. STILL LOOKING FOR
+20:31:52,323  INFO loginGmailOneClick:75 - FOUND MLBB MENU
+20:31:56,442  INFO loginGmailOneClick:92 - FOUND DIAMOND DENOM
+20:31:56,442  INFO loginGmailOneClick:128 - /*-------------PRODUCT CHECKING START---------------*/
+20:31:57,338  INFO loginGmailOneClick:139 - /*-------------PURCHASE PROCESS FINISHED---------------*/
+20:32:52,792  INFO loginGmailOneClick:36 - /*-------------START LOGIN PROCESS-----------------*/
+20:33:02,965  INFO loginGmailOneClick:60 - /*-------------LOGIN PROCESS FINISHED---------------*/
+20:33:02,965  INFO loginGmailOneClick:67 - /*-------------START PURCHASE PROCESS---------------*/
+20:33:02,999  INFO loginGmailOneClick:78 - MLBB MENU NOT FOUND.. STILL LOOKING FOR
+20:33:06,218  INFO loginGmailOneClick:75 - FOUND MLBB MENU
+20:33:10,360  INFO loginGmailOneClick:92 - FOUND DIAMOND DENOM
+20:34:38,201  INFO loginGmailOneClick:36 - /*-------------START LOGIN PROCESS-----------------*/
+20:34:47,898  INFO loginGmailOneClick:60 - /*-------------LOGIN PROCESS FINISHED---------------*/
+20:34:47,898  INFO loginGmailOneClick:67 - /*-------------START PURCHASE PROCESS---------------*/
+20:34:47,928  INFO loginGmailOneClick:78 - MLBB MENU NOT FOUND.. STILL LOOKING FOR
+20:34:53,299  INFO loginGmailOneClick:75 - FOUND MLBB MENU
+20:34:57,394  INFO loginGmailOneClick:92 - FOUND DIAMOND DENOM
+20:35:43,328  INFO loginGmailOneClick:36 - /*-------------START LOGIN PROCESS-----------------*/
+20:35:53,061  INFO loginGmailOneClick:60 - /*-------------LOGIN PROCESS FINISHED---------------*/
+20:35:53,061  INFO loginGmailOneClick:67 - /*-------------START PURCHASE PROCESS---------------*/
+20:35:53,097  INFO loginGmailOneClick:78 - MLBB MENU NOT FOUND.. STILL LOOKING FOR
+20:35:56,945  INFO loginGmailOneClick:75 - FOUND MLBB MENU
+20:36:01,056  INFO loginGmailOneClick:92 - FOUND DIAMOND DENOM
+20:37:31,660  INFO loginGmailOneClick:36 - /*-------------START LOGIN PROCESS-----------------*/
+20:37:41,296  INFO loginGmailOneClick:60 - /*-------------LOGIN PROCESS FINISHED---------------*/
+20:37:41,297  INFO loginGmailOneClick:67 - /*-------------START PURCHASE PROCESS---------------*/
+20:37:41,328  INFO loginGmailOneClick:78 - MLBB MENU NOT FOUND.. STILL LOOKING FOR
+20:37:45,023  INFO loginGmailOneClick:75 - FOUND MLBB MENU
+20:37:49,098  INFO loginGmailOneClick:92 - FOUND DIAMOND DENOM
+20:37:49,274  INFO loginGmailOneClick:118 - PRINTING objects VALUE
+20:37:49,289  INFO loginGmailOneClick:118 - PRINTING objects VALUE
+20:37:49,304  INFO loginGmailOneClick:118 - PRINTING objects VALUE
+20:37:49,319  INFO loginGmailOneClick:118 - PRINTING objects VALUE
+20:37:49,335  INFO loginGmailOneClick:118 - PRINTING objects VALUE
+20:37:49,350  INFO loginGmailOneClick:118 - PRINTING objects VALUE
+20:37:49,366  INFO loginGmailOneClick:118 - PRINTING objects VALUE
+20:37:49,380  INFO loginGmailOneClick:118 - PRINTING objects VALUE
+20:37:49,396  INFO loginGmailOneClick:118 - PRINTING objects VALUE
+20:37:49,411  INFO loginGmailOneClick:118 - PRINTING objects VALUE
+20:37:49,427  INFO loginGmailOneClick:118 - PRINTING objects VALUE
+20:44:29,538  INFO loginGmailOneClick:37 - /*-------------START LOGIN PROCESS-----------------*/
+20:44:39,351  INFO loginGmailOneClick:61 - /*-------------LOGIN PROCESS FINISHED---------------*/
+20:44:39,351  INFO loginGmailOneClick:68 - /*-------------START PURCHASE PROCESS---------------*/
+20:44:39,391  INFO loginGmailOneClick:79 - MLBB MENU NOT FOUND.. STILL LOOKING FOR
+20:44:42,851  INFO loginGmailOneClick:76 - FOUND MLBB MENU
+20:44:46,955  INFO loginGmailOneClick:93 - FOUND DIAMOND DENOM.. MLBB PAGE IS LOADED CONFIRMED
+20:44:47,143  INFO loginGmailOneClick:119 - PRINTING objects VALUE
+20:44:47,172  INFO loginGmailOneClick:119 - PRINTING objects VALUE
+20:44:47,186  INFO loginGmailOneClick:119 - PRINTING objects VALUE
+20:44:47,201  INFO loginGmailOneClick:119 - PRINTING objects VALUE
+20:44:47,217  INFO loginGmailOneClick:119 - PRINTING objects VALUE
+20:44:47,233  INFO loginGmailOneClick:119 - PRINTING objects VALUE
+20:44:47,250  INFO loginGmailOneClick:119 - PRINTING objects VALUE
+20:44:47,264  INFO loginGmailOneClick:119 - PRINTING objects VALUE
+20:44:47,279  INFO loginGmailOneClick:119 - PRINTING objects VALUE
+20:44:47,295  INFO loginGmailOneClick:119 - PRINTING objects VALUE
+20:44:47,311  INFO loginGmailOneClick:119 - PRINTING objects VALUE
+20:51:05,612  INFO loginGmailOneClick:37 - /*-------------START LOGIN PROCESS-----------------*/
+20:51:16,530  INFO loginGmailOneClick:37 - /*-------------START LOGIN PROCESS-----------------*/
+20:51:26,251  INFO loginGmailOneClick:61 - /*-------------LOGIN PROCESS FINISHED---------------*/
+20:51:26,252  INFO loginGmailOneClick:68 - /*-------------START PURCHASE PROCESS---------------*/
+20:51:26,296  INFO loginGmailOneClick:79 - MLBB MENU NOT FOUND.. STILL LOOKING FOR
+20:51:30,216  INFO loginGmailOneClick:76 - FOUND MLBB MENU
+20:51:34,295  INFO loginGmailOneClick:93 - FOUND DIAMOND DENOM.. MLBB PAGE IS LOADED CONFIRMED
+20:51:34,570  INFO loginGmailOneClick:118 - PRINTING objects VALUE
+20:51:36,143  INFO loginGmailOneClick:118 - PRINTING objects VALUE
+20:51:37,710  INFO loginGmailOneClick:118 - PRINTING objects VALUE
+20:51:39,292  INFO loginGmailOneClick:118 - PRINTING objects VALUE
+20:51:40,859  INFO loginGmailOneClick:118 - PRINTING objects VALUE
+20:51:42,435  INFO loginGmailOneClick:118 - PRINTING objects VALUE
+20:51:44,008  INFO loginGmailOneClick:118 - PRINTING objects VALUE
+20:51:45,597  INFO loginGmailOneClick:118 - PRINTING objects VALUE
+20:51:47,177  INFO loginGmailOneClick:118 - PRINTING objects VALUE
+20:51:48,751  INFO loginGmailOneClick:118 - PRINTING objects VALUE
+20:51:50,331  INFO loginGmailOneClick:118 - PRINTING objects VALUE
+21:39:38,217  INFO TransactionController:71 - /*-------------START LOGIN PROCESS-----------------*/
+21:39:49,546  INFO TransactionController:95 - /*-------------LOGIN PROCESS FINISHED---------------*/
+21:39:49,546  INFO TransactionController:102 - /*-------------START PURCHASE PROCESS---------------*/
+21:39:49,579  INFO TransactionController:113 - MLBB MENU NOT FOUND.. STILL LOOKING FOR
+21:39:51,619  INFO TransactionController:113 - MLBB MENU NOT FOUND.. STILL LOOKING FOR
+21:39:54,267  INFO TransactionController:110 - FOUND MLBB MENU
+21:39:58,464  INFO TransactionController:128 - FOUND SELECTED DENOM.. MLBB PAGE IS LOADED CONFIRMED
+21:41:05,579  INFO TransactionController:71 - /*-------------START LOGIN PROCESS-----------------*/
+21:41:15,736  INFO TransactionController:95 - /*-------------LOGIN PROCESS FINISHED---------------*/
+21:41:15,736  INFO TransactionController:102 - /*-------------START PURCHASE PROCESS---------------*/
+21:41:15,768  INFO TransactionController:113 - MLBB MENU NOT FOUND.. STILL LOOKING FOR
+21:41:19,953  INFO TransactionController:110 - FOUND MLBB MENU
+21:41:24,132  INFO TransactionController:128 - FOUND SELECTED DENOM.. MLBB PAGE IS LOADED CONFIRMED
+21:42:04,362  INFO TransactionController:71 - /*-------------START LOGIN PROCESS-----------------*/
+21:42:14,032  INFO TransactionController:95 - /*-------------LOGIN PROCESS FINISHED---------------*/
+21:42:14,033  INFO TransactionController:102 - /*-------------START PURCHASE PROCESS---------------*/
+21:42:14,052  INFO TransactionController:113 - MLBB MENU NOT FOUND.. STILL LOOKING FOR
+21:42:17,845  INFO TransactionController:110 - FOUND MLBB MENU
+21:42:22,044  INFO TransactionController:128 - FOUND SELECTED DENOM.. MLBB PAGE IS LOADED CONFIRMED
+21:42:59,550  INFO TransactionController:71 - /*-------------START LOGIN PROCESS-----------------*/
+21:43:09,561  INFO TransactionController:95 - /*-------------LOGIN PROCESS FINISHED---------------*/
+21:43:09,561  INFO TransactionController:102 - /*-------------START PURCHASE PROCESS---------------*/
+21:43:09,583  INFO TransactionController:113 - MLBB MENU NOT FOUND.. STILL LOOKING FOR
+21:43:13,972  INFO TransactionController:110 - FOUND MLBB MENU
+21:43:18,177  INFO TransactionController:128 - FOUND SELECTED DENOM.. MLBB PAGE IS LOADED CONFIRMED
+21:46:48,185  INFO TransactionController:71 - /*-------------START LOGIN PROCESS-----------------*/
+21:46:57,886  INFO TransactionController:95 - /*-------------LOGIN PROCESS FINISHED---------------*/
+21:46:57,887  INFO TransactionController:102 - /*-------------START PURCHASE PROCESS---------------*/
+21:46:57,913  INFO TransactionController:113 - MLBB MENU NOT FOUND.. STILL LOOKING FOR
+21:47:01,391  INFO TransactionController:110 - FOUND MLBB MENU
+21:47:05,565  INFO TransactionController:128 - FOUND SELECTED DENOM.. MLBB PAGE HAS BEEN LOADED IS CONFIRMED
+21:48:27,339  INFO SmileOneBot:33 - /*-------------START LOGIN PROCESS-----------------*/
+21:48:37,203  INFO SmileOneBot:57 - /*-------------LOGIN PROCESS FINISHED---------------*/
+21:48:37,203  INFO SmileOneBot:64 - /*-------------START PURCHASE PROCESS---------------*/
+21:48:37,232  INFO SmileOneBot:75 - MLBB MENU NOT FOUND.. STILL LOOKING FOR
+21:48:40,942  INFO SmileOneBot:72 - FOUND MLBB MENU
+21:48:45,027  INFO SmileOneBot:89 - FOUND DIAMOND DENOM.. MLBB PAGE IS LOADED CONFIRMED
+21:48:45,206  INFO SmileOneBot:114 - PRINTING objects VALUE
+21:48:46,785  INFO SmileOneBot:114 - PRINTING objects VALUE
+21:48:48,357  INFO SmileOneBot:114 - PRINTING objects VALUE
+21:48:49,927  INFO SmileOneBot:114 - PRINTING objects VALUE
+21:48:51,497  INFO SmileOneBot:114 - PRINTING objects VALUE
+21:48:53,076  INFO SmileOneBot:114 - PRINTING objects VALUE
+21:49:46,354  INFO TransactionController:70 - /*-------------START LOGIN PROCESS-----------------*/
+21:49:56,332  INFO TransactionController:94 - /*-------------LOGIN PROCESS FINISHED---------------*/
+21:49:56,333  INFO TransactionController:101 - /*-------------START PURCHASE PROCESS---------------*/
+21:49:56,363  INFO TransactionController:112 - MLBB MENU NOT FOUND.. STILL LOOKING FOR
+21:50:00,176  INFO TransactionController:109 - FOUND MLBB MENU
+21:50:04,384  INFO TransactionController:127 - FOUND SELECTED DENOM.. MLBB PAGE HAS BEEN LOADED IS CONFIRMED
+21:58:30,879  INFO TransactionController:75 - /*-------------START LOGIN PROCESS-----------------*/
+21:58:40,785  INFO TransactionController:99 - /*-------------LOGIN PROCESS FINISHED---------------*/
+21:58:40,785  INFO TransactionController:108 - /*-------------START PURCHASE PROCESS---------------*/
+21:58:40,827  INFO TransactionController:116 - MLBB MENU NOT FOUND.. STILL LOOKING FOR
+21:58:44,197  INFO TransactionController:113 - FOUND MLBB MENU.. HOMEPAGE HAS BEEN LOADED IS CONFIRMED
+21:58:48,308  INFO TransactionController:134 - DIAMOND DENOM NOT FOUND.. STILL LOOKING FOR
+21:58:49,341  INFO TransactionController:134 - DIAMOND DENOM NOT FOUND.. STILL LOOKING FOR
+21:58:50,370  INFO TransactionController:134 - DIAMOND DENOM NOT FOUND.. STILL LOOKING FOR
+21:58:51,404  INFO TransactionController:134 - DIAMOND DENOM NOT FOUND.. STILL LOOKING FOR
+21:58:52,443  INFO TransactionController:134 - DIAMOND DENOM NOT FOUND.. STILL LOOKING FOR
+21:58:53,480  INFO TransactionController:134 - DIAMOND DENOM NOT FOUND.. STILL LOOKING FOR
+21:58:54,506  INFO TransactionController:134 - DIAMOND DENOM NOT FOUND.. STILL LOOKING FOR
+21:58:55,545  INFO TransactionController:134 - DIAMOND DENOM NOT FOUND.. STILL LOOKING FOR
+21:58:56,580  INFO TransactionController:134 - DIAMOND DENOM NOT FOUND.. STILL LOOKING FOR
+21:58:57,619  INFO TransactionController:134 - DIAMOND DENOM NOT FOUND.. STILL LOOKING FOR
+21:58:58,656  INFO TransactionController:134 - DIAMOND DENOM NOT FOUND.. STILL LOOKING FOR
+21:58:59,693  INFO TransactionController:134 - DIAMOND DENOM NOT FOUND.. STILL LOOKING FOR
+21:59:00,725  INFO TransactionController:134 - DIAMOND DENOM NOT FOUND.. STILL LOOKING FOR
+21:59:01,762  INFO TransactionController:134 - DIAMOND DENOM NOT FOUND.. STILL LOOKING FOR
+21:59:02,788  INFO TransactionController:134 - DIAMOND DENOM NOT FOUND.. STILL LOOKING FOR
+21:59:03,820  INFO TransactionController:134 - DIAMOND DENOM NOT FOUND.. STILL LOOKING FOR
+21:59:04,857  INFO TransactionController:134 - DIAMOND DENOM NOT FOUND.. STILL LOOKING FOR
+21:59:05,896  INFO TransactionController:134 - DIAMOND DENOM NOT FOUND.. STILL LOOKING FOR
+21:59:06,923  INFO TransactionController:134 - DIAMOND DENOM NOT FOUND.. STILL LOOKING FOR
+21:59:07,959  INFO TransactionController:134 - DIAMOND DENOM NOT FOUND.. STILL LOOKING FOR
+21:59:08,989  INFO TransactionController:134 - DIAMOND DENOM NOT FOUND.. STILL LOOKING FOR
+21:59:10,021  INFO TransactionController:134 - DIAMOND DENOM NOT FOUND.. STILL LOOKING FOR
+21:59:11,080  INFO TransactionController:134 - DIAMOND DENOM NOT FOUND.. STILL LOOKING FOR
+21:59:12,101  INFO TransactionController:134 - DIAMOND DENOM NOT FOUND.. STILL LOOKING FOR
+21:59:13,125  INFO TransactionController:134 - DIAMOND DENOM NOT FOUND.. STILL LOOKING FOR
+21:59:14,144  INFO TransactionController:134 - DIAMOND DENOM NOT FOUND.. STILL LOOKING FOR
+21:59:15,164  INFO TransactionController:134 - DIAMOND DENOM NOT FOUND.. STILL LOOKING FOR
+21:59:16,195  INFO TransactionController:134 - DIAMOND DENOM NOT FOUND.. STILL LOOKING FOR
+21:59:17,221  INFO TransactionController:134 - DIAMOND DENOM NOT FOUND.. STILL LOOKING FOR
+21:59:18,260  INFO TransactionController:134 - DIAMOND DENOM NOT FOUND.. STILL LOOKING FOR
+21:59:19,282  INFO TransactionController:134 - DIAMOND DENOM NOT FOUND.. STILL LOOKING FOR
+21:59:20,314  INFO TransactionController:134 - DIAMOND DENOM NOT FOUND.. STILL LOOKING FOR
+21:59:20,653  INFO TransactionController:75 - /*-------------START LOGIN PROCESS-----------------*/
+21:59:22,505  INFO TransactionController:134 - DIAMOND DENOM NOT FOUND.. STILL LOOKING FOR
+21:59:24,676  INFO TransactionController:134 - DIAMOND DENOM NOT FOUND.. STILL LOOKING FOR
+21:59:25,715  INFO TransactionController:134 - DIAMOND DENOM NOT FOUND.. STILL LOOKING FOR
+21:59:26,745  INFO TransactionController:134 - DIAMOND DENOM NOT FOUND.. STILL LOOKING FOR
+21:59:29,019  INFO TransactionController:134 - DIAMOND DENOM NOT FOUND.. STILL LOOKING FOR
+21:59:30,053  INFO TransactionController:134 - DIAMOND DENOM NOT FOUND.. STILL LOOKING FOR
+21:59:31,090  INFO TransactionController:134 - DIAMOND DENOM NOT FOUND.. STILL LOOKING FOR
+21:59:31,397  INFO TransactionController:99 - /*-------------LOGIN PROCESS FINISHED---------------*/
+21:59:31,398  INFO TransactionController:108 - /*-------------START PURCHASE PROCESS---------------*/
+21:59:31,419  INFO TransactionController:116 - MLBB MENU NOT FOUND.. STILL LOOKING FOR
+21:59:32,124  INFO TransactionController:134 - DIAMOND DENOM NOT FOUND.. STILL LOOKING FOR
+21:59:34,890  INFO TransactionController:134 - DIAMOND DENOM NOT FOUND.. STILL LOOKING FOR
+21:59:35,041  INFO TransactionController:113 - FOUND MLBB MENU.. HOMEPAGE HAS BEEN LOADED IS CONFIRMED
+21:59:36,008  INFO TransactionController:134 - DIAMOND DENOM NOT FOUND.. STILL LOOKING FOR
+21:59:37,039  INFO TransactionController:134 - DIAMOND DENOM NOT FOUND.. STILL LOOKING FOR
+21:59:39,150  INFO TransactionController:134 - DIAMOND DENOM NOT FOUND.. STILL LOOKING FOR
+21:59:40,103  INFO TransactionController:131 - FOUND SELECTED DENOM.. MLBB PAGE HAS BEEN LOADED IS CONFIRMED
+21:59:40,182  INFO TransactionController:134 - DIAMOND DENOM NOT FOUND.. STILL LOOKING FOR
+21:59:41,211  INFO TransactionController:134 - DIAMOND DENOM NOT FOUND.. STILL LOOKING FOR
+21:59:42,251  INFO TransactionController:134 - DIAMOND DENOM NOT FOUND.. STILL LOOKING FOR
+21:59:43,290  INFO TransactionController:134 - DIAMOND DENOM NOT FOUND.. STILL LOOKING FOR
+21:59:44,319  INFO TransactionController:134 - DIAMOND DENOM NOT FOUND.. STILL LOOKING FOR
+21:59:45,344  INFO TransactionController:134 - DIAMOND DENOM NOT FOUND.. STILL LOOKING FOR
+21:59:46,371  INFO TransactionController:134 - DIAMOND DENOM NOT FOUND.. STILL LOOKING FOR
+21:59:47,402  INFO TransactionController:134 - DIAMOND DENOM NOT FOUND.. STILL LOOKING FOR
+21:59:49,089  INFO TransactionController:134 - DIAMOND DENOM NOT FOUND.. STILL LOOKING FOR
+21:59:50,120  INFO TransactionController:134 - DIAMOND DENOM NOT FOUND.. STILL LOOKING FOR
+21:59:51,156  INFO TransactionController:134 - DIAMOND DENOM NOT FOUND.. STILL LOOKING FOR
+21:59:52,177  INFO TransactionController:134 - DIAMOND DENOM NOT FOUND.. STILL LOOKING FOR
+21:59:53,206  INFO TransactionController:134 - DIAMOND DENOM NOT FOUND.. STILL LOOKING FOR

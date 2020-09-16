@@ -1,0 +1,52 @@
+plugins {
+	id 'org.springframework.boot' version '2.3.3.RELEASE'
+	id 'io.spring.dependency-management' version '1.0.10.RELEASE'
+	id 'application'
+}
+
+apply plugin : 'java'
+
+application {
+	mainClass = 'SmileOneBot'
+}
+
+//version = '0.0.1-SNAPSHOT'
+
+repositories {
+	mavenCentral()
+	jcenter()
+}
+
+dependencies {
+	implementation 'org.springframework.boot:spring-boot-starter-web'
+	testImplementation('org.springframework.boot:spring-boot-starter-test') {
+		exclude group: 'org.junit.vintage', module: 'junit-vintage-engine'
+	}
+
+	// https://mvnrepository.com/artifact/log4j/log4j
+	compile group: 'log4j', name: 'log4j', version: '1.2.17'
+
+	// https://mvnrepository.com/artifact/org.seleniumhq.selenium/selenium-java
+	compile group: 'org.seleniumhq.selenium', name: 'selenium-java', version: '3.141.59'
+
+	// https://mvnrepository.com/artifact/org.seleniumhq.selenium/selenium-firefox-driver
+	compile group: 'org.seleniumhq.selenium', name: 'selenium-firefox-driver', version: '3.141.59'
+
+	// https://mvnrepository.com/artifact/org.seleniumhq.selenium/selenium-remote-driver
+	compile group: 'org.seleniumhq.selenium', name: 'selenium-remote-driver', version: '3.141.59'
+
+	// https://mvnrepository.com/artifact/org.seleniumhq.selenium/selenium-chrome-driver
+	compile group: 'org.seleniumhq.selenium', name: 'selenium-chrome-driver', version: '3.141.59'
+
+	// https://mvnrepository.com/artifact/org.seleniumhq.selenium/selenium-support
+	compile group: 'org.seleniumhq.selenium', name: 'selenium-support', version: '3.141.59'
+
+	// https://mvnrepository.com/artifact/junit/junit
+	compile group: 'junit', name: 'junit', version: '4.12'
+
+	testImplementation 'junit:junit:4.13'
+}
+
+test {
+	useJUnitPlatform()
+}
