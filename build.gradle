@@ -7,7 +7,7 @@ plugins {
 apply plugin : 'java'
 
 application {
-	mainClass = 'SmileOneBot'
+	mainClass = 'SmileOne.SmileOneBot'
 }
 
 //version = '0.0.1-SNAPSHOT'

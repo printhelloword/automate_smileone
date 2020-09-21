@@ -203,7 +203,6 @@ public class TransactionController {
                 /*Checking for MLBB Page Fully Loaded*/
                 while (true) {
                     try {
-                        response = driver.findElement(By.cssSelector(getDenomELementLocator(denom))).getAttribute("class");
                         driver.findElement(By.cssSelector(getDenomELementLocator(denom))).click();
                         SmileOneBot.logger.info( "FOUND SELECTED DENOM.. MLBB PAGE HAS BEEN LOADED IS CONFIRMED");
                         break;
@@ -241,7 +240,7 @@ public class TransactionController {
                         /*SAVING TO OUTBOX*/
                         SmileOneBot.logger.info("Saving Request to Outbox");
                         Date date = new Date();
-                        Outboxes outboxes = new Outboxes(response, null, date, currentInboxID);
+                        Outboxes outboxes = new Outboxes(responsePojo.getMessage(), null, date, currentInboxID);
                         dbOutboxes.saveOutbox(outboxes);
                     } catch (Exception e) {
                         SmileOneBot.logger.info("---------Fail Save to DB----------");
@@ -347,7 +346,7 @@ public class TransactionController {
             case "twilight":
                 denomResult=denom10;
                 break;
-            case "tarlightplus":
+            case "starlightplus":
                 denomResult=denom11;
                 break;
             default:

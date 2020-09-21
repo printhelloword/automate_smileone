@@ -1484,3 +1484,26 @@
     "trxId": "12345",
     "status": "Success"
 }
+17:10:43,557  INFO SmileOneBot:355 - INVALID DENOM IN CURRENT REQUEST : starlightplus
+17:10:43,567  INFO SmileOneBot:263 - PURCHASE FINISHED WITH DETAILS :
+{
+    "message": "INVALID DENOM",
+    "status": "Error"
+}
+17:10:48,641  INFO SmileOneBot:126 - Saving Request to Inbox
+17:10:54,114  INFO SmileOneBot:145 - /*-------------START LOGIN PROCESS-----------------*/
+17:11:03,148  INFO SmileOneBot:175 - /*-------------LOGIN PROCESS FINISHED---------------*/
+17:11:04,273  INFO SmileOneBot:182 - /*-------------START PURCHASE PROCESS---------------*/
+17:11:06,436  INFO SmileOneBot:208 - FOUND SELECTED DENOM.. MLBB PAGE HAS BEEN LOADED IS CONFIRMED
+17:11:07,847  INFO SmileOneBot:239 - Saving to Outbox with inbox_id : 11
+17:11:07,848  INFO SmileOneBot:242 - Saving Request to Outbox
+17:11:08,493  INFO SmileOneBot:263 - PURCHASE FINISHED WITH DETAILS :
+{
+    "voucher": {
+        "denom": "starlight",
+        "playerId": 1266066872632
+    },
+    "message": "Voucher Purchased",
+    "trxId": "12321",
+    "status": "Success"
+}
