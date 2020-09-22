@@ -1507,3 +1507,24 @@
     "trxId": "12321",
     "status": "Success"
 }
+23:50:38,113  INFO SmileOneBot:45 - /*-------------START LOGIN PROCESS-----------------*/
+23:51:50,071  INFO SmileOneBot:45 - /*-------------START LOGIN PROCESS-----------------*/
+23:52:26,485  INFO SmileOneBot:45 - /*-------------START LOGIN PROCESS-----------------*/
+23:53:45,746  INFO SmileOneBot:46 - /*-------------START LOGIN PROCESS-----------------*/
+00:18:40,752  INFO SmileOneBot:60 - /*-------------START LOGIN PROCESS-----------------*/
+00:24:17,446  INFO SmileOneBot:60 - /*-------------START LOGIN PROCESS-----------------*/
+00:24:28,378  INFO SmileOneBot:71 - /*-------------PURCHASE PROCESS FINISHED---------------*/
+00:25:45,549  INFO SmileOneBot:61 - /*-------------START LOGIN PROCESS-----------------*/
+00:25:50,394  INFO SmileOneBot:72 - /*-------------PURCHASE PROCESS FINISHED---------------*/
+00:27:55,693  INFO SmileOneBot:59 - /*-------------START LOGIN PROCESS-----------------*/
+00:30:51,971  INFO SmileOneBot:59 - /*-------------START LOGIN PROCESS-----------------*/
+00:31:00,053  INFO SmileOneBot:82 - /*-------------PURCHASE PROCESS FINISHED---------------*/
+00:32:31,662  INFO SmileOneBot:60 - /*-------------START LOGIN PROCESS-----------------*/
+00:32:35,437  INFO SmileOneBot:73 - /*-------------PURCHASE PROCESS FINISHED---------------*/
+00:33:26,162  INFO SmileOneBot:60 - /*-------------START LOGIN PROCESS-----------------*/
+00:34:10,784  INFO SmileOneBot:60 - /*-------------START LOGIN PROCESS-----------------*/
+00:34:16,553  INFO SmileOneBot:74 - /*-------------PURCHASE PROCESS FINISHED---------------*/
+00:35:21,453  INFO SmileOneBot:60 - /*-------------START LOGIN PROCESS-----------------*/
+00:35:25,396  INFO SmileOneBot:74 - /*-------------PURCHASE PROCESS FINISHED---------------*/
+00:36:13,188  INFO SmileOneBot:60 - /*-------------START LOGIN PROCESS-----------------*/
+00:36:18,686  INFO SmileOneBot:74 - /*-------------PURCHASE PROCESS FINISHED---------------*/

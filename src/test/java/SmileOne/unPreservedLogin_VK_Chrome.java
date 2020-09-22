@@ -14,7 +14,7 @@ import java.util.HashMap;
 import java.util.Map;
 import java.util.Set;
 
-public class login_purchase_VK {
+public class unPreservedLogin_VK_Chrome {
     private static Logger logger = Logger.getLogger(SmileOneBot.class);
 
     private static WebDriver driver ;

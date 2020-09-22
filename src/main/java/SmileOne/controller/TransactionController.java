@@ -231,8 +231,6 @@ public class TransactionController {
                 responsePojo.setTrxId(trxId);
                 responsePojo.setStatus(status00);
 
-
-
                 /*CHECKING&SAVING OUTBOX*/
                 if (currentInboxID!=null) {
                     SmileOneBot.logger.info("Saving to Outbox with inbox_id : "+currentInboxID);

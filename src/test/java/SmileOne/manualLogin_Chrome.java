@@ -11,7 +11,7 @@ import java.util.HashMap;
 import java.util.Map;
 import java.util.Set;
 
-public class botSmileLogintoPurchase {
+public class manualLogin_Chrome {
     private static Logger logger = Logger.getLogger(SmileOneBot.class);
 
     private static WebDriver driver ;
