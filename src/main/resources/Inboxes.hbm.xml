@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated Sep 14, 2020 10:34:28 AM by Hibernate Tools 4.3.1 -->
+<hibernate-mapping>
+    <class name="SmileOne.model.Inboxes" table="inboxes" catalog="smile_one" optimistic-lock="version">
+        <id name="id" type="int">
+            <column name="id" />
+            <generator class="identity" />
+        </id>
+        <property name="message" type="string">
+            <column name="message" />
+        </property>
+        <property name="sender" type="string">
+            <column name="sender" />
+        </property>
+        <property name="status" type="java.lang.Integer">
+            <column name="status" />
+        </property>
+        <property name="createDate" type="timestamp">
+            <column name="create_date" length="19" />
+        </property>
+        <property name="trxId" type="string">
+            <column name="trx_id" />
+        </property>
+    </class>
+</hibernate-mapping>
