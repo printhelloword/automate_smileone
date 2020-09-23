@@ -76,6 +76,10 @@ public class TransactionControllerChrome {
         Integer currentInboxID = null;
 
         String responseMsg=null;
+        String responseStatus=status01;
+        Long responsePlayerID=null;
+        String responseDenom=null;
+        String responseTrxid=null;
 
         System.setProperty("webdriver.chrome.driver","webdrivers\\chromedriver.exe");
         System.setProperty("webdriver.firefox.driver","webdrivers\\geckodriver.exe");
@@ -93,30 +97,28 @@ public class TransactionControllerChrome {
         DBOutboxes dbOutboxes = new DBOutboxes();
 
         /*GENERATING RESPONSE MESSAGE*/
-        VoucherPojo voucherPojo = new VoucherPojo(null,null);
-        voucherPojo.setPlayerId(null);
-        voucherPojo.setDenom(null);
+        VoucherPojo voucherPojo = new VoucherPojo(responsePlayerID, responseDenom);
 
-        ResponsePojo responsePojo = new ResponsePojo(null, null, null, status01);
+        ResponsePojo responsePojo = new ResponsePojo(null, responseMsg, responseTrxid, responseStatus);
 
         /*Input validation*/
         if (!isTrxIdValid(trxId)) { //trxId Validation
-            response = "INVALID TRX ID";
-            responsePojo.setMessage(response);
+            responseMsg = "INVALID TRX ID";
+            responsePojo.setMessage(responseMsg);
         }
         else if (dbInboxes.isTrxIdExists(trxId)) { //check for duplicate trxId
-            response = "SAME TRX ID FOUND IN THE DATABASE";
+            responseMsg = "SAME TRX ID FOUND IN THE DATABASE";
             responsePojo.setTrxId(trxId);
-            responsePojo.setMessage(response);;
+            responsePojo.setMessage(responseMsg);;
         }
         else if(!isNumeric(playerId) || playerId.length()!=13) { //playerId Validation
-            response = "INVALID PLAYER ID";
+            responseMsg = "INVALID PLAYER ID";
             responsePojo.setTrxId(trxId);
-            responsePojo.setMessage(response);
+            responsePojo.setMessage(responseMsg);
         }
         else if(getDenomELementLocator(denom)==null) {
-            response = "INVALID DENOM";
-            responsePojo.setMessage(response);
+            responseMsg = "INVALID DENOM";
+            responsePojo.setMessage(responseMsg);
         }
         else if (isNumeric(playerId) && playerId.length()==13) {
             accountId = playerId.substring(0, 9);
@@ -222,15 +224,29 @@ public class TransactionControllerChrome {
                 driver.findElement(By.cssSelector(".section-nav:nth-child(1) .smilecoin > .cartao-name")).click();
                 driver.findElement(By.id("Nav-btnpc")).click();
 
-                WebDriverWait wait = new WebDriverWait(driver, 5);
-                wait.until(ExpectedConditions.alertIsPresent());
-                try {
-                    String alrt = driver.switchTo().alert().getText();
-                    SmileOneBot.logger.info("Msg from web : "+alrt);
-                    SmileOneBot.logger.info("Player "+accountId +"("+zoneId+") Does Not Exist");
-                    responseMsg = "Player Does not Exist";
-                }catch (Exception e){
-                    SmileOneBot.logger.info("Player exists");
+//                driver.switchTo().window(vars.get("root").toString());
+
+                if (driver.getCurrentUrl().equalsIgnoreCase("https://www.smile.one/merchant/mobilelegends?source=other")) {
+                    WebDriverWait wait = new WebDriverWait(driver, 5);
+                    try {
+                        wait.until(ExpectedConditions.alertIsPresent());
+                        String alrt = driver.switchTo().alert().getText();
+                        SmileOneBot.logger.info("Msg from web : " + alrt);
+                        SmileOneBot.logger.info("Player " + accountId + "(" + zoneId + ") Does Not Exist");
+                        responseMsg = "Player Does not Exist";
+                        responseStatus = status01;
+                    } catch (Exception e) {
+                        SmileOneBot.logger.info("Player exists");
+                        if (driver.getCurrentUrl().equalsIgnoreCase("https://www.smile.one/customer/recharge")) {
+                            SmileOneBot.logger.info("Insufficient Balance");
+                            responseMsg = "Insuficient Balance";
+                            responseStatus = status01;
+                        } else if (driver.getCurrentUrl().equalsIgnoreCase("https://www.smile.one/message/success")) {
+                            SmileOneBot.logger.info("");
+                            responseMsg = "Top-up Successful";
+                            responseStatus = status00;
+                        }
+                    }
                 }
 
 
@@ -246,7 +262,7 @@ public class TransactionControllerChrome {
                 responsePojo.setVoucher(voucherPojo);
                 responsePojo.setMessage(responseMsg);
                 responsePojo.setTrxId(trxId);
-                responsePojo.setStatus(status00);
+                responsePojo.setStatus(responseStatus);
 
                 Thread.sleep(2000);
 
@@ -254,7 +270,7 @@ public class TransactionControllerChrome {
                 e.printStackTrace();
 //                driver.quit();
             } finally {
-                driver.quit();
+//                driver.quit();
             }
         }
             jsonObject =  new JSONObject(responsePojo);

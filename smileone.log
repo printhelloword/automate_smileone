@@ -11719,3 +11719,410 @@
 14:26:04,969  INFO SmileOneBot:36 - /*-------------START LOGIN PROCESS-----------------*/
 14:26:16,801  INFO SmileOneBot:60 - /*-------------LOGIN PROCESS FINISHED---------------*/
 14:26:16,802  INFO SmileOneBot:67 - /*-------------START PURCHASE PROCESS---------------*/
+14:46:31,241  INFO SmileOneBot:130 - Saving Request to Inbox
+14:46:35,355  INFO SmileOneBot:149 - /*-------------START LOGIN PROCESS-----------------*/
+14:46:44,560  INFO SmileOneBot:179 - /*-------------LOGIN PROCESS FINISHED---------------*/
+14:46:45,780  INFO SmileOneBot:186 - /*-------------START PURCHASE PROCESS---------------*/
+14:46:47,887  INFO SmileOneBot:211 - FOUND SELECTED DENOM.. MLBB PAGE HAS BEEN LOADED IS CONFIRMED
+14:46:49,885  INFO SmileOneBot:229 - Msg from web : USER ID não existe
+14:46:49,885  INFO SmileOneBot:230 - Player 122222222(2535) Does Not Exist
+14:46:52,545  INFO SmileOneBot:263 - PURCHASE FINISHED WITH DETAILS :
+{
+    "voucher": {
+        "denom": "86",
+        "playerId": 1222222222535
+    },
+    "message": "Player Does not Exist",
+    "trxId": "23467915",
+    "status": "Success"
+}
+14:46:52,545  INFO SmileOneBot:267 - Saving to Outbox with inbox_id : 26
+14:46:52,545  INFO SmileOneBot:270 - Saving Request to Outbox
+17:27:13,641  INFO SmileOneBot:278 - PURCHASE FINISHED WITH DETAILS :
+{
+    "message": "SAME TRX ID FOUND IN THE DATABASE",
+    "trxId": "324874810",
+    "status": "Error"
+}
+17:27:22,370  INFO SmileOneBot:132 - Saving Request to Inbox
+17:27:26,787  INFO SmileOneBot:151 - /*-------------START LOGIN PROCESS-----------------*/
+17:27:35,895  INFO SmileOneBot:181 - /*-------------LOGIN PROCESS FINISHED---------------*/
+17:27:36,860  INFO SmileOneBot:188 - /*-------------START PURCHASE PROCESS---------------*/
+17:27:38,973  INFO SmileOneBot:213 - FOUND SELECTED DENOM.. MLBB PAGE HAS BEEN LOADED IS CONFIRMED
+17:27:48,084  INFO SmileOneBot:278 - PURCHASE FINISHED WITH DETAILS :
+{"status": "Error"}
+17:27:48,085  INFO SmileOneBot:282 - Saving to Outbox with inbox_id : 30
+17:27:48,085  INFO SmileOneBot:285 - Saving Request to Outbox
+17:27:55,368  INFO SmileOneBot:132 - Saving Request to Inbox
+17:27:58,582  INFO SmileOneBot:151 - /*-------------START LOGIN PROCESS-----------------*/
+17:28:07,180  INFO SmileOneBot:181 - /*-------------LOGIN PROCESS FINISHED---------------*/
+17:28:08,291  INFO SmileOneBot:188 - /*-------------START PURCHASE PROCESS---------------*/
+17:28:10,404  INFO SmileOneBot:213 - FOUND SELECTED DENOM.. MLBB PAGE HAS BEEN LOADED IS CONFIRMED
+17:28:14,422  INFO SmileOneBot:230 - Insufficient Balance
+17:28:16,439  INFO SmileOneBot:278 - PURCHASE FINISHED WITH DETAILS :
+{
+    "voucher": {
+        "denom": "86",
+        "playerId": 1266066872632
+    },
+    "message": "Insuficient Balance",
+    "trxId": "324672213",
+    "status": "Error"
+}
+17:28:16,440  INFO SmileOneBot:282 - Saving to Outbox with inbox_id : 31
+17:28:16,440  INFO SmileOneBot:285 - Saving Request to Outbox
+17:30:30,146  INFO SmileOneBot:132 - Saving Request to Inbox
+17:30:34,380  INFO SmileOneBot:151 - /*-------------START LOGIN PROCESS-----------------*/
+17:30:43,065  INFO SmileOneBot:181 - /*-------------LOGIN PROCESS FINISHED---------------*/
+17:30:44,047  INFO SmileOneBot:188 - /*-------------START PURCHASE PROCESS---------------*/
+17:30:46,163  INFO SmileOneBot:213 - FOUND SELECTED DENOM.. MLBB PAGE HAS BEEN LOADED IS CONFIRMED
+17:30:50,271  INFO SmileOneBot:230 - Insufficient Balance
+17:30:52,286  INFO SmileOneBot:278 - PURCHASE FINISHED WITH DETAILS :
+{
+    "voucher": {
+        "denom": "86",
+        "playerId": 1266066872632
+    },
+    "message": "Insuficient Balance",
+    "trxId": "2384723",
+    "status": "Error"
+}
+17:30:52,286  INFO SmileOneBot:282 - Saving to Outbox with inbox_id : 32
+17:30:52,286  INFO SmileOneBot:285 - Saving Request to Outbox
+17:32:26,124  INFO SmileOneBot:132 - Saving Request to Inbox
+17:32:30,564  INFO SmileOneBot:151 - /*-------------START LOGIN PROCESS-----------------*/
+17:32:39,294  INFO SmileOneBot:181 - /*-------------LOGIN PROCESS FINISHED---------------*/
+17:32:40,469  INFO SmileOneBot:188 - /*-------------START PURCHASE PROCESS---------------*/
+17:32:42,594  INFO SmileOneBot:213 - FOUND SELECTED DENOM.. MLBB PAGE HAS BEEN LOADED IS CONFIRMED
+17:32:46,515  INFO SmileOneBot:278 - PURCHASE FINISHED WITH DETAILS :
+{"status": "Error"}
+17:32:46,515  INFO SmileOneBot:282 - Saving to Outbox with inbox_id : 33
+17:32:46,515  INFO SmileOneBot:285 - Saving Request to Outbox
+17:35:33,822  INFO SmileOneBot:132 - Saving Request to Inbox
+17:35:37,043  INFO SmileOneBot:151 - /*-------------START LOGIN PROCESS-----------------*/
+17:35:45,518  INFO SmileOneBot:181 - /*-------------LOGIN PROCESS FINISHED---------------*/
+17:35:46,474  INFO SmileOneBot:188 - /*-------------START PURCHASE PROCESS---------------*/
+17:35:48,592  INFO SmileOneBot:213 - FOUND SELECTED DENOM.. MLBB PAGE HAS BEEN LOADED IS CONFIRMED
+17:35:52,771  INFO SmileOneBot:278 - PURCHASE FINISHED WITH DETAILS :
+{"status": "Error"}
+17:35:52,772  INFO SmileOneBot:282 - Saving to Outbox with inbox_id : 34
+17:35:52,772  INFO SmileOneBot:285 - Saving Request to Outbox
+17:37:05,750  INFO SmileOneBot:132 - Saving Request to Inbox
+17:37:10,245  INFO SmileOneBot:151 - /*-------------START LOGIN PROCESS-----------------*/
+17:37:18,721  INFO SmileOneBot:181 - /*-------------LOGIN PROCESS FINISHED---------------*/
+17:37:19,659  INFO SmileOneBot:188 - /*-------------START PURCHASE PROCESS---------------*/
+17:37:21,779  INFO SmileOneBot:213 - FOUND SELECTED DENOM.. MLBB PAGE HAS BEEN LOADED IS CONFIRMED
+17:37:25,777  INFO SmileOneBot:278 - PURCHASE FINISHED WITH DETAILS :
+{"status": "Error"}
+17:37:25,777  INFO SmileOneBot:282 - Saving to Outbox with inbox_id : 35
+17:37:25,777  INFO SmileOneBot:285 - Saving Request to Outbox
+17:38:48,394  INFO SmileOneBot:132 - Saving Request to Inbox
+17:38:52,715  INFO SmileOneBot:151 - /*-------------START LOGIN PROCESS-----------------*/
+17:39:01,195  INFO SmileOneBot:181 - /*-------------LOGIN PROCESS FINISHED---------------*/
+17:39:02,163  INFO SmileOneBot:188 - /*-------------START PURCHASE PROCESS---------------*/
+17:39:04,278  INFO SmileOneBot:213 - FOUND SELECTED DENOM.. MLBB PAGE HAS BEEN LOADED IS CONFIRMED
+17:39:08,327  INFO SmileOneBot:278 - PURCHASE FINISHED WITH DETAILS :
+{"status": "Error"}
+17:39:08,327  INFO SmileOneBot:282 - Saving to Outbox with inbox_id : 36
+17:39:08,328  INFO SmileOneBot:285 - Saving Request to Outbox
+17:40:00,461  INFO SmileOneBot:132 - Saving Request to Inbox
+17:40:04,716  INFO SmileOneBot:151 - /*-------------START LOGIN PROCESS-----------------*/
+17:40:13,282  INFO SmileOneBot:181 - /*-------------LOGIN PROCESS FINISHED---------------*/
+17:40:14,230  INFO SmileOneBot:188 - /*-------------START PURCHASE PROCESS---------------*/
+17:40:16,347  INFO SmileOneBot:213 - FOUND SELECTED DENOM.. MLBB PAGE HAS BEEN LOADED IS CONFIRMED
+17:40:20,320  INFO SmileOneBot:278 - PURCHASE FINISHED WITH DETAILS :
+{"status": "Error"}
+17:40:20,320  INFO SmileOneBot:282 - Saving to Outbox with inbox_id : 37
+17:40:20,320  INFO SmileOneBot:285 - Saving Request to Outbox
+17:40:47,951  INFO SmileOneBot:132 - Saving Request to Inbox
+17:40:52,530  INFO SmileOneBot:151 - /*-------------START LOGIN PROCESS-----------------*/
+17:41:07,382  INFO SmileOneBot:181 - /*-------------LOGIN PROCESS FINISHED---------------*/
+17:41:08,408  INFO SmileOneBot:188 - /*-------------START PURCHASE PROCESS---------------*/
+17:41:10,518  INFO SmileOneBot:213 - FOUND SELECTED DENOM.. MLBB PAGE HAS BEEN LOADED IS CONFIRMED
+17:41:14,773  INFO SmileOneBot:278 - PURCHASE FINISHED WITH DETAILS :
+{"status": "Error"}
+17:41:14,774  INFO SmileOneBot:282 - Saving to Outbox with inbox_id : 38
+17:41:14,775  INFO SmileOneBot:285 - Saving Request to Outbox
+17:41:50,928  INFO SmileOneBot:280 - PURCHASE FINISHED WITH DETAILS :
+{
+    "message": "SAME TRX ID FOUND IN THE DATABASE",
+    "trxId": "39824723",
+    "status": "Error"
+}
+17:41:58,876  INFO SmileOneBot:132 - Saving Request to Inbox
+17:42:03,165  INFO SmileOneBot:151 - /*-------------START LOGIN PROCESS-----------------*/
+17:42:11,506  INFO SmileOneBot:181 - /*-------------LOGIN PROCESS FINISHED---------------*/
+17:42:12,499  INFO SmileOneBot:188 - /*-------------START PURCHASE PROCESS---------------*/
+17:42:14,619  INFO SmileOneBot:213 - FOUND SELECTED DENOM.. MLBB PAGE HAS BEEN LOADED IS CONFIRMED
+17:42:18,779  INFO SmileOneBot:234 - Msg from web : USER ID não existe
+17:42:18,779  INFO SmileOneBot:235 - Player 126606682(2632) Does Not Exist
+17:42:18,794  INFO SmileOneBot:280 - PURCHASE FINISHED WITH DETAILS :
+{"status": "Error"}
+17:42:18,795  INFO SmileOneBot:284 - Saving to Outbox with inbox_id : 39
+17:42:18,795  INFO SmileOneBot:287 - Saving Request to Outbox
+17:43:30,139  INFO SmileOneBot:280 - PURCHASE FINISHED WITH DETAILS :
+{
+    "message": "SAME TRX ID FOUND IN THE DATABASE",
+    "trxId": "38992",
+    "status": "Error"
+}
+17:43:31,033  INFO SmileOneBot:132 - Saving Request to Inbox
+17:43:36,569  INFO SmileOneBot:151 - /*-------------START LOGIN PROCESS-----------------*/
+17:43:45,767  INFO SmileOneBot:181 - /*-------------LOGIN PROCESS FINISHED---------------*/
+17:43:46,748  INFO SmileOneBot:188 - /*-------------START PURCHASE PROCESS---------------*/
+17:43:48,862  INFO SmileOneBot:213 - FOUND SELECTED DENOM.. MLBB PAGE HAS BEEN LOADED IS CONFIRMED
+17:43:50,732  INFO SmileOneBot:232 - Msg from web : USER ID não existe
+17:43:50,732  INFO SmileOneBot:233 - Player 126606682(2632) Does Not Exist
+17:43:53,750  INFO SmileOneBot:280 - PURCHASE FINISHED WITH DETAILS :
+{"status": "Error"}
+17:43:53,751  INFO SmileOneBot:284 - Saving to Outbox with inbox_id : 40
+17:43:53,752  INFO SmileOneBot:287 - Saving Request to Outbox
+17:46:36,999  INFO SmileOneBot:132 - Saving Request to Inbox
+17:46:43,025  INFO SmileOneBot:151 - /*-------------START LOGIN PROCESS-----------------*/
+17:46:52,083  INFO SmileOneBot:181 - /*-------------LOGIN PROCESS FINISHED---------------*/
+17:46:53,183  INFO SmileOneBot:188 - /*-------------START PURCHASE PROCESS---------------*/
+17:46:55,312  INFO SmileOneBot:213 - FOUND SELECTED DENOM.. MLBB PAGE HAS BEEN LOADED IS CONFIRMED
+17:46:57,583  INFO SmileOneBot:242 - Msg from web : USER ID não existe
+17:46:57,584  INFO SmileOneBot:243 - Player 126606682(2632) Does Not Exist
+17:46:59,603  INFO SmileOneBot:277 - PURCHASE FINISHED WITH DETAILS :
+{
+    "voucher": {
+        "denom": "86",
+        "playerId": 1266066822632
+    },
+    "message": "Player Does not Exist",
+    "trxId": "237192981",
+    "status": "Error"
+}
+17:46:59,603  INFO SmileOneBot:281 - Saving to Outbox with inbox_id : 41
+17:46:59,603  INFO SmileOneBot:284 - Saving Request to Outbox
+17:47:45,584  INFO SmileOneBot:132 - Saving Request to Inbox
+17:47:48,985  INFO SmileOneBot:151 - /*-------------START LOGIN PROCESS-----------------*/
+17:47:58,031  INFO SmileOneBot:181 - /*-------------LOGIN PROCESS FINISHED---------------*/
+17:47:59,088  INFO SmileOneBot:188 - /*-------------START PURCHASE PROCESS---------------*/
+17:48:01,212  INFO SmileOneBot:213 - FOUND SELECTED DENOM.. MLBB PAGE HAS BEEN LOADED IS CONFIRMED
+17:48:07,571  INFO SmileOneBot:277 - PURCHASE FINISHED WITH DETAILS :
+{"status": "Error"}
+17:48:07,572  INFO SmileOneBot:281 - Saving to Outbox with inbox_id : 42
+17:48:07,572  INFO SmileOneBot:284 - Saving Request to Outbox
+17:48:29,569  INFO SmileOneBot:132 - Saving Request to Inbox
+17:48:32,804  INFO SmileOneBot:151 - /*-------------START LOGIN PROCESS-----------------*/
+17:48:41,732  INFO SmileOneBot:181 - /*-------------LOGIN PROCESS FINISHED---------------*/
+17:48:43,016  INFO SmileOneBot:188 - /*-------------START PURCHASE PROCESS---------------*/
+17:48:45,136  INFO SmileOneBot:213 - FOUND SELECTED DENOM.. MLBB PAGE HAS BEEN LOADED IS CONFIRMED
+17:48:51,427  INFO SmileOneBot:277 - PURCHASE FINISHED WITH DETAILS :
+{"status": "Error"}
+17:48:51,428  INFO SmileOneBot:281 - Saving to Outbox with inbox_id : 43
+17:48:51,428  INFO SmileOneBot:284 - Saving Request to Outbox
+17:50:11,064  INFO SmileOneBot:132 - Saving Request to Inbox
+17:50:15,294  INFO SmileOneBot:151 - /*-------------START LOGIN PROCESS-----------------*/
+17:50:23,749  INFO SmileOneBot:181 - /*-------------LOGIN PROCESS FINISHED---------------*/
+17:50:24,719  INFO SmileOneBot:188 - /*-------------START PURCHASE PROCESS---------------*/
+17:50:26,830  INFO SmileOneBot:213 - FOUND SELECTED DENOM.. MLBB PAGE HAS BEEN LOADED IS CONFIRMED
+17:50:33,074  INFO SmileOneBot:278 - PURCHASE FINISHED WITH DETAILS :
+{"status": "Error"}
+17:50:33,074  INFO SmileOneBot:282 - Saving to Outbox with inbox_id : 44
+17:50:33,074  INFO SmileOneBot:285 - Saving Request to Outbox
+17:51:19,081  INFO SmileOneBot:277 - PURCHASE FINISHED WITH DETAILS :
+{
+    "message": "SAME TRX ID FOUND IN THE DATABASE",
+    "trxId": "765",
+    "status": "Error"
+}
+17:51:20,599  INFO SmileOneBot:132 - Saving Request to Inbox
+17:51:24,928  INFO SmileOneBot:151 - /*-------------START LOGIN PROCESS-----------------*/
+17:51:33,494  INFO SmileOneBot:181 - /*-------------LOGIN PROCESS FINISHED---------------*/
+17:51:34,590  INFO SmileOneBot:188 - /*-------------START PURCHASE PROCESS---------------*/
+17:51:36,709  INFO SmileOneBot:213 - FOUND SELECTED DENOM.. MLBB PAGE HAS BEEN LOADED IS CONFIRMED
+17:51:43,067  INFO SmileOneBot:247 - Player exists
+17:51:45,073  INFO SmileOneBot:277 - PURCHASE FINISHED WITH DETAILS :
+{
+    "voucher": {
+        "denom": "86",
+        "playerId": 1266066872632
+    },
+    "trxId": "76532",
+    "status": "Error"
+}
+17:51:45,073  INFO SmileOneBot:281 - Saving to Outbox with inbox_id : 45
+17:51:45,074  INFO SmileOneBot:284 - Saving Request to Outbox
+17:52:39,725  INFO SmileOneBot:132 - Saving Request to Inbox
+17:52:43,962  INFO SmileOneBot:151 - /*-------------START LOGIN PROCESS-----------------*/
+17:52:52,372  INFO SmileOneBot:181 - /*-------------LOGIN PROCESS FINISHED---------------*/
+17:52:53,427  INFO SmileOneBot:188 - /*-------------START PURCHASE PROCESS---------------*/
+17:52:55,552  INFO SmileOneBot:213 - FOUND SELECTED DENOM.. MLBB PAGE HAS BEEN LOADED IS CONFIRMED
+17:53:01,708  INFO SmileOneBot:238 - Player exists
+17:53:01,713  INFO SmileOneBot:242 - Insufficient Balance
+17:53:03,721  INFO SmileOneBot:278 - PURCHASE FINISHED WITH DETAILS :
+{
+    "voucher": {
+        "denom": "86",
+        "playerId": 1266066872632
+    },
+    "message": "Insuficient Balance",
+    "trxId": "234897234",
+    "status": "Error"
+}
+17:53:03,721  INFO SmileOneBot:282 - Saving to Outbox with inbox_id : 46
+17:53:03,722  INFO SmileOneBot:285 - Saving Request to Outbox
+17:53:37,251  INFO SmileOneBot:132 - Saving Request to Inbox
+17:53:40,581  INFO SmileOneBot:151 - /*-------------START LOGIN PROCESS-----------------*/
+17:53:49,375  INFO SmileOneBot:181 - /*-------------LOGIN PROCESS FINISHED---------------*/
+17:53:50,673  INFO SmileOneBot:188 - /*-------------START PURCHASE PROCESS---------------*/
+17:53:52,775  INFO SmileOneBot:213 - FOUND SELECTED DENOM.. MLBB PAGE HAS BEEN LOADED IS CONFIRMED
+17:53:54,986  INFO SmileOneBot:233 - Msg from web : USER ID não existe
+17:53:54,987  INFO SmileOneBot:234 - Player 122222222(2222) Does Not Exist
+17:53:54,993  INFO SmileOneBot:278 - PURCHASE FINISHED WITH DETAILS :
+{"status": "Error"}
+17:53:54,994  INFO SmileOneBot:282 - Saving to Outbox with inbox_id : 47
+17:53:54,994  INFO SmileOneBot:285 - Saving Request to Outbox
+17:54:10,847  INFO SmileOneBot:278 - PURCHASE FINISHED WITH DETAILS :
+{
+    "message": "SAME TRX ID FOUND IN THE DATABASE",
+    "trxId": "3894792398",
+    "status": "Error"
+}
+17:54:14,367  INFO SmileOneBot:341 - TRX ID is invalid
+17:54:14,368  INFO SmileOneBot:278 - PURCHASE FINISHED WITH DETAILS :
+{
+    "message": "INVALID TRX ID",
+    "status": "Error"
+}
+17:54:20,572  INFO SmileOneBot:132 - Saving Request to Inbox
+17:54:23,755  INFO SmileOneBot:151 - /*-------------START LOGIN PROCESS-----------------*/
+17:54:32,916  INFO SmileOneBot:181 - /*-------------LOGIN PROCESS FINISHED---------------*/
+17:54:34,181  INFO SmileOneBot:188 - /*-------------START PURCHASE PROCESS---------------*/
+17:54:36,277  INFO SmileOneBot:213 - FOUND SELECTED DENOM.. MLBB PAGE HAS BEEN LOADED IS CONFIRMED
+17:54:38,889  INFO SmileOneBot:233 - Msg from web : USER ID não existe
+17:54:38,889  INFO SmileOneBot:234 - Player 122222222(2222) Does Not Exist
+17:54:38,896  INFO SmileOneBot:278 - PURCHASE FINISHED WITH DETAILS :
+{"status": "Error"}
+17:54:38,896  INFO SmileOneBot:282 - Saving to Outbox with inbox_id : 48
+17:54:38,897  INFO SmileOneBot:285 - Saving Request to Outbox
+17:55:13,479  INFO SmileOneBot:341 - TRX ID is invalid
+17:55:13,487  INFO SmileOneBot:278 - PURCHASE FINISHED WITH DETAILS :
+{
+    "message": "INVALID TRX ID",
+    "status": "Error"
+}
+17:55:14,662  INFO SmileOneBot:132 - Saving Request to Inbox
+17:55:18,981  INFO SmileOneBot:151 - /*-------------START LOGIN PROCESS-----------------*/
+17:55:27,288  INFO SmileOneBot:181 - /*-------------LOGIN PROCESS FINISHED---------------*/
+17:55:28,198  INFO SmileOneBot:188 - /*-------------START PURCHASE PROCESS---------------*/
+17:55:30,313  INFO SmileOneBot:213 - FOUND SELECTED DENOM.. MLBB PAGE HAS BEEN LOADED IS CONFIRMED
+17:55:32,175  INFO SmileOneBot:233 - Msg from web : USER ID não existe
+17:55:32,175  INFO SmileOneBot:234 - Player 122222222(2222) Does Not Exist
+17:55:32,182  INFO SmileOneBot:278 - PURCHASE FINISHED WITH DETAILS :
+{"status": "Error"}
+17:55:32,183  INFO SmileOneBot:282 - Saving to Outbox with inbox_id : 49
+17:55:32,184  INFO SmileOneBot:285 - Saving Request to Outbox
+17:57:40,468  INFO SmileOneBot:132 - Saving Request to Inbox
+17:57:44,796  INFO SmileOneBot:151 - /*-------------START LOGIN PROCESS-----------------*/
+17:57:53,369  INFO SmileOneBot:181 - /*-------------LOGIN PROCESS FINISHED---------------*/
+17:57:54,556  INFO SmileOneBot:188 - /*-------------START PURCHASE PROCESS---------------*/
+17:57:56,671  INFO SmileOneBot:213 - FOUND SELECTED DENOM.. MLBB PAGE HAS BEEN LOADED IS CONFIRMED
+17:57:58,484  INFO SmileOneBot:234 - Msg from web : USER ID não existe
+17:57:58,484  INFO SmileOneBot:235 - Player 122222222(2222) Does Not Exist
+17:57:58,496  INFO SmileOneBot:280 - PURCHASE FINISHED WITH DETAILS :
+{"status": "Error"}
+17:57:58,497  INFO SmileOneBot:284 - Saving to Outbox with inbox_id : 50
+17:57:58,497  INFO SmileOneBot:287 - Saving Request to Outbox
+17:59:05,104  INFO SmileOneBot:132 - Saving Request to Inbox
+17:59:09,485  INFO SmileOneBot:151 - /*-------------START LOGIN PROCESS-----------------*/
+17:59:18,131  INFO SmileOneBot:181 - /*-------------LOGIN PROCESS FINISHED---------------*/
+17:59:19,328  INFO SmileOneBot:188 - /*-------------START PURCHASE PROCESS---------------*/
+17:59:21,436  INFO SmileOneBot:213 - FOUND SELECTED DENOM.. MLBB PAGE HAS BEEN LOADED IS CONFIRMED
+17:59:23,452  INFO SmileOneBot:234 - Msg from web : USER ID não existe
+17:59:23,452  INFO SmileOneBot:235 - Player 122222222(2222) Does Not Exist
+17:59:25,464  INFO SmileOneBot:281 - PURCHASE FINISHED WITH DETAILS :
+{
+    "voucher": {
+        "denom": "86",
+        "playerId": 1222222222222
+    },
+    "message": "Player Does not Exist",
+    "trxId": "2347239",
+    "status": "Error"
+}
+17:59:25,464  INFO SmileOneBot:285 - Saving to Outbox with inbox_id : 51
+17:59:25,464  INFO SmileOneBot:288 - Saving Request to Outbox
+17:59:46,636  INFO SmileOneBot:281 - PURCHASE FINISHED WITH DETAILS :
+{
+    "message": "SAME TRX ID FOUND IN THE DATABASE",
+    "trxId": "2347239",
+    "status": "Error"
+}
+17:59:51,369  INFO SmileOneBot:132 - Saving Request to Inbox
+17:59:54,575  INFO SmileOneBot:151 - /*-------------START LOGIN PROCESS-----------------*/
+18:00:03,647  INFO SmileOneBot:181 - /*-------------LOGIN PROCESS FINISHED---------------*/
+18:00:04,894  INFO SmileOneBot:188 - /*-------------START PURCHASE PROCESS---------------*/
+18:00:07,007  INFO SmileOneBot:213 - FOUND SELECTED DENOM.. MLBB PAGE HAS BEEN LOADED IS CONFIRMED
+18:00:13,578  INFO SmileOneBot:239 - Player exists
+18:00:15,580  INFO SmileOneBot:281 - PURCHASE FINISHED WITH DETAILS :
+{
+    "voucher": {
+        "denom": "86",
+        "playerId": 1266066872632
+    },
+    "trxId": "398472398",
+    "status": "Error"
+}
+18:00:15,580  INFO SmileOneBot:285 - Saving to Outbox with inbox_id : 52
+18:00:15,581  INFO SmileOneBot:288 - Saving Request to Outbox
+18:02:28,158  INFO SmileOneBot:132 - Saving Request to Inbox
+18:02:32,627  INFO SmileOneBot:151 - /*-------------START LOGIN PROCESS-----------------*/
+18:02:41,234  INFO SmileOneBot:181 - /*-------------LOGIN PROCESS FINISHED---------------*/
+18:02:42,248  INFO SmileOneBot:188 - /*-------------START PURCHASE PROCESS---------------*/
+18:02:44,362  INFO SmileOneBot:213 - FOUND SELECTED DENOM.. MLBB PAGE HAS BEEN LOADED IS CONFIRMED
+18:02:50,806  INFO SmileOneBot:239 - Player exists
+18:02:50,811  INFO SmileOneBot:241 - Insufficient Balance
+18:02:52,821  INFO SmileOneBot:289 - PURCHASE FINISHED WITH DETAILS :
+{
+    "voucher": {
+        "denom": "86",
+        "playerId": 1266066872632
+    },
+    "message": "Insuficient Balance",
+    "trxId": "2973182319",
+    "status": "Error"
+}
+18:02:52,822  INFO SmileOneBot:293 - Saving to Outbox with inbox_id : 53
+18:02:52,822  INFO SmileOneBot:296 - Saving Request to Outbox
+18:03:27,076  INFO SmileOneBot:132 - Saving Request to Inbox
+18:03:30,391  INFO SmileOneBot:151 - /*-------------START LOGIN PROCESS-----------------*/
+18:03:38,707  INFO SmileOneBot:181 - /*-------------LOGIN PROCESS FINISHED---------------*/
+18:03:39,725  INFO SmileOneBot:188 - /*-------------START PURCHASE PROCESS---------------*/
+18:03:41,840  INFO SmileOneBot:213 - FOUND SELECTED DENOM.. MLBB PAGE HAS BEEN LOADED IS CONFIRMED
+18:03:43,594  INFO SmileOneBot:234 - Msg from web : USER ID não existe
+18:03:43,595  INFO SmileOneBot:235 - Player 122222222(2632) Does Not Exist
+18:03:45,609  INFO SmileOneBot:289 - PURCHASE FINISHED WITH DETAILS :
+{
+    "voucher": {
+        "denom": "86",
+        "playerId": 1222222222632
+    },
+    "message": "Player Does not Exist",
+    "trxId": "973987",
+    "status": "Error"
+}
+18:03:45,609  INFO SmileOneBot:293 - Saving to Outbox with inbox_id : 54
+18:03:45,609  INFO SmileOneBot:296 - Saving Request to Outbox
+18:04:12,607  INFO SmileOneBot:132 - Saving Request to Inbox
+18:04:15,824  INFO SmileOneBot:151 - /*-------------START LOGIN PROCESS-----------------*/
+18:04:24,112  INFO SmileOneBot:181 - /*-------------LOGIN PROCESS FINISHED---------------*/
+18:04:25,436  INFO SmileOneBot:188 - /*-------------START PURCHASE PROCESS---------------*/
+18:04:27,561  INFO SmileOneBot:213 - FOUND SELECTED DENOM.. MLBB PAGE HAS BEEN LOADED IS CONFIRMED
+18:04:33,929  INFO SmileOneBot:239 - Player exists
+18:04:33,935  INFO SmileOneBot:241 - Insufficient Balance
+18:04:35,948  INFO SmileOneBot:289 - PURCHASE FINISHED WITH DETAILS :
+{
+    "voucher": {
+        "denom": "86",
+        "playerId": 1266066872632
+    },
+    "message": "Insuficient Balance",
+    "trxId": "34879332",
+    "status": "Error"
+}
+18:04:35,949  INFO SmileOneBot:293 - Saving to Outbox with inbox_id : 55
+18:04:35,950  INFO SmileOneBot:296 - Saving Request to Outbox
