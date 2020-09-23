@@ -119,7 +119,6 @@ public class manualLogin_Chrome {
             }
 
 
-
             /*CHECKING FOR PRODUCTS*/
 //            logger.log(Level.INFO, "/*-------------PRODUCT CHECKING START---------------*/");
 //

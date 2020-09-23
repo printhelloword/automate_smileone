@@ -27,32 +27,15 @@ public class preservedLogin_Firefox {
 
     public static void main(String[] args) {
 
-//        System.setProperty("webdriver.chrome.driver","C:\\Program Files (x86)\\Google\\Chrome\\Application\\chrome.exe");
-//        System.setProperty("webdriver.chrome.driver","webdrivers\\chromedriver.exe");
         System.setProperty("webdriver.gecko.driver","webdrivers\\geckodriver027.exe");
-
-
-//        ChromeDriverService chSvc = new ChromeDriverService.Builder()
-//                .usingDriverExecutable(new File("webdrivers\\chromedriver.exe")).usingAnyFreePort().build();
-//                .usingDriverExecutable(new File("C:\\Program Files (x86)\\Google\\Chrome\\Application\\chrome.exe")).usingAnyFreePort().build();
-
-
-//        ChromeOptions options = new ChromeOptions();
-//        options.addArguments("user-data-dir=C:\\Users\\acer\\AppData\\Local\\Google\\Chrome\\User Data\\Profile 7");
-//        options.addArguments("--incognito");
-
 
         ProfilesIni profile = new ProfilesIni();
         FirefoxProfile myprofile = profile.getProfile("botSmileOne");
-
 
         FirefoxOptions firefoxOptions = new FirefoxOptions();
         firefoxOptions.setProfile(myprofile);
 
         driver = new FirefoxDriver(firefoxOptions);
-//        driver = new ChromeDriver(chSvc, options);
-//        driver = new ChromeDriver(options);
-
         js = (JavascriptExecutor) driver;
 
         try {
@@ -60,22 +43,88 @@ public class preservedLogin_Firefox {
             logger.log(Level.INFO, "/*-------------START LOGIN PROCESS-----------------*/");
 
             driver.get("https://www.smile.one/customer/account/login");
-            driver.manage().window().setSize(new Dimension(1435, 749));
+
+            driver.manage().window().setSize(new Dimension(1547, 950));
+//            driver.manage().window().setPosition(new Point(0,0));
+
             vars.put("window_handles", driver.getWindowHandles());
 
-            waitForProcess(1500);
-            driver.findElement(By.cssSelector(".google > .login_method_p2")).click();
+            waitForWindow(1500);
+            driver.findElement(By.cssSelector(".google")).click();
 
-            vars.put("win1110", waitForWindow(2000));
+            vars.put("win9253", waitForWindow(2000));
             vars.put("root", driver.getWindowHandle());
-            driver.switchTo().window(vars.get("win1110").toString());
+            driver.switchTo().window(vars.get("root").toString());
+
+            logger.log(Level.INFO, "/*-------------PURCHASE PROCESS FINISHED---------------*/");
+            /*END LOGIN*/
+
+            while(true){
+                try{
+                    driver.findElement(By.cssSelector(".listol1 > .list-li:nth-child(3) .imgicon"));
+                    logger.log(Level.INFO, "FOUND MLBB MENU");
+                    driver.navigate().to("https://www.smile.one/merchant/mobilelegends?source=other");
+                    break;
+                }catch (Exception e){
+                    logger.log(Level.INFO, "MLBB MENU NOT FOUND.. STILL LOOKING FOR");
+                    e.printStackTrace();
+                }
+                Thread.sleep(2000);
+            }
+
+
+            /*MOVE TO MLBB WINDOW*/
+            vars.put("win3322", waitForWindow(2000));
+            driver.switchTo().window(vars.get("win3322").toString());
+            /*END MOVE TO MLBB WINDOW*/
+
+            /*Checking for MLBB Page Fully Loaded*/
+            while (true) {
+                try {
+                    driver.findElement(By.cssSelector(".PcliF-em2")).click();
+                    SmileOneBot.logger.info( "FOUND SELECTED DENOM.. MLBB PAGE HAS BEEN LOADED IS CONFIRMED");
+                    break;
+                } catch (Exception e) {
+                    SmileOneBot.logger.info("DIAMOND DENOM NOT FOUND.. STILL LOOKING FOR");
+                }
+                Thread.sleep(1000);
+            }
+
+            /*Adding elements to Array For Checking Later*/
+            ArrayList<WebElement> webElements = new ArrayList<>();
+            webElements.add(driver.findElement(By.cssSelector(".PcliF-em2")));
+            webElements.add(driver.findElement(By.cssSelector(".PcliS-em2")));
+            webElements.add(driver.findElement(By.cssSelector(".PcliT-em2")));
+            webElements.add(driver.findElement(By.cssSelector(".PcliFo-em2")));
+            webElements.add(driver.findElement(By.cssSelector(".PcliFif-em2")));
+            webElements.add(driver.findElement(By.cssSelector(".PcliSix-em2")));
+            webElements.add(driver.findElement(By.cssSelector(".PcliSev-em2")));
+            webElements.add(driver.findElement(By.cssSelector(".PcliEig-em2")));
+            webElements.add(driver.findElement(By.cssSelector(".PcliNin-em2")));
+            webElements.add(driver.findElement(By.cssSelector(".PcliEle-em2")));
+            webElements.add(driver.findElement(By.cssSelector(".PcliTwl-em2")));
+
+            /*Start Checking for each denom and print value in log*/
+            for(int i = 0; i < webElements.size(); i++)
+            {
+                logger.log(Level.INFO, "PRINTING objects VALUE");
+                System.out.println(webElements.get(i).getAttribute("class"));
+                webElements.get(i).click();
+
+                Thread.sleep(1500);
+            }
+
+            logger.log(Level.INFO, "/*-------------PRODUCT CHECKING START---------------*/");
+
+                driver.findElement(By.id("puseid")).click();
+                driver.findElement(By.id("puseid")).sendKeys("126606687");
+                driver.findElement(By.id("pserverid")).sendKeys("2632");
+                driver.findElement(By.cssSelector(".PcDiamant-ul > .fl:nth-child(1)")).click();
+                driver.findElement(By.cssSelector(".section-nav:nth-child(1) .smilecoin > .cartao-name")).click();
+//                driver.findElement(By.id("Nav-btnpc")).click();
 
 
             logger.log(Level.INFO, "/*-------------PURCHASE PROCESS FINISHED---------------*/");
-            /*-------------END PURCHASE-----------------*/
-
-
-            /*Purchasing*/
 
         }catch (Exception e){
             e.printStackTrace();

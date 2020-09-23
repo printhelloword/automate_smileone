@@ -18,47 +18,43 @@ public class preservedLogin_Chrome {
     private static Map<String, Object> vars = new HashMap<String, Object>();
 
     public static void main(String[] args) {
-//        System.setProperty("webdriver.chrome.driver","D:\\SpringBoot\\`VoucherGame\\webdrivers\\chromedriver.exe");
-        System.setProperty("webdriver.chrome.driver","webdrivers\\chromedriver.exe");
+//        System.setProperty("webdriver.chrome.driver","webdrivers\\chromedriver85x86.exe");
+        System.setProperty("webdriver.chrome.driver","C:\\Program Files (x86)\\Google\\Chrome\\Application\\chrome.exe");
 
-        ChromeOptions options = new ChromeOptions();
-        options.addArguments("user-data-dir=C:\\Users\\acer\\AppData\\Local\\Google\\Chrome\\User Data\\Profile 3");
-        options.addArguments("--incognito");
+        String chromeProfilePath = "C:\\Users\\acer\\AppData\\Local\\Google\\Chrome\\User Data\\Profile 7";
 
-        driver = new ChromeDriver(options);
-//        driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
+        ChromeOptions chromeProfile = new ChromeOptions();
+        chromeProfile.addArguments("user-data-dir=" + chromeProfilePath);
+        chromeProfile.addArguments("profile-directory=Profile 6");
+//        chromeProfile.setBinary("C:\\Program Files (x86)\\Google\\Chrome\\Application");
+
+//        ChromeOptions options = new ChromeOptions();
+//        options.addArguments("user-data-dir=C:\\Users\\acer\\AppData\\Local\\Google\\Chrome\\User Data\\Profile 7");
+
+        driver = new ChromeDriver(chromeProfile);
 
         try {
             /*-------------START LOGIN-----------------*/
             logger.log(Level.INFO, "/*-------------START LOGIN PROCESS-----------------*/");
 
-            driver.get("https://www.smile.one/customer/account/login");
+//            driver.get("https://www.smile.one/customer/account/login");
+            driver.get("https://www.google.com");
 
-            driver.manage().window().setSize(new Dimension(1547, 950));
-            driver.manage().window().setPosition(new Point(0,0));
+//            driver.manage().window().setSize(new Dimension(1397, 820));
+//            vars.put("window_handles", driver.getWindowHandles());
+//
+//            driver.findElement(By.cssSelector(".google")).click();
+//
+//            vars.put("win5733", waitForWindow(2000));
+//            vars.put("root", driver.getWindowHandle());
+//            driver.switchTo().window(vars.get("win5733").toString());
 
-            vars.put("window_handles", driver.getWindowHandles());
-            driver.findElement(By.cssSelector(".google")).click();
-
-            vars.put("win9253", waitForWindow(2000));
-            vars.put("root", driver.getWindowHandle());
-            driver.switchTo().window(vars.get("win9253").toString());
-            driver.findElement(By.id("identifierId")).click();
-            driver.findElement(By.id("identifierId")).sendKeys("botsmileone");
-            driver.findElement(By.id("identifierId")).sendKeys(Keys.ENTER);
-
-            waitForProcess(2000);
-
-            driver.findElement(By.name("password")).sendKeys("vassa8888");
-            driver.findElement(By.name("password")).sendKeys(Keys.ENTER);
-
-
-            driver.switchTo().window(vars.get("root").toString());
             logger.log(Level.INFO, "/*-------------LOGIN PROCESS FINISHED---------------*/");
             /*-------------END LOGIN-----------------*/
 
 
             /*---------------------------------PROCESS DIVIDER-------------------------------------*/
+
 
             /*-------------START PURCHASE-----------------*/
             logger.log(Level.INFO, "/*-------------START PURCHASE PROCESS---------------*/");
@@ -95,6 +91,7 @@ public class preservedLogin_Chrome {
             }
 
 
+            /*START CHECKING FOR PRODUCTS*/
             ArrayList<WebElement> webElements = new ArrayList<>();
             webElements.add(driver.findElement(By.cssSelector(".PcliF-em2")));
             webElements.add(driver.findElement(By.cssSelector(".PcliS-em2")));
@@ -117,21 +114,8 @@ public class preservedLogin_Chrome {
 
                 Thread.sleep(1500);
             }
+            /*END CHECKING FOR PRODUCTS*/
 
-
-
-            /*CHECKING FOR PRODUCTS*/
-//            logger.log(Level.INFO, "/*-------------PRODUCT CHECKING START---------------*/");
-//
-//
-//                driver.findElement(By.id("puseid")).click();
-//                driver.findElement(By.id("puseid")).sendKeys("126606687");
-//                driver.findElement(By.id("pserverid")).sendKeys("2632");
-//                driver.findElement(By.cssSelector(".PcDiamant-ul > .fl:nth-child(1)")).click();
-//                driver.findElement(By.cssSelector(".section-nav:nth-child(1) .smilecoin > .cartao-name")).click();
-//                driver.findElement(By.id("Nav-btnpc")).click();
-//
-//
 //            logger.log(Level.INFO, "/*-------------PURCHASE PROCESS FINISHED---------------*/");
             /*-------------END PURCHASE-----------------*/
 
