@@ -63,9 +63,7 @@ public class TransactionControllerChrome {
     @Value("${denom.11}")
     private String denom11;
 
-    /*@GetMapping("/trx/{idPlayer}/{denom}/{trxId}")*/  // --> Technical Spec
-    @GetMapping("/trx/{playerId}/{denom}/{trxId}")  // -> Developer
-    // "/trx/<idplayer>/<denom>/<trx_id>"
+    @GetMapping("/trx/{playerId}/{denom}/{trxId}")
     public String startPurchase(
             @PathVariable String playerId,
             @PathVariable String denom,
@@ -76,209 +74,226 @@ public class TransactionControllerChrome {
         Integer currentInboxID = null;
 
         String responseMsg=null;
-        String responseStatus=status01;
         Long responsePlayerID=null;
         String responseDenom=null;
         String responseTrxid=null;
+        String responseStatus=status01; //initialize with Error status
 
+        String response = null;
+        JSONObject jsonObject = null;
+
+        /*initialize Webdrivers for each browser*/
         System.setProperty("webdriver.chrome.driver","webdrivers\\chromedriver.exe");
         System.setProperty("webdriver.firefox.driver","webdrivers\\geckodriver.exe");
         System.setProperty("webdriver.ie.driver","webdrivers\\IEDriverServer.exe");
 
+        /*option start chrome incognito mode*/
         ChromeOptions options = new ChromeOptions();
-//        options.addArguments("user-data-dir=C:\\Users\\acer\\AppData\\Local\\Google\\Chrome\\User Data\\Profile 5");
         options.addArguments("--incognito");
 
-        String response = null;
-
-        JSONObject jsonObject = null;
-
+        /*DB Helpers*/
         DBInboxes dbInboxes = new DBInboxes();
         DBOutboxes dbOutboxes = new DBOutboxes();
 
-        /*GENERATING RESPONSE MESSAGE*/
+        /*initialize response message with null values*/
         VoucherPojo voucherPojo = new VoucherPojo(responsePlayerID, responseDenom);
-
         ResponsePojo responsePojo = new ResponsePojo(null, responseMsg, responseTrxid, responseStatus);
 
         /*Input validation*/
         if (!isTrxIdValid(trxId)) { //trxId Validation
-            responseMsg = "INVALID TRX ID";
-            responsePojo.setMessage(responseMsg);
+            responseMsg = "Trx ID tidak Valid";
+//            responseMsg = "Invalid Trx ID";
         }
-        else if (dbInboxes.isTrxIdExists(trxId)) { //check for duplicate trxId
-            responseMsg = "SAME TRX ID FOUND IN THE DATABASE";
-            responsePojo.setTrxId(trxId);
-            responsePojo.setMessage(responseMsg);;
-        }
-        else if(!isNumeric(playerId) || playerId.length()!=13) { //playerId Validation
-            responseMsg = "INVALID PLAYER ID";
-            responsePojo.setTrxId(trxId);
-            responsePojo.setMessage(responseMsg);
-        }
-        else if(getDenomELementLocator(denom)==null) {
-            responseMsg = "INVALID DENOM";
-            responsePojo.setMessage(responseMsg);
-        }
-        else if (isNumeric(playerId) && playerId.length()==13) {
-            accountId = playerId.substring(0, 9);
-            zoneId = playerId.substring(9);
-
-            try {
-
-                /*CHECKING&SAVING INBOX*/
-                try {
-                    /*SAVING TO INBOX*/
-                    SmileOneBot.logger.info("Saving Request to Inbox");
-//                    dbInboxes = new DBInboxes();
-                    SimpleDateFormat formatter = new SimpleDateFormat("dd/MM/yyyy HH:mm:ss");
-                    Date date = new Date();
-                    String message = trxId + "#" + denom + "#" + playerId;
-                    Inboxes inbox = new Inboxes(message, "localhost:8080/trx", 0, date, trxId);
-                    currentInboxID = dbInboxes.saveInbox(inbox);
-                }
-                catch (Exception e){
-                    SmileOneBot.logger.info("---------Fail Save to DB----------");
-                    e.printStackTrace();
-                }
-                /*END CHECKING&SAVING INBOX*/
-
-                driver = new ChromeDriver(options);
-//                driver = new FirefoxDriver();
-//                driver = new InternetExplorerDriver();
-
-                /*START LOGIN*/
-                SmileOneBot.logger.log(Level.INFO, "/*-------------START LOGIN PROCESS-----------------*/");
-
-                driver.get("https://www.smile.one/customer/account/login");
-
-                driver.manage().window().setSize(new Dimension(1547, 950));
-
-                /*HANDLE NEW WINDOWS AFTER DRIVER.GET*/
-                vars.put("window_handles", driver.getWindowHandles());
-                /*END HANDLE NEW WINDOWS AFTER DRIVER.GET*/
-
-                driver.findElement(By.cssSelector(".vk > .login_method_p2")).click();
-
-                /*SWITCH & HANDLE POPUP LOGIN WINDOWS*/
-                vars.put("win2423", waitForWindow(2000));
-                vars.put("root", driver.getWindowHandle());
-                driver.switchTo().window(vars.get("win2423").toString());
-                /*END SWITCH & HANDLE POPUP LOGIN WINDOWS*/
-
-                /*START LOGIN PROCESS*/
-                driver.findElement(By.name("email")).click();
-                driver.findElement(By.name("email")).sendKeys(botUsername);
-                driver.findElement(By.name("pass")).sendKeys(botPassword);
-                driver.findElement(By.name("pass")).sendKeys(Keys.ENTER);
-                /*END LOGIN PROCESS*/
-
-                /*SWITCH TO NEW REDIRECTED PAGE AFTER LOGGED IN*/
-                //driver.close();
-                driver.switchTo().window(vars.get("root").toString());
-                //driver.close();
-
-                SmileOneBot.logger.log(Level.INFO, "/*-------------LOGIN PROCESS FINISHED---------------*/");
-                /*END LOGIN*/
-
-                /*NAVIGATE TO MLBB PAGE AFTER LOGGED IN*/
-                driver.navigate().to("https://www.smile.one/merchant/mobilelegends?source=other");
-
-                /*START PURCHASE*/
-                SmileOneBot.logger.log(Level.INFO, "/*-------------START PURCHASE PROCESS---------------*/");
-
-                /*Checking for Page Fully Loaded*/
-//                while (true) {
-//                    try {
-//                        driver.findElement(By.cssSelector(".listol1 > .list-li:nth-child(3) .imgicon")).click();
-//                        logger.info("FOUND MLBB MENU.. HOMEPAGE HAS BEEN LOADED IS CONFIRMED");
-//                        break;
-//                    } catch (Exception e) {
-//                        logger.info("MLBB MENU NOT FOUND.. HOMEPAGE NOT FULLY LOADED YET");
-//                    }
-//                    Thread.sleep(2000);
-//                }
-
-                /*MOVE TO MLBB WINDOW*/
-                vars.put("win3322", waitForWindow(2000));
-                driver.switchTo().window(vars.get("win3322").toString());
-                /*END MOVE TO MLBB WINDOW*/
-
-                /*Validating for Page Fully Loaded*/
-
-                /*Checking for MLBB Page Fully Loaded*/
-                while (true) {
-                    try {
-                        driver.findElement(By.cssSelector(getDenomELementLocator(denom))).click();
-                        SmileOneBot.logger.info( "FOUND SELECTED DENOM.. MLBB PAGE HAS BEEN LOADED IS CONFIRMED");
-                        break;
-                    } catch (Exception e) {
-                        SmileOneBot.logger.info("DIAMOND DENOM NOT FOUND.. STILL LOOKING FOR");
-                    }
-                    Thread.sleep(1000);
-                }
-
-                driver.findElement(By.id("puseid")).click();
-                driver.findElement(By.id("puseid")).sendKeys(accountId);
-                driver.findElement(By.id("pserverid")).sendKeys(zoneId);
-                driver.findElement(By.cssSelector(".section-nav:nth-child(1) .smilecoin > .cartao-name")).click();
-                driver.findElement(By.id("Nav-btnpc")).click();
-
-//                driver.switchTo().window(vars.get("root").toString());
-
-                if (driver.getCurrentUrl().equalsIgnoreCase("https://www.smile.one/merchant/mobilelegends?source=other")) {
-                    WebDriverWait wait = new WebDriverWait(driver, 5);
-                    try {
-                        wait.until(ExpectedConditions.alertIsPresent());
-                        String alrt = driver.switchTo().alert().getText();
-                        SmileOneBot.logger.info("Msg from web : " + alrt);
-                        SmileOneBot.logger.info("Player " + accountId + "(" + zoneId + ") Does Not Exist");
-                        responseMsg = "Player Does not Exist";
-                        responseStatus = status01;
-                    } catch (Exception e) {
-                        SmileOneBot.logger.info("Player exists");
-                        if (driver.getCurrentUrl().equalsIgnoreCase("https://www.smile.one/customer/recharge")) {
-                            SmileOneBot.logger.info("Insufficient Balance");
-                            responseMsg = "Insuficient Balance";
-                            responseStatus = status01;
-                        } else if (driver.getCurrentUrl().equalsIgnoreCase("https://www.smile.one/message/success")) {
-                            SmileOneBot.logger.info("");
-                            responseMsg = "Top-up Successful";
-                            responseStatus = status00;
-                        }
-                    }
-                }
-
-
-
-                /*VALIDATION ON SUCCESS PURCHASE (COMMING SOON)*/
-
-                /* Create Json Response (success purchase) */
-
-                /*Start Generating Response JSON*/
-                voucherPojo.setPlayerId(Long.parseLong(playerId));
-                voucherPojo.setDenom(denom);
-
-                responsePojo.setVoucher(voucherPojo);
-                responsePojo.setMessage(responseMsg);
-                responsePojo.setTrxId(trxId);
-                responsePojo.setStatus(responseStatus);
-
-                Thread.sleep(2000);
-
-            } catch (Exception e) {
-                e.printStackTrace();
-//                driver.quit();
-            } finally {
-//                driver.quit();
+        else {
+            if (dbInboxes.isTrxIdExists(trxId)) { //check for duplicate trxId
+                responseMsg = "Trx id Sudah terdapat di Dababase";
+//                responseMsg = "Same Trx ID found in the database";
             }
-        }
-            jsonObject =  new JSONObject(responsePojo);
-            response = jsonObject.toString();
+            else{
+                if(getDenomELementLocator(denom)==null) {
+                    responseMsg = "Denom tidak valid";
+//                    responseMsg = "Invalid Denom";
+                }
+                else{
+                    if(!isNumeric(playerId) || playerId.length()>13){
+                        responseMsg="Player ID tidak valid";
+//                        responseMsg="Invalid Player ID";
+                    }else{
+                        accountId = playerId.substring(0, 9);
+                        zoneId = playerId.substring(9);
 
-        SmileOneBot.logger.info("PURCHASE FINISHED WITH DETAILS :\n"+jsonObject.toString(4));
+                        try {
 
-        /*CHECKING&SAVING OUTBOX*/
+                            /*Saving Inbox*/
+                            try {
+                                /*Saving to Inbox*/
+                                SmileOneBot.logger.info("Saving Request to Inbox");
+//                                SmileOneBot.logger.info("Saving Request to Inbox");
+                                //dbInboxes = new DBInboxes();
+                                SimpleDateFormat formatter = new SimpleDateFormat("dd/MM/yyyy HH:mm:ss");
+                                Date date = new Date();
+                                String message = trxId + "#" + denom + "#" + playerId;
+                                Inboxes inbox = new Inboxes(message, "localhost:8080/trx", 0, date, trxId);
+                                currentInboxID = dbInboxes.saveInbox(inbox);
+                            }
+                            catch (Exception e){
+                                SmileOneBot.logger.info("---------Fail Save Inbox to DB----------");
+                                e.printStackTrace();
+                                SmileOneBot.logger.info("---------Fail Save Inbox to DB----------");
+                            }
+                            /*END CHECKING&SAVING INBOX*/
+
+                            driver = new ChromeDriver(options);
+                            //driver = new FirefoxDriver();
+                            //driver = new InternetExplorerDriver();
+
+                            /*START LOGIN*/
+                            SmileOneBot.logger.log(Level.INFO, "/*-------------START LOGIN PROCESS-----------------*/");
+
+                            driver.get("https://www.smile.one/customer/account/login");
+
+                            driver.manage().window().setSize(new Dimension(1547, 950));
+
+                            /*HANDLE NEW WINDOWS AFTER DRIVER.GET*/
+                            vars.put("window_handles", driver.getWindowHandles());
+                            /*END HANDLE NEW WINDOWS AFTER DRIVER.GET*/
+
+                            driver.findElement(By.cssSelector(".vk > .login_method_p2")).click();
+
+                            /*SWITCH & HANDLE POPUP LOGIN WINDOWS*/
+                            vars.put("win2423", waitForWindow(2000));
+                            vars.put("root", driver.getWindowHandle());
+                            driver.switchTo().window(vars.get("win2423").toString());
+                            /*END SWITCH & HANDLE POPUP LOGIN WINDOWS*/
+
+                            /*START LOGIN PROCESS*/
+                            driver.findElement(By.name("email")).click();
+                            driver.findElement(By.name("email")).sendKeys(botUsername);
+                            driver.findElement(By.name("pass")).sendKeys(botPassword);
+                            driver.findElement(By.name("pass")).sendKeys(Keys.ENTER);
+                            /*END LOGIN PROCESS*/
+
+                            /*Handle Switch to HomePage after Loggedin*/
+                            //driver.close();
+                            driver.switchTo().window(vars.get("root").toString());
+                            //driver.close();
+
+                            SmileOneBot.logger.log(Level.INFO, "/*-------------LOGIN PROCESS FINISHED---------------*/");
+                            /*End Handle Switch to HomePage after Loggedin*/
+
+                            /*Navigate to MLBB Page from Homepage after logged in*/
+
+                            SmileOneBot.logger.log(Level.INFO, "Logged in. Navigating to MLBB Page");
+                            driver.navigate().to("https://www.smile.one/merchant/mobilelegends?source=other");
+                            /*START PURCHASE*/
+                            SmileOneBot.logger.log(Level.INFO, "/*-------------START TOP-UP PROCESS---------------*/");
+
+                            /*Checking for Page Fully Loaded*/
+                            /*while (true) {
+                                try {
+                                    driver.findElement(By.cssSelector(".listol1 > .list-li:nth-child(3) .imgicon")).click();
+                                    logger.info("FOUND MLBB MENU.. HOMEPAGE HAS BEEN LOADED IS CONFIRMED");
+                                    break;
+                                } catch (Exception e) {
+                                    logger.info("MLBB MENU NOT FOUND.. HOMEPAGE NOT FULLY LOADED YET");
+                                }
+                                Thread.sleep(2000);
+                            }*/
+
+                            /*Switch to MLBB Page*/
+                            vars.put("win3322", waitForWindow(2000));
+                            driver.switchTo().window(vars.get("win3322").toString());
+                            /*End Switch to MLBB Page*/
+
+                            /*Validating for Page Fully Loaded*/
+
+                            /*Checking for MLBB Page Fully Loaded*/
+                            while (true) {
+                                try {
+                                    driver.findElement(By.cssSelector(getDenomELementLocator(denom))).click();
+                                    SmileOneBot.logger.info( "Selecting Denom");
+                                    break;
+                                } catch (Exception e) {
+                                    SmileOneBot.logger.info("Waiting for MLBB page in readyState");
+                                }
+                                Thread.sleep(1000);
+                            }
+
+
+                            driver.findElement(By.id("puseid")).click();
+                            SmileOneBot.logger.info( "Inserting Player ID");
+                            driver.findElement(By.id("puseid")).sendKeys(accountId);
+                            SmileOneBot.logger.info( "Inserting Zone ID");
+                            driver.findElement(By.id("pserverid")).sendKeys(zoneId);
+                            SmileOneBot.logger.info( "Selecting Payment Type");
+                            driver.findElement(By.cssSelector(".section-nav:nth-child(1) .smilecoin > .cartao-name")).click();
+                            driver.findElement(By.id("Nav-btnpc")).click();
+                            SmileOneBot.logger.info( "Finished Inputs.. Now Processing Top-up...");
+
+                            if (driver.getCurrentUrl().equalsIgnoreCase("https://www.smile.one/merchant/mobilelegends?source=other")) {
+                                WebDriverWait wait = new WebDriverWait(driver, 5);
+                                /*Next try catch try to validates whether alert is present(player id does not exist) / payment is success or failed */
+                                try {
+                                    wait.until(ExpectedConditions.alertIsPresent());
+                                    String alrt = driver.switchTo().alert().getText();
+                                    SmileOneBot.logger.info("Found Alert with message : " + alrt);
+                                    SmileOneBot.logger.info("Player " + accountId + "(" + zoneId + ") Does Not Exist");
+                                    responseMsg = "Akun Player tidak di temukan";
+//                                    responseMsg = "Player Does not Exist";
+                                } catch (Exception e) {
+                                    SmileOneBot.logger.info("Player: "+accountId+" ("+zoneId+") di temukan. Melanjutkan top-up...");
+//                                    SmileOneBot.logger.info("Player "+accountId+" ("+zoneId+") exists. Countinue top-up...");
+                                    /*this statement validates if balance is insufficient*/
+                                    if (driver.getCurrentUrl().equalsIgnoreCase("https://www.smile.one/customer/recharge")) {
+                                        SmileOneBot.logger.info("Insufficient Balance");
+                                        responseMsg = "Saldo tidak mencukupi";
+//                                        responseMsg = "Insuficient Balance";
+                                    }
+                                    /*this statement validates if purchase is successful*/
+                                    else if (driver.getCurrentUrl().equalsIgnoreCase("https://www.smile.one/message/success")) {
+                                        SmileOneBot.logger.info("");
+                                        responseMsg = "Top-up Berhasil";
+//                                        responseMsg = "Top-up Successful";
+                                        responseStatus = status00;
+                                    }
+                                }
+                            }
+
+                            /* Create Json Response (success purchase) */
+
+                            /*Start Generating Response JSON*/
+                            voucherPojo.setPlayerId(Long.parseLong(playerId));
+                            voucherPojo.setDenom(denom);
+
+                            responsePojo.setVoucher(voucherPojo);
+                            responsePojo.setMessage(responseMsg);
+                            responsePojo.setTrxId(trxId);
+                            responsePojo.setStatus(responseStatus);
+
+                            Thread.sleep(2000);
+
+                        } catch (Exception e) {
+                            e.printStackTrace();
+                            SmileOneBot.logger.info("Error Found during purchase");
+                            //driver.quit();
+                        } finally {
+                            //driver.quit();
+                        }
+
+                    } //End if player ID is valid (last validation)
+
+                } //End if denom is valid
+
+            } //End if trxID is not in DB (yet)
+
+        } //End if trxID is valid
+
+        jsonObject =  new JSONObject(responsePojo);
+        response = jsonObject.toString(4);
+
+        SmileOneBot.logger.info("Process finished with response:\n"+jsonObject.toString(4));
+
+        /*Saving to Outbox*/
         if (currentInboxID!=null) {
             SmileOneBot.logger.info("Saving to Outbox with inbox_id : "+currentInboxID);
             try {
@@ -288,11 +303,12 @@ public class TransactionControllerChrome {
                 Outboxes outboxes = new Outboxes(response, null, date, currentInboxID);
                 dbOutboxes.saveOutbox(outboxes);
             } catch (Exception e) {
-                SmileOneBot.logger.info("---------Fail Save to DB----------");
+                SmileOneBot.logger.info("---------Fail Save Outbox to DB----------");
                 e.printStackTrace();
+                SmileOneBot.logger.info("---------Fail Save Outbox to DB----------");
             }
         }
-        /*END CHECKING&SAVING OUTBOX*/
+        /*End Saving to Outbox*/
 
         return response;
     }
@@ -319,19 +335,6 @@ public class TransactionControllerChrome {
 //        }
 //    }
 
-    private boolean isNumeric(String input) {
-        boolean result=false;
-        if (input!=null){
-            try {
-                Long.parseLong(input);
-                result=true;
-            } catch (Exception e) {
-                SmileOneBot.logger.info("Player ID + Zone ID Input not valid");
-            }
-        }
-        return result;
-    }
-
     private boolean isTrxIdValid(String input) {
         boolean result=false;
         if (input!=null){
@@ -340,6 +343,19 @@ public class TransactionControllerChrome {
                 result=true;
             } catch (Exception e) {
                 SmileOneBot.logger.info("TRX ID is invalid");
+            }
+        }
+        return result;
+    }
+
+    private boolean isNumeric(String input) {
+        boolean result=false;
+        if (input!=null){
+            try {
+                Long.parseLong(input);
+                result=true;
+            } catch (Exception e) {
+                SmileOneBot.logger.info("Player ID + Zone ID Input not valid");
             }
         }
         return result;
