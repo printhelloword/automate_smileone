@@ -12145,3 +12145,50 @@
 }
 18:05:20,224  INFO SmileOneBot:283 - Saving to Outbox with inbox_id : 56
 18:05:20,224  INFO SmileOneBot:286 - Saving Request to Outbox
+10:14:47,005  INFO SmileOneBot:348 - TRX ID is invalid
+10:14:47,019  INFO SmileOneBot:297 - Process finished with response:
+{"status": "Error"}
+10:14:58,543  INFO SmileOneBot:348 - TRX ID is invalid
+10:14:58,543  INFO SmileOneBot:297 - Process finished with response:
+{"status": "Error"}
+10:19:04,989  INFO SmileOneBot:352 - Invalid TrxId
+10:19:04,997  INFO SmileOneBot:301 - Process finished with response:
+{
+    "message": "Trx ID tidak Valid",
+    "status": "Error"
+}
+10:19:22,529  INFO SmileOneBot:352 - Invalid TrxId
+10:19:22,529  INFO SmileOneBot:301 - Process finished with response:
+{
+    "message": "Trx ID tidak Valid",
+    "status": "Error"
+}
+10:19:32,825  INFO SmileOneBot:352 - Invalid TrxId
+10:19:32,825  INFO SmileOneBot:301 - Process finished with response:
+{
+    "message": "Trx ID tidak Valid",
+    "status": "Error"
+}
+10:19:37,406  INFO SmileOneBot:352 - Invalid TrxId
+10:19:37,407  INFO SmileOneBot:301 - Process finished with response:
+{
+    "message": "Trx ID tidak Valid",
+    "status": "Error"
+}
+10:19:47,555  INFO SmileOneBot:134 - Saving Request to Inbox
+10:19:52,363  INFO SmileOneBot:155 - /*-------------START LOGIN PROCESS-----------------*/
+10:20:01,297  INFO SmileOneBot:185 - /*-------------LOGIN PROCESS FINISHED---------------*/
+10:20:01,297  INFO SmileOneBot:190 - Logged in. Navigating to MLBB Page
+10:20:02,634  INFO SmileOneBot:193 - /*-------------START TOP-UP PROCESS---------------*/
+10:20:08,721  INFO SmileOneBot:274 - Error Found during purchase
+10:20:08,722  INFO SmileOneBot:301 - Process finished with response:
+{
+    "voucher": {
+        "denom": "86",
+        "playerId": 1266066872632
+    },
+    "trxId": "213123",
+    "status": "Error"
+}
+10:20:08,722  INFO SmileOneBot:305 - Saving to Outbox with inbox_id : 57
+10:20:08,723  INFO SmileOneBot:308 - Saving Request to Outbox

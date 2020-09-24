@@ -103,21 +103,25 @@ public class TransactionControllerChrome {
         if (!isTrxIdValid(trxId)) { //trxId Validation
             responseMsg = "Trx ID tidak Valid";
 //            responseMsg = "Invalid Trx ID";
+            responsePojo.setMessage(responseMsg);
         }
         else {
             if (dbInboxes.isTrxIdExists(trxId)) { //check for duplicate trxId
                 responseMsg = "Trx id Sudah terdapat di Dababase";
 //                responseMsg = "Same Trx ID found in the database";
+                responsePojo.setMessage(responseMsg);
             }
             else{
                 if(getDenomELementLocator(denom)==null) {
                     responseMsg = "Denom tidak valid";
 //                    responseMsg = "Invalid Denom";
+                    responsePojo.setMessage(responseMsg);
                 }
                 else{
                     if(!isNumeric(playerId) || playerId.length()>13){
                         responseMsg="Player ID tidak valid";
 //                        responseMsg="Invalid Player ID";
+                        responsePojo.setMessage(responseMsg);
                     }else{
                         accountId = playerId.substring(0, 9);
                         zoneId = playerId.substring(9);
@@ -261,14 +265,7 @@ public class TransactionControllerChrome {
 
                             /* Create Json Response (success purchase) */
 
-                            /*Start Generating Response JSON*/
-                            voucherPojo.setPlayerId(Long.parseLong(playerId));
-                            voucherPojo.setDenom(denom);
 
-                            responsePojo.setVoucher(voucherPojo);
-                            responsePojo.setMessage(responseMsg);
-                            responsePojo.setTrxId(trxId);
-                            responsePojo.setStatus(responseStatus);
 
                             Thread.sleep(2000);
 
@@ -280,6 +277,15 @@ public class TransactionControllerChrome {
                             //driver.quit();
                         }
 
+                        /*Start Generating Response JSON*/
+                        voucherPojo.setPlayerId(Long.parseLong(playerId));
+                        voucherPojo.setDenom(denom);
+
+                        responsePojo.setVoucher(voucherPojo);
+                        responsePojo.setMessage(responseMsg);
+                        responsePojo.setTrxId(trxId);
+                        responsePojo.setStatus(responseStatus);
+
                     } //End if player ID is valid (last validation)
 
                 } //End if denom is valid
@@ -287,6 +293,7 @@ public class TransactionControllerChrome {
             } //End if trxID is not in DB (yet)
 
         } //End if trxID is valid
+
 
         jsonObject =  new JSONObject(responsePojo);
         response = jsonObject.toString(4);
@@ -342,7 +349,7 @@ public class TransactionControllerChrome {
                 Long.parseLong(input);
                 result=true;
             } catch (Exception e) {
-                SmileOneBot.logger.info("TRX ID is invalid");
+                SmileOneBot.logger.info("Invalid TrxId");
             }
         }
         return result;
