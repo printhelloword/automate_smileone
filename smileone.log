@@ -12192,3 +12192,31 @@
 }
 10:20:08,722  INFO SmileOneBot:305 - Saving to Outbox with inbox_id : 57
 10:20:08,723  INFO SmileOneBot:308 - Saving Request to Outbox
+10:20:37,923  INFO SmileOneBot:301 - Process finished with response:
+{
+    "message": "Trx id Sudah terdapat di Dababase",
+    "status": "Error"
+}
+10:21:12,024  INFO SmileOneBot:301 - Process finished with response:
+{
+    "message": "Trx id Sudah terdapat di Dababase",
+    "status": "Error"
+}
+10:21:18,535  INFO SmileOneBot:410 - INVALID DENOM IN CURRENT REQUEST : qweqwe
+10:21:18,536  INFO SmileOneBot:301 - Process finished with response:
+{
+    "message": "Denom tidak valid",
+    "status": "Error"
+}
+10:21:28,290  INFO SmileOneBot:365 - Player ID + Zone ID Input not valid
+10:21:28,291  INFO SmileOneBot:301 - Process finished with response:
+{
+    "message": "Player ID tidak valid",
+    "status": "Error"
+}
+10:27:31,429  INFO SmileOneBot:352 - Invalid TrxId
+10:27:31,442  INFO SmileOneBot:301 - Process finished with response:
+{
+    "message": "Trx ID tidak Valid",
+    "status": "Error"
+}

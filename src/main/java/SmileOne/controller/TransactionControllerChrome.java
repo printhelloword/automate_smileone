@@ -19,6 +19,7 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RestController;
 
+import javax.servlet.http.HttpServletRequest;
 import java.io.IOException;
 import java.text.SimpleDateFormat;
 import java.util.Date;
@@ -67,14 +68,15 @@ public class TransactionControllerChrome {
     public String startPurchase(
             @PathVariable String playerId,
             @PathVariable String denom,
-            @PathVariable String trxId
+            @PathVariable String trxId,
+            HttpServletRequest request
     ) throws IOException {
 
         String accountId, zoneId;
         Integer currentInboxID = null;
 
         String responseMsg=null;
-        Long responsePlayerID=null;
+        String responsePlayerID=null;
         String responseDenom=null;
         String responseTrxid=null;
         String responseStatus=status01; //initialize with Error status
@@ -123,21 +125,21 @@ public class TransactionControllerChrome {
 //                        responseMsg="Invalid Player ID";
                         responsePojo.setMessage(responseMsg);
                     }else{
-                        accountId = playerId.substring(0, 9);
-                        zoneId = playerId.substring(9);
+
+                        accountId = playerId.substring(0, playerId.length()-4);
+                        zoneId = playerId.substring(playerId.length()-4);
 
                         try {
 
                             /*Saving Inbox*/
                             try {
+                                SmileOneBot.logger.info("Incoming Request with URI: "+request.getRequestURI());
+
                                 /*Saving to Inbox*/
-                                SmileOneBot.logger.info("Saving Request to Inbox");
-//                                SmileOneBot.logger.info("Saving Request to Inbox");
-                                //dbInboxes = new DBInboxes();
-                                SimpleDateFormat formatter = new SimpleDateFormat("dd/MM/yyyy HH:mm:ss");
-                                Date date = new Date();
                                 String message = trxId + "#" + denom + "#" + playerId;
+                                Date date = new Date();
                                 Inboxes inbox = new Inboxes(message, "localhost:8080/trx", 0, date, trxId);
+                                SmileOneBot.logger.info("Saving Request to Inbox");
                                 currentInboxID = dbInboxes.saveInbox(inbox);
                             }
                             catch (Exception e){
@@ -223,7 +225,6 @@ public class TransactionControllerChrome {
                                 Thread.sleep(1000);
                             }
 
-
                             driver.findElement(By.id("puseid")).click();
                             SmileOneBot.logger.info( "Inserting Player ID");
                             driver.findElement(By.id("puseid")).sendKeys(accountId);
@@ -265,20 +266,19 @@ public class TransactionControllerChrome {
 
                             /* Create Json Response (success purchase) */
 
-
-
                             Thread.sleep(2000);
 
                         } catch (Exception e) {
                             e.printStackTrace();
-                            SmileOneBot.logger.info("Error Found during purchase");
-                            //driver.quit();
+                            SmileOneBot.logger.info("Error Found during purchase. Closing Browser Now");
+                            driver.quit();
                         } finally {
-                            //driver.quit();
+                            SmileOneBot.logger.info("Closing Browser Now");
+                            driver.quit();
                         }
 
                         /*Start Generating Response JSON*/
-                        voucherPojo.setPlayerId(Long.parseLong(playerId));
+                        voucherPojo.setPlayerId(playerId);
                         voucherPojo.setDenom(denom);
 
                         responsePojo.setVoucher(voucherPojo);
@@ -294,9 +294,8 @@ public class TransactionControllerChrome {
 
         } //End if trxID is valid
 
-
         jsonObject =  new JSONObject(responsePojo);
-        response = jsonObject.toString(4);
+        response = jsonObject.toString();
 
         SmileOneBot.logger.info("Process finished with response:\n"+jsonObject.toString(4));
 
