@@ -12,6 +12,9 @@ import org.json.JSONObject;
 import org.openqa.selenium.*;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
+import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.firefox.FirefoxOptions;
+import org.openqa.selenium.ie.InternetExplorerDriver;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.springframework.beans.factory.annotation.Value;
@@ -35,11 +38,18 @@ public class TransactionControllerChrome {
 
     private static final String status00 = "Success";
     private static final String status01 = "Error";
+    private static final String auto_close = "1"; //1 = auto close browser = on
 
     @Value("${bot.username}")
     private String botUsername;
     @Value("${bot.password}")
     private String botPassword;
+
+    @Value("${wait.time}")
+    private String waitTime;
+
+    @Value("${auto.close}")
+    private String autoClose;
 
     @Value("${denom.1}")
     private String denom1;
@@ -86,12 +96,16 @@ public class TransactionControllerChrome {
 
         /*initialize Webdrivers for each browser*/
         System.setProperty("webdriver.chrome.driver","webdrivers\\chromedriver.exe");
-        System.setProperty("webdriver.firefox.driver","webdrivers\\geckodriver.exe");
+        System.setProperty("webdriver.gecko.driver","webdrivers\\geckodriver.exe");
         System.setProperty("webdriver.ie.driver","webdrivers\\IEDriverServer.exe");
 
         /*option start chrome incognito mode*/
         ChromeOptions options = new ChromeOptions();
         options.addArguments("--incognito");
+
+        FirefoxOptions firefoxOptions = new FirefoxOptions();
+        firefoxOptions.setCapability("browser.privatebrowsing.autostart", true);
+
 
         /*DB Helpers*/
         DBInboxes dbInboxes = new DBInboxes();
@@ -150,13 +164,16 @@ public class TransactionControllerChrome {
                             /*END CHECKING&SAVING INBOX*/
 
                             driver = new ChromeDriver(options);
-                            //driver = new FirefoxDriver();
-                            //driver = new InternetExplorerDriver();
+//                            driver = new FirefoxDriver(firefoxOptions);
+//                            driver = new InternetExplorerDriver();
+
+                            Thread.sleep(Integer.parseInt(waitTime));
 
                             /*START LOGIN*/
                             SmileOneBot.logger.log(Level.INFO, "/*-------------START LOGIN PROCESS-----------------*/");
 
                             driver.get("https://www.smile.one/customer/account/login");
+//                            driver.get("https://www.smile.one/");
 
                             driver.manage().window().setSize(new Dimension(1547, 950));
 
@@ -214,7 +231,12 @@ public class TransactionControllerChrome {
                             /*Validating for Page Fully Loaded*/
 
                             /*Checking for MLBB Page Fully Loaded*/
-                            while (true) {
+//                            while (true) {
+                            int maxRetry=5;
+                            int retryInterval=2000; //ms
+
+                            while(true){
+//                            for(int i=0; i<maxRetry; i++){
                                 try {
                                     driver.findElement(By.cssSelector(getDenomELementLocator(denom))).click();
                                     SmileOneBot.logger.info( "Selecting Denom");
@@ -222,7 +244,7 @@ public class TransactionControllerChrome {
                                 } catch (Exception e) {
                                     SmileOneBot.logger.info("Waiting for MLBB page in readyState");
                                 }
-                                Thread.sleep(1000);
+                                Thread.sleep(retryInterval);
                             }
 
                             driver.findElement(By.id("puseid")).click();
@@ -271,10 +293,12 @@ public class TransactionControllerChrome {
                         } catch (Exception e) {
                             e.printStackTrace();
                             SmileOneBot.logger.info("Error Found during purchase. Closing Browser Now");
-                            driver.quit();
+                            if(autoClose.equalsIgnoreCase(auto_close))
+                                driver.quit();
                         } finally {
                             SmileOneBot.logger.info("Closing Browser Now");
-                            driver.quit();
+                            if(autoClose.equalsIgnoreCase(auto_close))
+                                driver.quit();
                         }
 
                         /*Start Generating Response JSON*/

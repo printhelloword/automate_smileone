@@ -12220,3 +12220,390 @@
     "message": "Trx ID tidak Valid",
     "status": "Error"
 }
+09:08:51,579  INFO SmileOneBot:136 - Incoming Request with URI: /trx/126606687/86/123871221
+09:08:51,582  INFO SmileOneBot:142 - Saving Request to Inbox
+09:09:02,844  INFO SmileOneBot:157 - /*-------------START LOGIN PROCESS-----------------*/
+09:09:22,157  INFO SmileOneBot:187 - /*-------------LOGIN PROCESS FINISHED---------------*/
+09:09:22,158  INFO SmileOneBot:192 - Logged in. Navigating to MLBB Page
+09:09:23,461  INFO SmileOneBot:195 - /*-------------START TOP-UP PROCESS---------------*/
+09:09:25,592  INFO SmileOneBot:220 - Selecting Denom
+09:09:25,659  INFO SmileOneBot:229 - Inserting Player ID
+09:09:25,718  INFO SmileOneBot:231 - Inserting Zone ID
+09:09:25,785  INFO SmileOneBot:233 - Selecting Payment Type
+09:09:26,430  INFO SmileOneBot:236 - Finished Inputs.. Now Processing Top-up...
+09:09:27,234  INFO SmileOneBot:244 - Found Alert with message : USER ID ou Zone ID não exist
+09:09:27,235  INFO SmileOneBot:245 - Player 12660(6687) Does Not Exist
+09:09:29,246  INFO SmileOneBot:276 - Closing Browser Now
+09:09:29,904  INFO SmileOneBot:300 - Process finished with response:
+{
+    "voucher": {
+        "denom": "86",
+        "playerId": "126606687"
+    },
+    "message": "Akun Player tidak di temukan",
+    "trxId": "123871221",
+    "status": "Error"
+}
+09:09:29,904  INFO SmileOneBot:304 - Saving to Outbox with inbox_id : 73
+09:09:29,905  INFO SmileOneBot:307 - Saving Request to Outbox
+09:38:56,295  INFO SmileOneBot:141 - Incoming Request with URI: /trx/126606687/86/12387122112
+09:38:56,297  INFO SmileOneBot:147 - Saving Request to Inbox
+09:38:56,453  INFO SmileOneBot:283 - Error Found during purchase. Closing Browser Now
+09:38:56,453  INFO SmileOneBot:286 - Closing Browser Now
+09:39:56,632  INFO SmileOneBot:141 - Incoming Request with URI: /trx/126606687/86/12387123
+09:39:56,635  INFO SmileOneBot:147 - Saving Request to Inbox
+09:39:56,736  INFO SmileOneBot:283 - Error Found during purchase. Closing Browser Now
+09:39:56,737  INFO SmileOneBot:286 - Closing Browser Now
+09:40:40,822  INFO SmileOneBot:310 - Process finished with response:
+{
+    "message": "Trx id Sudah terdapat di Dababase",
+    "status": "Error"
+}
+09:40:44,394  INFO SmileOneBot:141 - Incoming Request with URI: /trx/126606687/86/12387123123
+09:40:44,394  INFO SmileOneBot:147 - Saving Request to Inbox
+09:40:49,497  INFO SmileOneBot:162 - /*-------------START LOGIN PROCESS-----------------*/
+09:41:01,735  INFO SmileOneBot:283 - Error Found during purchase. Closing Browser Now
+09:41:03,014  INFO SmileOneBot:286 - Closing Browser Now
+09:41:03,014  INFO SmileOneBot:310 - Process finished with response:
+{
+    "voucher": {
+        "denom": "86",
+        "playerId": "126606687"
+    },
+    "trxId": "12387123123",
+    "status": "Error"
+}
+09:41:03,015  INFO SmileOneBot:314 - Saving to Outbox with inbox_id : 77
+09:41:03,015  INFO SmileOneBot:317 - Saving Request to Outbox
+09:41:57,861  INFO SmileOneBot:141 - Incoming Request with URI: /trx/126606687/86/1231231321
+09:41:57,863  INFO SmileOneBot:147 - Saving Request to Inbox
+09:42:02,180  INFO SmileOneBot:162 - /*-------------START LOGIN PROCESS-----------------*/
+09:42:14,331  INFO SmileOneBot:283 - Error Found during purchase. Closing Browser Now
+09:42:14,331  INFO SmileOneBot:286 - Closing Browser Now
+09:42:14,339  INFO SmileOneBot:310 - Process finished with response:
+{
+    "voucher": {
+        "denom": "86",
+        "playerId": "126606687"
+    },
+    "trxId": "1231231321",
+    "status": "Error"
+}
+09:42:14,340  INFO SmileOneBot:314 - Saving to Outbox with inbox_id : 78
+09:42:14,340  INFO SmileOneBot:317 - Saving Request to Outbox
+09:43:27,456  INFO SmileOneBot:141 - Incoming Request with URI: /trx/126606687/86/123123221232131231
+09:43:27,458  INFO SmileOneBot:147 - Saving Request to Inbox
+09:43:31,719  INFO SmileOneBot:162 - /*-------------START LOGIN PROCESS-----------------*/
+09:43:33,517  INFO SmileOneBot:284 - Error Found during purchase. Closing Browser Now
+09:43:33,517  INFO SmileOneBot:287 - Closing Browser Now
+09:43:33,525  INFO SmileOneBot:311 - Process finished with response:
+{
+    "voucher": {
+        "denom": "86",
+        "playerId": "126606687"
+    },
+    "trxId": "123123221232131231",
+    "status": "Error"
+}
+09:43:33,525  INFO SmileOneBot:315 - Saving to Outbox with inbox_id : 79
+09:43:33,526  INFO SmileOneBot:318 - Saving Request to Outbox
+09:44:04,953  INFO SmileOneBot:141 - Incoming Request with URI: /trx/126606687/86/900909
+09:44:04,955  INFO SmileOneBot:147 - Saving Request to Inbox
+09:44:09,661  INFO SmileOneBot:162 - /*-------------START LOGIN PROCESS-----------------*/
+09:44:12,875  INFO SmileOneBot:284 - Error Found during purchase. Closing Browser Now
+09:44:12,875  INFO SmileOneBot:287 - Closing Browser Now
+09:44:12,880  INFO SmileOneBot:311 - Process finished with response:
+{
+    "voucher": {
+        "denom": "86",
+        "playerId": "126606687"
+    },
+    "trxId": "900909",
+    "status": "Error"
+}
+09:44:12,881  INFO SmileOneBot:315 - Saving to Outbox with inbox_id : 80
+09:44:12,881  INFO SmileOneBot:318 - Saving Request to Outbox
+09:51:34,698  INFO SmileOneBot:142 - Incoming Request with URI: /trx/126606687/86/9009099
+09:51:34,700  INFO SmileOneBot:148 - Saving Request to Inbox
+09:51:38,890  INFO SmileOneBot:163 - /*-------------START LOGIN PROCESS-----------------*/
+09:52:59,411  INFO SmileOneBot:142 - Incoming Request with URI: /trx/126606687/86/90090991
+09:52:59,412  INFO SmileOneBot:148 - Saving Request to Inbox
+09:53:00,586  INFO SmileOneBot:163 - /*-------------START LOGIN PROCESS-----------------*/
+09:56:32,989  INFO SmileOneBot:142 - Incoming Request with URI: /trx/126606687/86/900909911
+09:56:32,990  INFO SmileOneBot:148 - Saving Request to Inbox
+09:56:34,990  INFO SmileOneBot:163 - /*-------------START LOGIN PROCESS-----------------*/
+09:56:39,106  INFO SmileOneBot:285 - Error Found during purchase. Closing Browser Now
+09:56:39,106  INFO SmileOneBot:288 - Closing Browser Now
+09:56:39,117  INFO SmileOneBot:312 - Process finished with response:
+{
+    "voucher": {
+        "denom": "86",
+        "playerId": "126606687"
+    },
+    "trxId": "9009099",
+    "status": "Error"
+}
+09:56:39,117  INFO SmileOneBot:316 - Saving to Outbox with inbox_id : 81
+09:56:39,117  INFO SmileOneBot:319 - Saving Request to Outbox
+09:57:10,949  INFO SmileOneBot:142 - Incoming Request with URI: /trx/126606687/86/9009099111
+09:57:10,952  INFO SmileOneBot:148 - Saving Request to Inbox
+09:57:15,356  INFO SmileOneBot:164 - /*-------------START LOGIN PROCESS-----------------*/
+09:57:18,681  INFO SmileOneBot:286 - Error Found during purchase. Closing Browser Now
+09:57:18,681  INFO SmileOneBot:289 - Closing Browser Now
+09:57:18,688  INFO SmileOneBot:313 - Process finished with response:
+{
+    "voucher": {
+        "denom": "86",
+        "playerId": "126606687"
+    },
+    "trxId": "9009099111",
+    "status": "Error"
+}
+09:57:18,688  INFO SmileOneBot:317 - Saving to Outbox with inbox_id : 84
+09:57:18,688  INFO SmileOneBot:320 - Saving Request to Outbox
+09:57:53,581  INFO SmileOneBot:142 - Incoming Request with URI: /trx/126606687/86/90090991111
+09:57:53,581  INFO SmileOneBot:148 - Saving Request to Inbox
+09:57:56,859  INFO SmileOneBot:164 - /*-------------START LOGIN PROCESS-----------------*/
+09:58:00,639  INFO SmileOneBot:286 - Error Found during purchase. Closing Browser Now
+09:58:00,640  INFO SmileOneBot:289 - Closing Browser Now
+09:58:00,640  INFO SmileOneBot:313 - Process finished with response:
+{
+    "voucher": {
+        "denom": "86",
+        "playerId": "126606687"
+    },
+    "trxId": "90090991111",
+    "status": "Error"
+}
+09:58:00,640  INFO SmileOneBot:317 - Saving to Outbox with inbox_id : 85
+09:58:00,640  INFO SmileOneBot:320 - Saving Request to Outbox
+09:58:13,226  INFO SmileOneBot:142 - Incoming Request with URI: /trx/126606687/86/900909911111
+09:58:13,226  INFO SmileOneBot:148 - Saving Request to Inbox
+09:58:16,796  INFO SmileOneBot:164 - /*-------------START LOGIN PROCESS-----------------*/
+09:58:20,258  INFO SmileOneBot:286 - Error Found during purchase. Closing Browser Now
+09:58:20,258  INFO SmileOneBot:289 - Closing Browser Now
+09:58:20,258  INFO SmileOneBot:313 - Process finished with response:
+{
+    "voucher": {
+        "denom": "86",
+        "playerId": "126606687"
+    },
+    "trxId": "900909911111",
+    "status": "Error"
+}
+09:58:20,259  INFO SmileOneBot:317 - Saving to Outbox with inbox_id : 86
+09:58:20,259  INFO SmileOneBot:320 - Saving Request to Outbox
+10:00:40,587  INFO SmileOneBot:313 - Process finished with response:
+{
+    "message": "Trx id Sudah terdapat di Dababase",
+    "status": "Error"
+}
+10:00:42,339  INFO SmileOneBot:142 - Incoming Request with URI: /trx/126606687/86/9009099111111
+10:00:42,339  INFO SmileOneBot:148 - Saving Request to Inbox
+10:00:47,137  INFO SmileOneBot:164 - /*-------------START LOGIN PROCESS-----------------*/
+10:00:50,512  INFO SmileOneBot:286 - Error Found during purchase. Closing Browser Now
+10:00:50,512  INFO SmileOneBot:289 - Closing Browser Now
+10:00:50,513  INFO SmileOneBot:313 - Process finished with response:
+{
+    "voucher": {
+        "denom": "86",
+        "playerId": "126606687"
+    },
+    "trxId": "9009099111111",
+    "status": "Error"
+}
+10:00:50,513  INFO SmileOneBot:317 - Saving to Outbox with inbox_id : 87
+10:00:50,513  INFO SmileOneBot:320 - Saving Request to Outbox
+10:05:10,877  INFO SmileOneBot:145 - Incoming Request with URI: /trx/126606687/86/90090991111111
+10:05:10,879  INFO SmileOneBot:151 - Saving Request to Inbox
+10:05:15,733  INFO SmileOneBot:167 - /*-------------START LOGIN PROCESS-----------------*/
+10:05:19,297  INFO SmileOneBot:289 - Error Found during purchase. Closing Browser Now
+10:05:19,298  INFO SmileOneBot:292 - Closing Browser Now
+10:05:19,303  INFO SmileOneBot:316 - Process finished with response:
+{
+    "voucher": {
+        "denom": "86",
+        "playerId": "126606687"
+    },
+    "trxId": "90090991111111",
+    "status": "Error"
+}
+10:05:19,303  INFO SmileOneBot:320 - Saving to Outbox with inbox_id : 88
+10:05:19,303  INFO SmileOneBot:323 - Saving Request to Outbox
+10:06:17,910  INFO SmileOneBot:145 - Incoming Request with URI: /trx/126606687/86/90090992
+10:06:17,912  INFO SmileOneBot:151 - Saving Request to Inbox
+10:06:22,642  INFO SmileOneBot:167 - /*-------------START LOGIN PROCESS-----------------*/
+10:06:25,926  INFO SmileOneBot:289 - Error Found during purchase. Closing Browser Now
+10:06:25,926  INFO SmileOneBot:292 - Closing Browser Now
+10:06:25,931  INFO SmileOneBot:316 - Process finished with response:
+{
+    "voucher": {
+        "denom": "86",
+        "playerId": "126606687"
+    },
+    "trxId": "90090992",
+    "status": "Error"
+}
+10:06:25,932  INFO SmileOneBot:320 - Saving to Outbox with inbox_id : 89
+10:06:25,932  INFO SmileOneBot:323 - Saving Request to Outbox
+10:14:39,476  INFO SmileOneBot:145 - Incoming Request with URI: /trx/126606687/86/90090993
+10:14:39,477  INFO SmileOneBot:151 - Saving Request to Inbox
+10:14:42,106  INFO SmileOneBot:167 - /*-------------START LOGIN PROCESS-----------------*/
+10:14:45,676  INFO SmileOneBot:289 - Error Found during purchase. Closing Browser Now
+10:14:45,676  INFO SmileOneBot:292 - Closing Browser Now
+10:14:45,677  INFO SmileOneBot:316 - Process finished with response:
+{
+    "voucher": {
+        "denom": "86",
+        "playerId": "126606687"
+    },
+    "trxId": "90090993",
+    "status": "Error"
+}
+10:14:45,677  INFO SmileOneBot:320 - Saving to Outbox with inbox_id : 90
+10:14:45,677  INFO SmileOneBot:323 - Saving Request to Outbox
+10:35:29,025  INFO SmileOneBot:146 - Incoming Request with URI: /trx/126606687/86/90090995
+10:35:29,027  INFO SmileOneBot:152 - Saving Request to Inbox
+10:35:35,697  INFO SmileOneBot:291 - Error Found during purchase. Closing Browser Now
+10:35:35,697  INFO SmileOneBot:294 - Closing Browser Now
+10:35:35,702  INFO SmileOneBot:318 - Process finished with response:
+{
+    "voucher": {
+        "denom": "86",
+        "playerId": "126606687"
+    },
+    "trxId": "90090995",
+    "status": "Error"
+}
+10:35:35,702  INFO SmileOneBot:322 - Saving to Outbox with inbox_id : 91
+10:35:35,702  INFO SmileOneBot:325 - Saving Request to Outbox
+10:36:12,981  INFO SmileOneBot:146 - Incoming Request with URI: /trx/126606687/86/90090996
+10:36:12,984  INFO SmileOneBot:152 - Saving Request to Inbox
+10:36:27,689  INFO SmileOneBot:169 - /*-------------START LOGIN PROCESS-----------------*/
+10:36:50,462  INFO SmileOneBot:200 - /*-------------LOGIN PROCESS FINISHED---------------*/
+10:36:50,463  INFO SmileOneBot:205 - Logged in. Navigating to MLBB Page
+10:36:51,426  INFO SmileOneBot:208 - /*-------------START TOP-UP PROCESS---------------*/
+10:36:53,544  INFO SmileOneBot:238 - Selecting Denom
+10:36:53,603  INFO SmileOneBot:247 - Inserting Player ID
+10:36:53,653  INFO SmileOneBot:249 - Inserting Zone ID
+10:36:53,717  INFO SmileOneBot:251 - Selecting Payment Type
+10:36:54,158  INFO SmileOneBot:254 - Finished Inputs.. Now Processing Top-up...
+10:36:55,090  INFO SmileOneBot:262 - Found Alert with message : USER ID ou Zone ID não exist
+10:36:55,090  INFO SmileOneBot:263 - Player 12660(6687) Does Not Exist
+10:36:57,101  INFO SmileOneBot:294 - Closing Browser Now
+10:36:57,106  INFO SmileOneBot:318 - Process finished with response:
+{
+    "voucher": {
+        "denom": "86",
+        "playerId": "126606687"
+    },
+    "message": "Akun Player tidak di temukan",
+    "trxId": "90090996",
+    "status": "Error"
+}
+10:36:57,107  INFO SmileOneBot:322 - Saving to Outbox with inbox_id : 92
+10:36:57,107  INFO SmileOneBot:325 - Saving Request to Outbox
+11:04:18,768  INFO SmileOneBot:150 - Incoming Request with URI: /trx/126606687/86/90090997
+11:04:18,773  INFO SmileOneBot:156 - Saving Request to Inbox
+11:04:23,256  INFO SmileOneBot:173 - /*-------------START LOGIN PROCESS-----------------*/
+11:04:32,407  INFO SmileOneBot:204 - /*-------------LOGIN PROCESS FINISHED---------------*/
+11:04:32,407  INFO SmileOneBot:209 - Logged in. Navigating to MLBB Page
+11:04:38,371  INFO SmileOneBot:212 - /*-------------START TOP-UP PROCESS---------------*/
+11:04:40,480  INFO SmileOneBot:242 - Selecting Denom
+11:04:40,543  INFO SmileOneBot:251 - Inserting Player ID
+11:04:40,591  INFO SmileOneBot:253 - Inserting Zone ID
+11:04:40,661  INFO SmileOneBot:255 - Selecting Payment Type
+11:04:41,123  INFO SmileOneBot:258 - Finished Inputs.. Now Processing Top-up...
+11:04:41,741  INFO SmileOneBot:266 - Found Alert with message : USER ID ou Zone ID não exist
+11:04:41,741  INFO SmileOneBot:267 - Player 12660(6687) Does Not Exist
+11:04:43,745  INFO SmileOneBot:299 - Closing Browser Now
+11:04:43,750  INFO SmileOneBot:324 - Process finished with response:
+{
+    "voucher": {
+        "denom": "86",
+        "playerId": "126606687"
+    },
+    "message": "Akun Player tidak di temukan",
+    "trxId": "90090997",
+    "status": "Error"
+}
+11:04:43,751  INFO SmileOneBot:328 - Saving to Outbox with inbox_id : 93
+11:04:43,751  INFO SmileOneBot:331 - Saving Request to Outbox
+11:05:09,402  INFO SmileOneBot:150 - Incoming Request with URI: /trx/126606687/86/90090998
+11:05:09,404  INFO SmileOneBot:156 - Saving Request to Inbox
+11:05:14,778  INFO SmileOneBot:173 - /*-------------START LOGIN PROCESS-----------------*/
+11:05:25,445  INFO SmileOneBot:204 - /*-------------LOGIN PROCESS FINISHED---------------*/
+11:05:25,446  INFO SmileOneBot:209 - Logged in. Navigating to MLBB Page
+11:05:26,633  INFO SmileOneBot:212 - /*-------------START TOP-UP PROCESS---------------*/
+11:05:28,741  INFO SmileOneBot:242 - Selecting Denom
+11:05:28,806  INFO SmileOneBot:251 - Inserting Player ID
+11:05:28,857  INFO SmileOneBot:253 - Inserting Zone ID
+11:05:28,929  INFO SmileOneBot:255 - Selecting Payment Type
+11:05:29,421  INFO SmileOneBot:258 - Finished Inputs.. Now Processing Top-up...
+11:05:30,207  INFO SmileOneBot:266 - Found Alert with message : USER ID ou Zone ID não exist
+11:05:30,207  INFO SmileOneBot:267 - Player 12660(6687) Does Not Exist
+11:05:32,214  INFO SmileOneBot:299 - Closing Browser Now
+11:05:32,220  INFO SmileOneBot:324 - Process finished with response:
+{
+    "voucher": {
+        "denom": "86",
+        "playerId": "126606687"
+    },
+    "message": "Akun Player tidak di temukan",
+    "trxId": "90090998",
+    "status": "Error"
+}
+11:05:32,220  INFO SmileOneBot:328 - Saving to Outbox with inbox_id : 94
+11:05:32,220  INFO SmileOneBot:331 - Saving Request to Outbox
+11:06:28,255  INFO SmileOneBot:150 - Incoming Request with URI: /trx/126606687/86/9009099121
+11:06:28,258  INFO SmileOneBot:156 - Saving Request to Inbox
+11:06:32,578  INFO SmileOneBot:173 - /*-------------START LOGIN PROCESS-----------------*/
+11:06:40,970  INFO SmileOneBot:204 - /*-------------LOGIN PROCESS FINISHED---------------*/
+11:06:40,970  INFO SmileOneBot:209 - Logged in. Navigating to MLBB Page
+11:06:41,961  INFO SmileOneBot:212 - /*-------------START TOP-UP PROCESS---------------*/
+11:06:44,093  INFO SmileOneBot:242 - Selecting Denom
+11:06:44,177  INFO SmileOneBot:251 - Inserting Player ID
+11:06:44,245  INFO SmileOneBot:253 - Inserting Zone ID
+11:06:44,353  INFO SmileOneBot:255 - Selecting Payment Type
+11:06:44,904  INFO SmileOneBot:258 - Finished Inputs.. Now Processing Top-up...
+11:06:45,564  INFO SmileOneBot:266 - Found Alert with message : USER ID ou Zone ID não exist
+11:06:45,565  INFO SmileOneBot:267 - Player 12660(6687) Does Not Exist
+11:06:47,566  INFO SmileOneBot:299 - Closing Browser Now
+11:06:48,231  INFO SmileOneBot:324 - Process finished with response:
+{
+    "voucher": {
+        "denom": "86",
+        "playerId": "126606687"
+    },
+    "message": "Akun Player tidak di temukan",
+    "trxId": "9009099121",
+    "status": "Error"
+}
+11:06:48,232  INFO SmileOneBot:328 - Saving to Outbox with inbox_id : 95
+11:06:48,233  INFO SmileOneBot:331 - Saving Request to Outbox
+11:07:14,779  INFO SmileOneBot:150 - Incoming Request with URI: /trx/126606687/86/9009012
+11:07:14,781  INFO SmileOneBot:156 - Saving Request to Inbox
+11:07:19,952  INFO SmileOneBot:173 - /*-------------START LOGIN PROCESS-----------------*/
+11:07:28,584  INFO SmileOneBot:204 - /*-------------LOGIN PROCESS FINISHED---------------*/
+11:07:28,584  INFO SmileOneBot:209 - Logged in. Navigating to MLBB Page
+11:07:29,857  INFO SmileOneBot:212 - /*-------------START TOP-UP PROCESS---------------*/
+11:07:32,002  INFO SmileOneBot:242 - Selecting Denom
+11:07:32,116  INFO SmileOneBot:251 - Inserting Player ID
+11:07:32,323  INFO SmileOneBot:253 - Inserting Zone ID
+11:07:32,421  INFO SmileOneBot:255 - Selecting Payment Type
+11:07:32,963  INFO SmileOneBot:258 - Finished Inputs.. Now Processing Top-up...
+11:07:33,553  INFO SmileOneBot:266 - Found Alert with message : USER ID ou Zone ID não exist
+11:07:33,553  INFO SmileOneBot:267 - Player 12660(6687) Does Not Exist
+11:07:35,566  INFO SmileOneBot:299 - Closing Browser Now
+11:07:35,573  INFO SmileOneBot:324 - Process finished with response:
+{
+    "voucher": {
+        "denom": "86",
+        "playerId": "126606687"
+    },
+    "message": "Akun Player tidak di temukan",
+    "trxId": "9009012",
+    "status": "Error"
+}
+11:07:35,573  INFO SmileOneBot:328 - Saving to Outbox with inbox_id : 96
+11:07:35,573  INFO SmileOneBot:331 - Saving Request to Outbox
