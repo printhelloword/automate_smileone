@@ -14,6 +14,8 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.firefox.FirefoxOptions;
+import org.openqa.selenium.firefox.FirefoxProfile;
+import org.openqa.selenium.firefox.ProfilesIni;
 import org.openqa.selenium.ie.InternetExplorerDriver;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
@@ -29,9 +31,10 @@ import java.util.Date;
 import java.util.HashMap;
 import java.util.Map;
 import java.util.Set;
+import java.util.concurrent.TimeUnit;
 
 @RestController
-public class TransactionControllerChrome {
+public class TransactionController {
 
     private static WebDriver driver ;
     private static Map<String, Object> vars = new HashMap<String, Object>();
@@ -50,6 +53,15 @@ public class TransactionControllerChrome {
 
     @Value("${auto.close}")
     private String autoClose;
+
+    @Value("${login.method}")
+    private String loginMethod;
+
+    @Value("${browser.name}")
+    private String browserName;
+
+    @Value("${session.firefox}")
+    private String firefoxMode;
 
     @Value("${denom.1}")
     private String denom1;
@@ -73,6 +85,9 @@ public class TransactionControllerChrome {
     private String denom10;
     @Value("${denom.11}")
     private String denom11;
+
+    public final String FIREFOX_SESSION_PRIVATE = "private";
+    public final String FIREFOX_SESSION_PROFILE = "profile";
 
     @GetMapping("/trx/{playerId}/{denom}/{trxId}")
     public String startPurchase(
@@ -98,14 +113,6 @@ public class TransactionControllerChrome {
         System.setProperty("webdriver.chrome.driver","webdrivers\\chromedriver.exe");
         System.setProperty("webdriver.gecko.driver","webdrivers\\geckodriver.exe");
         System.setProperty("webdriver.ie.driver","webdrivers\\IEDriverServer.exe");
-
-        /*option start chrome incognito mode*/
-        ChromeOptions options = new ChromeOptions();
-        options.addArguments("--incognito");
-
-        FirefoxOptions firefoxOptions = new FirefoxOptions();
-        firefoxOptions.setCapability("browser.privatebrowsing.autostart", true);
-
 
         /*DB Helpers*/
         DBInboxes dbInboxes = new DBInboxes();
@@ -163,9 +170,8 @@ public class TransactionControllerChrome {
                             }
                             /*END CHECKING&SAVING INBOX*/
 
-                            driver = new ChromeDriver(options);
-//                            driver = new FirefoxDriver(firefoxOptions);
-//                            driver = new InternetExplorerDriver();
+                            SmileOneBot.logger.info("Starting Browser : "+browserName);
+                            initBrowser(browserName);
 
                             Thread.sleep(Integer.parseInt(waitTime));
 
@@ -173,7 +179,6 @@ public class TransactionControllerChrome {
                             SmileOneBot.logger.log(Level.INFO, "/*-------------START LOGIN PROCESS-----------------*/");
 
                             driver.get("https://www.smile.one/customer/account/login");
-//                            driver.get("https://www.smile.one/");
 
                             driver.manage().window().setSize(new Dimension(1547, 950));
 
@@ -181,28 +186,10 @@ public class TransactionControllerChrome {
                             vars.put("window_handles", driver.getWindowHandles());
                             /*END HANDLE NEW WINDOWS AFTER DRIVER.GET*/
 
-                            driver.findElement(By.cssSelector(".vk > .login_method_p2")).click();
-
-                            /*SWITCH & HANDLE POPUP LOGIN WINDOWS*/
-                            vars.put("win2423", waitForWindow(2000));
-                            vars.put("root", driver.getWindowHandle());
-                            driver.switchTo().window(vars.get("win2423").toString());
-                            /*END SWITCH & HANDLE POPUP LOGIN WINDOWS*/
-
-                            /*START LOGIN PROCESS*/
-                            driver.findElement(By.name("email")).click();
-                            driver.findElement(By.name("email")).sendKeys(botUsername);
-                            driver.findElement(By.name("pass")).sendKeys(botPassword);
-                            driver.findElement(By.name("pass")).sendKeys(Keys.ENTER);
-                            /*END LOGIN PROCESS*/
-
-                            /*Handle Switch to HomePage after Loggedin*/
-                            //driver.close();
+                            processLogin(loginMethod, botUsername, botPassword);
                             driver.switchTo().window(vars.get("root").toString());
-                            //driver.close();
 
                             SmileOneBot.logger.log(Level.INFO, "/*-------------LOGIN PROCESS FINISHED---------------*/");
-                            /*End Handle Switch to HomePage after Loggedin*/
 
                             /*Navigate to MLBB Page from Homepage after logged in*/
 
@@ -210,18 +197,6 @@ public class TransactionControllerChrome {
                             driver.navigate().to("https://www.smile.one/merchant/mobilelegends?source=other");
                             /*START PURCHASE*/
                             SmileOneBot.logger.log(Level.INFO, "/*-------------START TOP-UP PROCESS---------------*/");
-
-                            /*Checking for Page Fully Loaded*/
-                            /*while (true) {
-                                try {
-                                    driver.findElement(By.cssSelector(".listol1 > .list-li:nth-child(3) .imgicon")).click();
-                                    logger.info("FOUND MLBB MENU.. HOMEPAGE HAS BEEN LOADED IS CONFIRMED");
-                                    break;
-                                } catch (Exception e) {
-                                    logger.info("MLBB MENU NOT FOUND.. HOMEPAGE NOT FULLY LOADED YET");
-                                }
-                                Thread.sleep(2000);
-                            }*/
 
                             /*Switch to MLBB Page*/
                             vars.put("win3322", waitForWindow(2000));
@@ -235,17 +210,19 @@ public class TransactionControllerChrome {
                             int maxRetry=5;
                             int retryInterval=2000; //ms
 
-                            while(true){
-//                            for(int i=0; i<maxRetry; i++){
-                                try {
+//                            while(true){
+////                            for(int i=0; i<maxRetry; i++){
+//                                try {
+                            driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+
                                     driver.findElement(By.cssSelector(getDenomELementLocator(denom))).click();
                                     SmileOneBot.logger.info( "Selecting Denom");
-                                    break;
-                                } catch (Exception e) {
-                                    SmileOneBot.logger.info("Waiting for MLBB page in readyState");
-                                }
-                                Thread.sleep(retryInterval);
-                            }
+//                                    break;
+//                                } catch (Exception e) {
+//                                    SmileOneBot.logger.info("Waiting for MLBB page in readyState");
+//                                }
+//                                Thread.sleep(retryInterval);
+//                            }
 
                             driver.findElement(By.id("puseid")).click();
                             SmileOneBot.logger.info( "Inserting Player ID");
@@ -258,6 +235,10 @@ public class TransactionControllerChrome {
                             SmileOneBot.logger.info( "Finished Inputs.. Now Processing Top-up...");
 
                             if (driver.getCurrentUrl().equalsIgnoreCase("https://www.smile.one/merchant/mobilelegends?source=other")) {
+
+                                voucherPojo.setPlayerId(playerId);
+                                voucherPojo.setDenom(denom);
+
                                 WebDriverWait wait = new WebDriverWait(driver, 5);
                                 /*Next try catch try to validates whether alert is present(player id does not exist) / payment is success or failed */
                                 try {
@@ -266,21 +247,18 @@ public class TransactionControllerChrome {
                                     SmileOneBot.logger.info("Found Alert with message : " + alrt);
                                     SmileOneBot.logger.info("Player " + accountId + "(" + zoneId + ") Does Not Exist");
                                     responseMsg = "Akun Player tidak di temukan";
-//                                    responseMsg = "Player Does not Exist";
                                 } catch (Exception e) {
-                                    SmileOneBot.logger.info("Player: "+accountId+" ("+zoneId+") di temukan. Melanjutkan top-up...");
-//                                    SmileOneBot.logger.info("Player "+accountId+" ("+zoneId+") exists. Countinue top-up...");
+//                                    SmileOneBot.logger.info("Player: "+accountId+" ("+zoneId+") di temukan. Melanjutkan top-up...");
+                                    SmileOneBot.logger.info("Player "+accountId+" ("+zoneId+") exists. Countinue top-up...");
                                     /*this statement validates if balance is insufficient*/
                                     if (driver.getCurrentUrl().equalsIgnoreCase("https://www.smile.one/customer/recharge")) {
                                         SmileOneBot.logger.info("Insufficient Balance");
                                         responseMsg = "Saldo tidak mencukupi";
-//                                        responseMsg = "Insuficient Balance";
                                     }
                                     /*this statement validates if purchase is successful*/
                                     else if (driver.getCurrentUrl().equalsIgnoreCase("https://www.smile.one/message/success")) {
                                         SmileOneBot.logger.info("");
                                         responseMsg = "Top-up Berhasil";
-//                                        responseMsg = "Top-up Successful";
                                         responseStatus = status00;
                                     }
                                 }
@@ -292,9 +270,11 @@ public class TransactionControllerChrome {
 
                         } catch (Exception e) {
                             e.printStackTrace();
-                            SmileOneBot.logger.info("Error Found during purchase. Closing Browser Now");
-                            if(autoClose.equalsIgnoreCase(auto_close))
+                            SmileOneBot.logger.info("Error Found during purchase.");
+                            if(autoClose.equalsIgnoreCase(auto_close)) {
+                                SmileOneBot.logger.info("Closing Browser Now");
                                 driver.quit();
+                            }
                         } finally {
                             SmileOneBot.logger.info("Closing Browser Now");
                             if(autoClose.equalsIgnoreCase(auto_close))
@@ -302,9 +282,6 @@ public class TransactionControllerChrome {
                         }
 
                         /*Start Generating Response JSON*/
-                        voucherPojo.setPlayerId(playerId);
-                        voucherPojo.setDenom(denom);
-
                         responsePojo.setVoucher(voucherPojo);
                         responsePojo.setMessage(responseMsg);
                         responsePojo.setTrxId(trxId);
@@ -389,6 +366,77 @@ public class TransactionControllerChrome {
             }
         }
         return result;
+    }
+
+    private void initBrowser(String driverName){
+        /*Chrome Parameters*/
+        ChromeOptions options = new ChromeOptions();
+        options.addArguments("--incognito");
+
+        /*Firefox Parameters*/
+        ProfilesIni profile = new ProfilesIni();
+        FirefoxProfile myprofile = profile.getProfile("botSmileOne");
+        FirefoxOptions firefoxOptions = new FirefoxOptions();
+
+        if (driverName.equalsIgnoreCase("chrome"))
+            driver = new ChromeDriver(options);
+        else if (driverName.equalsIgnoreCase("firefox")) {
+            if (firefoxMode.equalsIgnoreCase(FIREFOX_SESSION_PRIVATE))
+                firefoxOptions.setCapability("browser.privatebrowsing.autostart", true);
+            else if (firefoxMode.equalsIgnoreCase(FIREFOX_SESSION_PROFILE))
+                firefoxOptions.setProfile(myprofile);
+
+            driver = new FirefoxDriver(firefoxOptions);
+        }
+    }
+
+    private void processLogin(String loginMethod, String userName, String userPwd){
+        SmileOneBot.logger.log(Level.INFO, "Selecting Login Method: "+loginMethod);
+
+        if (loginMethod.equalsIgnoreCase("vk")){
+            driver.findElement(By.cssSelector(".vk > .login_method_p2")).click(); // vk login
+
+            /*SWITCH & HANDLE POPUP LOGIN WINDOWS*/
+            vars.put("win2423", waitForWindow(2000));
+            vars.put("root", driver.getWindowHandle());
+            driver.switchTo().window(vars.get("win2423").toString());
+            /*END SWITCH & HANDLE POPUP LOGIN WINDOWS*/
+
+            driver.findElement(By.name("email")).click();
+            driver.findElement(By.name("email")).sendKeys(userName);
+            driver.findElement(By.name("pass")).sendKeys(userPwd);
+            driver.findElement(By.name("pass")).sendKeys(Keys.ENTER);
+        }
+        else if (loginMethod.equalsIgnoreCase("google")){
+            if(firefoxMode.equalsIgnoreCase(FIREFOX_SESSION_PRIVATE)) {
+                SmileOneBot.logger.info("Start Firefox in Profile Mode");
+                driver.findElement(By.cssSelector(".google")).click(); //google login
+
+                /*SWITCH & HANDLE POPUP LOGIN WINDOWS*/
+                vars.put("win2423", waitForWindow(2000));
+                vars.put("root", driver.getWindowHandle());
+                driver.switchTo().window(vars.get("win2423").toString());
+                /*END SWITCH & HANDLE POPUP LOGIN WINDOWS*/
+
+                driver.findElement(By.id("identifierId")).click();
+                driver.findElement(By.id("identifierId")).sendKeys(userName);
+                driver.findElement(By.id("identifierId")).sendKeys(Keys.ENTER);
+                driver.findElement(By.name("password")).sendKeys(userPwd);
+                driver.findElement(By.name("password")).sendKeys(Keys.ENTER);
+            }
+            else if(firefoxMode.equalsIgnoreCase(FIREFOX_SESSION_PROFILE)) {
+                SmileOneBot.logger.info("Start Firefox in Private Mode");
+                waitForWindow(4000);
+                driver.findElement(By.cssSelector(".google")).click();
+
+                /*SWITCH & HANDLE POPUP LOGIN WINDOWS*/
+                vars.put("win2423", waitForWindow(2000));
+                vars.put("root", driver.getWindowHandle());
+                driver.switchTo().window(vars.get("win2423").toString());
+                /*END SWITCH & HANDLE POPUP LOGIN WINDOWS*/
+
+            }
+        }
     }
 
     private String getDenomELementLocator(String denomInput) {
