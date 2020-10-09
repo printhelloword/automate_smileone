@@ -224,8 +224,6 @@ public class TransactionControllerChrome {
                 driver.findElement(By.cssSelector(".section-nav:nth-child(1) .smilecoin > .cartao-name")).click();
                 driver.findElement(By.id("Nav-btnpc")).click();
 
-//                driver.switchTo().window(vars.get("root").toString());
-
                 if (driver.getCurrentUrl().equalsIgnoreCase("https://www.smile.one/merchant/mobilelegends?source=other")) {
                     WebDriverWait wait = new WebDriverWait(driver, 5);
                     try {
@@ -248,8 +246,6 @@ public class TransactionControllerChrome {
                         }
                     }
                 }
-
-
 
                 /*VALIDATION ON SUCCESS PURCHASE (COMMING SOON)*/
 

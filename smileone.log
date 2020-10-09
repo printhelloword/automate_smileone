@@ -12126,3 +12126,22 @@
 }
 18:04:35,949  INFO SmileOneBot:293 - Saving to Outbox with inbox_id : 55
 18:04:35,950  INFO SmileOneBot:296 - Saving Request to Outbox
+18:04:56,199  INFO SmileOneBot:132 - Saving Request to Inbox
+18:05:00,347  INFO SmileOneBot:151 - /*-------------START LOGIN PROCESS-----------------*/
+18:05:08,700  INFO SmileOneBot:181 - /*-------------LOGIN PROCESS FINISHED---------------*/
+18:05:09,882  INFO SmileOneBot:188 - /*-------------START PURCHASE PROCESS---------------*/
+18:05:11,998  INFO SmileOneBot:213 - FOUND SELECTED DENOM.. MLBB PAGE HAS BEEN LOADED IS CONFIRMED
+18:05:18,196  INFO SmileOneBot:239 - Player exists
+18:05:18,205  INFO SmileOneBot:245 - 
+18:05:20,224  INFO SmileOneBot:279 - PURCHASE FINISHED WITH DETAILS :
+{
+    "voucher": {
+        "denom": "86",
+        "playerId": 1266066872632
+    },
+    "message": "Top-up Successful",
+    "trxId": "234726837238",
+    "status": "Success"
+}
+18:05:20,224  INFO SmileOneBot:283 - Saving to Outbox with inbox_id : 56
+18:05:20,224  INFO SmileOneBot:286 - Saving Request to Outbox
