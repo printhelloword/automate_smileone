@@ -8391,3 +8391,846 @@
 }
 14:51:52,261  INFO SmileOneBot:305 - Saving to Outbox with inbox_id : 154
 14:51:52,261  INFO SmileOneBot:308 - Saving Request to Outbox
+14:56:06,885  INFO SmileOneBot:157 - Incoming Request with URI: /trx/1266066872632/86/009988
+14:56:06,887  INFO SmileOneBot:163 - Saving Request to Inbox
+14:56:06,932  INFO SmileOneBot:173 - Starting Browser : firefox
+14:56:33,789  INFO SmileOneBot:179 - /*-------------START LOGIN PROCESS-----------------*/
+14:56:35,810  INFO SmileOneBot:394 - Selecting Login Method: google
+14:56:35,811  INFO SmileOneBot:428 - Start Firefox in Private Mode
+14:56:42,929  INFO SmileOneBot:192 - /*-------------LOGIN PROCESS FINISHED---------------*/
+14:56:42,929  INFO SmileOneBot:196 - Logged in. Navigating to MLBB Page
+14:56:44,343  INFO SmileOneBot:199 - /*-------------START TOP-UP PROCESS---------------*/
+14:56:46,698  INFO SmileOneBot:219 - Selecting Denom
+14:56:46,960  INFO SmileOneBot:228 - Inserting Player ID
+14:56:47,032  INFO SmileOneBot:230 - Inserting Zone ID
+14:56:47,081  INFO SmileOneBot:232 - Selecting Payment Type
+14:56:48,201  INFO SmileOneBot:235 - Finished Inputs.. Now Processing Top-up...
+14:56:53,380  INFO SmileOneBot:252 - Player 126606687 (2632) exists. Countinue top-up...
+14:56:53,382  INFO SmileOneBot:255 - Insufficient Balance
+14:56:55,397  INFO SmileOneBot:279 - Closing Browser Now
+14:56:58,259  INFO SmileOneBot:301 - Process finished with response:
+{
+    "voucher": {
+        "denom": "86",
+        "playerId": "1266066872632"
+    },
+    "message": "Saldo tidak mencukupi",
+    "trxId": "009988",
+    "status": "Error"
+}
+14:56:58,259  INFO SmileOneBot:305 - Saving to Outbox with inbox_id : 155
+14:56:58,259  INFO SmileOneBot:308 - Saving Request to Outbox
+16:36:41,024  INFO SmileOneBot:166 - Incoming Request with URI: /trx/1266066872632/86/12312312
+16:36:41,026  INFO SmileOneBot:172 - Saving Request to Inbox
+16:36:41,064  INFO SmileOneBot:182 - Starting Browser : chrome
+16:36:49,401  INFO SmileOneBot:188 - /*-------------START LOGIN PROCESS-----------------*/
+16:36:52,641  INFO SmileOneBot:393 - Selecting Login Method: vk
+16:36:59,770  INFO SmileOneBot:201 - /*-------------LOGIN PROCESS FINISHED---------------*/
+16:36:59,771  INFO SmileOneBot:205 - Logged in. Navigating to MLBB Page
+16:37:00,963  INFO SmileOneBot:208 - /*-------------START TOP-UP PROCESS---------------*/
+16:37:03,093  INFO SmileOneBot:222 - Selecting Denom
+16:37:03,169  INFO SmileOneBot:225 - Inserting Player ID
+16:37:03,232  INFO SmileOneBot:227 - Inserting Zone ID
+16:37:03,320  INFO SmileOneBot:229 - Selecting Payment Type
+16:37:04,033  INFO SmileOneBot:232 - Finished Inputs.. Now Processing Top-up...
+16:37:09,504  INFO SmileOneBot:249 - Player 126606687 (2632) exists. Countinue top-up...
+16:37:16,523  INFO SmileOneBot:278 - Closing Browser Now
+16:37:17,165  INFO SmileOneBot:300 - Process finished with response:
+{
+    "voucher": {
+        "denom": "86",
+        "playerId": "1266066872632"
+    },
+    "trxId": "12312312",
+    "status": "Error"
+}
+16:37:17,166  INFO SmileOneBot:304 - Saving to Outbox with inbox_id : 166
+16:37:17,166  INFO SmileOneBot:307 - Saving Request to Outbox
+16:38:21,214  INFO SmileOneBot:301 - Process finished with response:
+{
+    "message": "Trx id Sudah terdapat di Dababase",
+    "status": "Error"
+}
+16:38:22,516  INFO SmileOneBot:166 - Incoming Request with URI: /trx/1266066872632/86/123123111
+16:38:22,516  INFO SmileOneBot:172 - Saving Request to Inbox
+16:38:22,546  INFO SmileOneBot:182 - Starting Browser : chrome
+16:38:29,037  INFO SmileOneBot:188 - /*-------------START LOGIN PROCESS-----------------*/
+16:38:31,885  INFO SmileOneBot:394 - Selecting Login Method: vk
+16:38:37,349  INFO SmileOneBot:201 - /*-------------LOGIN PROCESS FINISHED---------------*/
+16:38:37,349  INFO SmileOneBot:205 - Logged in. Navigating to MLBB Page
+16:38:38,314  INFO SmileOneBot:208 - /*-------------START TOP-UP PROCESS---------------*/
+16:38:40,453  INFO SmileOneBot:222 - Selecting Denom
+16:38:40,542  INFO SmileOneBot:225 - Inserting Player ID
+16:38:40,603  INFO SmileOneBot:227 - Inserting Zone ID
+16:38:40,781  INFO SmileOneBot:229 - Selecting Payment Type
+16:38:41,838  INFO SmileOneBot:232 - Finished Inputs.. Now Processing Top-up...
+16:38:47,254  INFO SmileOneBot:249 - Player 126606687 (2632) exists. Countinue top-up...
+16:38:54,285  INFO SmileOneBot:279 - Closing Browser Now
+16:38:54,915  INFO SmileOneBot:301 - Process finished with response:
+{
+    "voucher": {
+        "denom": "86",
+        "playerId": "1266066872632"
+    },
+    "trxId": "123123111",
+    "status": "Error"
+}
+16:38:54,915  INFO SmileOneBot:305 - Saving to Outbox with inbox_id : 167
+16:38:54,915  INFO SmileOneBot:308 - Saving Request to Outbox
+16:54:01,508  INFO SmileOneBot:163 - Incoming Request with URI: /trx/1266066872632/86/99898989
+16:54:01,510  INFO SmileOneBot:169 - Saving Request to Inbox
+16:54:01,536  INFO SmileOneBot:178 - Starting Browser : chrome
+16:54:07,752  INFO SmileOneBot:184 - /*-------------START LOGIN PROCESS-----------------*/
+16:54:10,836  INFO SmileOneBot:392 - Selecting Login Method: vk
+16:54:16,992  INFO SmileOneBot:197 - /*-------------LOGIN PROCESS FINISHED---------------*/
+16:54:16,992  INFO SmileOneBot:201 - Logged in. Navigating to MLBB Page
+16:54:18,101  INFO SmileOneBot:204 - /*-------------START TOP-UP PROCESS---------------*/
+16:54:20,210  INFO SmileOneBot:218 - Selecting Denom
+16:54:20,277  INFO SmileOneBot:221 - Inserting Player ID
+16:54:20,348  INFO SmileOneBot:223 - Inserting Zone ID
+16:54:20,424  INFO SmileOneBot:225 - Selecting Payment Type
+16:54:21,140  INFO SmileOneBot:228 - Finished Inputs.. Now Processing Top-up...
+16:54:26,295  INFO SmileOneBot:245 - Player 126606687 (2632) exists. Countinue top-up...
+16:54:38,358  INFO SmileOneBot:277 - Closing Browser Now
+16:54:38,988  INFO SmileOneBot:299 - Process finished with response:
+{
+    "voucher": {
+        "denom": "86",
+        "playerId": "1266066872632"
+    },
+    "trxId": "99898989",
+    "status": "Error"
+}
+16:54:38,989  INFO SmileOneBot:303 - Saving to Outbox with inbox_id : 168
+16:54:38,989  INFO SmileOneBot:306 - Saving Request to Outbox
+16:55:33,264  INFO SmileOneBot:163 - Incoming Request with URI: /trx/1266066872632/86/991123
+16:55:33,267  INFO SmileOneBot:169 - Saving Request to Inbox
+16:55:33,297  INFO SmileOneBot:178 - Starting Browser : chrome
+16:55:39,483  INFO SmileOneBot:184 - /*-------------START LOGIN PROCESS-----------------*/
+16:55:42,370  INFO SmileOneBot:396 - Selecting Login Method: vk
+16:55:47,869  INFO SmileOneBot:197 - /*-------------LOGIN PROCESS FINISHED---------------*/
+16:55:47,870  INFO SmileOneBot:201 - Logged in. Navigating to MLBB Page
+16:55:48,809  INFO SmileOneBot:204 - /*-------------START TOP-UP PROCESS---------------*/
+16:55:50,937  INFO SmileOneBot:218 - Selecting Denom
+16:55:51,001  INFO SmileOneBot:221 - Inserting Player ID
+16:55:51,065  INFO SmileOneBot:223 - Inserting Zone ID
+16:55:51,150  INFO SmileOneBot:225 - Selecting Payment Type
+16:55:52,377  INFO SmileOneBot:228 - Finished Inputs.. Now Processing Top-up...
+16:55:57,445  INFO SmileOneBot:245 - Player 126606687 (2632) exists. Countinue top-up...
+16:56:09,482  INFO SmileOneBot:281 - Closing Browser Now
+16:56:10,054  INFO SmileOneBot:303 - Process finished with response:
+{
+    "voucher": {
+        "denom": "86",
+        "playerId": "1266066872632"
+    },
+    "trxId": "991123",
+    "status": "Error"
+}
+16:56:10,054  INFO SmileOneBot:307 - Saving to Outbox with inbox_id : 169
+16:56:10,055  INFO SmileOneBot:310 - Saving Request to Outbox
+17:01:33,221  INFO SmileOneBot:163 - Incoming Request with URI: /trx/1266066872632/86/991122
+17:01:33,223  INFO SmileOneBot:169 - Saving Request to Inbox
+17:01:33,251  INFO SmileOneBot:178 - Starting Browser : chrome
+17:01:39,530  INFO SmileOneBot:184 - /*-------------START LOGIN PROCESS-----------------*/
+17:01:42,618  INFO SmileOneBot:396 - Selecting Login Method: vk
+17:01:48,246  INFO SmileOneBot:197 - /*-------------LOGIN PROCESS FINISHED---------------*/
+17:01:48,247  INFO SmileOneBot:201 - Logged in. Navigating to MLBB Page
+17:01:49,364  INFO SmileOneBot:204 - /*-------------START TOP-UP PROCESS---------------*/
+17:01:51,506  INFO SmileOneBot:218 - Selecting Denom
+17:01:51,605  INFO SmileOneBot:221 - Inserting Player ID
+17:01:51,703  INFO SmileOneBot:223 - Inserting Zone ID
+17:01:51,844  INFO SmileOneBot:225 - Selecting Payment Type
+17:01:52,766  INFO SmileOneBot:228 - Finished Inputs.. Now Processing Top-up...
+17:01:52,782  INFO SmileOneBot:245 - Player 126606687 (2632) exists. Countinue top-up...
+17:02:04,876  INFO SmileOneBot:281 - Closing Browser Now
+17:02:05,523  INFO SmileOneBot:303 - Process finished with response:
+{
+    "voucher": {
+        "denom": "86",
+        "playerId": "1266066872632"
+    },
+    "trxId": "991122",
+    "status": "Error"
+}
+17:02:05,523  INFO SmileOneBot:307 - Saving to Outbox with inbox_id : 170
+17:02:05,523  INFO SmileOneBot:310 - Saving Request to Outbox
+17:04:23,389  INFO SmileOneBot:163 - Incoming Request with URI: /trx/1266066872632/86/9911211
+17:04:23,391  INFO SmileOneBot:169 - Saving Request to Inbox
+17:04:23,420  INFO SmileOneBot:178 - Starting Browser : chrome
+17:04:29,922  INFO SmileOneBot:184 - /*-------------START LOGIN PROCESS-----------------*/
+17:04:32,942  INFO SmileOneBot:396 - Selecting Login Method: vk
+17:04:38,433  INFO SmileOneBot:197 - /*-------------LOGIN PROCESS FINISHED---------------*/
+17:04:38,433  INFO SmileOneBot:201 - Logged in. Navigating to MLBB Page
+17:04:39,418  INFO SmileOneBot:204 - /*-------------START TOP-UP PROCESS---------------*/
+17:04:41,535  INFO SmileOneBot:218 - Selecting Denom
+17:04:41,608  INFO SmileOneBot:221 - Inserting Player ID
+17:04:41,673  INFO SmileOneBot:223 - Inserting Zone ID
+17:04:41,748  INFO SmileOneBot:225 - Selecting Payment Type
+17:04:42,501  INFO SmileOneBot:228 - Finished Inputs.. Now Processing Top-up...
+17:04:42,513  INFO SmileOneBot:246 - Player 126606687 (2632) exists. Countinue top-up...
+17:04:52,184  INFO SmileOneBot:281 - Closing Browser Now
+17:04:52,753  INFO SmileOneBot:303 - Process finished with response:
+{
+    "voucher": {
+        "denom": "86",
+        "playerId": "1266066872632"
+    },
+    "trxId": "9911211",
+    "status": "Error"
+}
+17:04:52,754  INFO SmileOneBot:307 - Saving to Outbox with inbox_id : 171
+17:04:52,754  INFO SmileOneBot:310 - Saving Request to Outbox
+17:06:17,939  INFO SmileOneBot:163 - Incoming Request with URI: /trx/1266066872632/86/991125
+17:06:17,941  INFO SmileOneBot:169 - Saving Request to Inbox
+17:06:17,983  INFO SmileOneBot:178 - Starting Browser : firefox
+17:06:22,871  INFO SmileOneBot:275 - Error Found during purchase.
+17:06:22,871  INFO SmileOneBot:277 - Closing Browser Now
+17:06:22,871  INFO SmileOneBot:281 - Closing Browser Now
+17:07:00,052  INFO SmileOneBot:303 - Process finished with response:
+{
+    "message": "Trx id Sudah terdapat di Dababase",
+    "status": "Error"
+}
+17:07:03,872  INFO SmileOneBot:163 - Incoming Request with URI: /trx/1266066872632/86/9911258
+17:07:03,872  INFO SmileOneBot:169 - Saving Request to Inbox
+17:07:03,876  INFO SmileOneBot:178 - Starting Browser : firefox
+17:07:10,083  INFO SmileOneBot:184 - /*-------------START LOGIN PROCESS-----------------*/
+17:07:11,492  INFO SmileOneBot:396 - Selecting Login Method: vk
+17:07:13,786  INFO SmileOneBot:275 - Error Found during purchase.
+17:07:13,786  INFO SmileOneBot:277 - Closing Browser Now
+17:07:14,880  INFO SmileOneBot:281 - Closing Browser Now
+17:07:14,880  INFO SmileOneBot:303 - Process finished with response:
+{
+    "voucher": {},
+    "trxId": "9911258",
+    "status": "Error"
+}
+17:07:14,882  INFO SmileOneBot:307 - Saving to Outbox with inbox_id : 173
+17:07:14,882  INFO SmileOneBot:310 - Saving Request to Outbox
+17:13:25,975  INFO SmileOneBot:163 - Incoming Request with URI: /trx/1266066872632/86/887876
+17:13:25,978  INFO SmileOneBot:169 - Saving Request to Inbox
+17:13:26,008  INFO SmileOneBot:178 - Starting Browser : chrome
+17:13:32,589  INFO SmileOneBot:184 - /*-------------START LOGIN PROCESS-----------------*/
+17:13:36,013  INFO SmileOneBot:396 - Selecting Login Method: vk
+17:13:43,897  INFO SmileOneBot:197 - /*-------------LOGIN PROCESS FINISHED---------------*/
+17:13:43,897  INFO SmileOneBot:201 - Logged in. Navigating to MLBB Page
+17:13:45,172  INFO SmileOneBot:204 - /*-------------START TOP-UP PROCESS---------------*/
+17:13:47,304  INFO SmileOneBot:218 - Selecting Denom
+17:13:47,400  INFO SmileOneBot:221 - Inserting Player ID
+17:13:47,468  INFO SmileOneBot:223 - Inserting Zone ID
+17:13:47,553  INFO SmileOneBot:225 - Selecting Payment Type
+17:13:48,478  INFO SmileOneBot:228 - Finished Inputs.. Now Processing Top-up...
+17:13:48,489  INFO SmileOneBot:246 - Player 126606687 (2632) exists. Countinue top-up...
+17:14:00,526  INFO SmileOneBot:281 - Closing Browser Now
+17:14:01,173  INFO SmileOneBot:303 - Process finished with response:
+{
+    "voucher": {
+        "denom": "86",
+        "playerId": "1266066872632"
+    },
+    "trxId": "887876",
+    "status": "Error"
+}
+17:14:01,174  INFO SmileOneBot:307 - Saving to Outbox with inbox_id : 174
+17:14:01,174  INFO SmileOneBot:310 - Saving Request to Outbox
+17:21:27,507  INFO SmileOneBot:163 - Incoming Request with URI: /trx/1266066872632/86/8878761
+17:21:27,509  INFO SmileOneBot:169 - Saving Request to Inbox
+17:21:27,540  INFO SmileOneBot:178 - Starting Browser : chrome
+17:21:34,316  INFO SmileOneBot:184 - /*-------------START LOGIN PROCESS-----------------*/
+17:21:37,109  INFO SmileOneBot:397 - Selecting Login Method: vk
+17:21:42,575  INFO SmileOneBot:197 - /*-------------LOGIN PROCESS FINISHED---------------*/
+17:21:42,576  INFO SmileOneBot:201 - Logged in. Navigating to MLBB Page
+17:21:43,553  INFO SmileOneBot:204 - /*-------------START TOP-UP PROCESS---------------*/
+17:21:45,698  INFO SmileOneBot:218 - Selecting Denom
+17:21:45,812  INFO SmileOneBot:221 - Inserting Player ID
+17:21:46,017  INFO SmileOneBot:223 - Inserting Zone ID
+17:21:46,096  INFO SmileOneBot:225 - Selecting Payment Type
+17:21:47,149  INFO SmileOneBot:228 - Finished Inputs.. Now Processing Top-up...
+17:21:47,189  INFO SmileOneBot:246 - Player 126606687 (2632) exists. Countinue top-up...
+17:21:57,246  INFO SmileOneBot:256 - 
+17:21:59,255  INFO SmileOneBot:282 - Closing Browser Now
+17:21:59,888  INFO SmileOneBot:304 - Process finished with response:
+{
+    "voucher": {
+        "denom": "86",
+        "playerId": "1266066872632"
+    },
+    "message": "Top-up Berhasil",
+    "trxId": "8878761",
+    "status": "Success"
+}
+17:21:59,888  INFO SmileOneBot:308 - Saving to Outbox with inbox_id : 175
+17:21:59,888  INFO SmileOneBot:311 - Saving Request to Outbox
+17:23:24,435  INFO SmileOneBot:163 - Incoming Request with URI: /trx/1266066872632/86/88787612
+17:23:24,437  INFO SmileOneBot:169 - Saving Request to Inbox
+17:23:24,459  INFO SmileOneBot:178 - Starting Browser : chrome
+17:23:30,549  INFO SmileOneBot:184 - /*-------------START LOGIN PROCESS-----------------*/
+17:23:33,556  INFO SmileOneBot:396 - Selecting Login Method: vk
+17:23:39,057  INFO SmileOneBot:197 - /*-------------LOGIN PROCESS FINISHED---------------*/
+17:23:39,057  INFO SmileOneBot:201 - Logged in. Navigating to MLBB Page
+17:23:40,048  INFO SmileOneBot:204 - /*-------------START TOP-UP PROCESS---------------*/
+17:23:42,170  INFO SmileOneBot:218 - Selecting Denom
+17:23:42,248  INFO SmileOneBot:221 - Inserting Player ID
+17:23:42,306  INFO SmileOneBot:223 - Inserting Zone ID
+17:23:42,381  INFO SmileOneBot:225 - Selecting Payment Type
+17:23:43,097  INFO SmileOneBot:228 - Finished Inputs.. Now Processing Top-up...
+17:23:43,108  INFO SmileOneBot:246 - Player 126606687 (2632) exists. Countinue top-up...
+17:23:45,131  INFO SmileOneBot:281 - Closing Browser Now
+17:23:45,135  INFO SmileOneBot:303 - Process finished with response:
+{
+    "voucher": {
+        "denom": "86",
+        "playerId": "1266066872632"
+    },
+    "trxId": "88787612",
+    "status": "Error"
+}
+17:23:45,135  INFO SmileOneBot:307 - Saving to Outbox with inbox_id : 176
+17:23:45,135  INFO SmileOneBot:310 - Saving Request to Outbox
+17:30:23,905  INFO SmileOneBot:163 - Incoming Request with URI: /trx/1266066872632/86/887876121
+17:30:23,908  INFO SmileOneBot:169 - Saving Request to Inbox
+17:30:23,941  INFO SmileOneBot:178 - Starting Browser : firefox
+17:30:30,658  INFO SmileOneBot:184 - /*-------------START LOGIN PROCESS-----------------*/
+17:30:31,802  INFO SmileOneBot:396 - Selecting Login Method: vk
+17:30:34,115  INFO SmileOneBot:275 - Error Found during purchase.
+17:30:34,116  INFO SmileOneBot:281 - Closing Browser Now
+17:30:34,119  INFO SmileOneBot:303 - Process finished with response:
+{
+    "voucher": {},
+    "trxId": "887876121",
+    "status": "Error"
+}
+17:30:34,119  INFO SmileOneBot:307 - Saving to Outbox with inbox_id : 177
+17:30:34,119  INFO SmileOneBot:310 - Saving Request to Outbox
+17:37:50,406  INFO SmileOneBot:163 - Incoming Request with URI: /trx/1266066872632/86/909009
+17:37:50,409  INFO SmileOneBot:169 - Saving Request to Inbox
+17:37:50,435  INFO SmileOneBot:178 - Starting Browser : firefox
+17:37:57,754  INFO SmileOneBot:184 - /*-------------START LOGIN PROCESS-----------------*/
+17:37:59,433  INFO SmileOneBot:398 - Selecting Login Method: vk
+17:38:01,751  INFO SmileOneBot:277 - Error Found during purchase.
+17:38:01,751  INFO SmileOneBot:283 - Closing Browser Now
+17:38:01,756  INFO SmileOneBot:305 - Process finished with response:
+{
+    "voucher": {},
+    "trxId": "909009",
+    "status": "Error"
+}
+17:38:01,757  INFO SmileOneBot:309 - Saving to Outbox with inbox_id : 178
+17:38:01,757  INFO SmileOneBot:312 - Saving Request to Outbox
+17:38:34,926  INFO SmileOneBot:305 - Process finished with response:
+{
+    "message": "Trx id Sudah terdapat di Dababase",
+    "status": "Error"
+}
+17:38:41,337  INFO SmileOneBot:163 - Incoming Request with URI: /trx/1266066872632/86/0931
+17:38:41,337  INFO SmileOneBot:169 - Saving Request to Inbox
+17:38:41,379  INFO SmileOneBot:178 - Starting Browser : chrome
+17:38:47,645  INFO SmileOneBot:184 - /*-------------START LOGIN PROCESS-----------------*/
+17:38:50,800  INFO SmileOneBot:398 - Selecting Login Method: vk
+17:38:56,284  INFO SmileOneBot:198 - /*-------------LOGIN PROCESS FINISHED---------------*/
+17:38:56,285  INFO SmileOneBot:202 - Logged in. Navigating to MLBB Page
+17:38:57,199  INFO SmileOneBot:205 - /*-------------START TOP-UP PROCESS---------------*/
+17:38:59,355  INFO SmileOneBot:220 - Selecting Denom
+17:38:59,456  INFO SmileOneBot:223 - Inserting Player ID
+17:38:59,512  INFO SmileOneBot:225 - Inserting Zone ID
+17:38:59,597  INFO SmileOneBot:227 - Selecting Payment Type
+17:39:00,532  INFO SmileOneBot:230 - Finished Inputs.. Now Processing Top-up...
+17:39:00,548  INFO SmileOneBot:248 - Player 126606687 (2632) exists. Countinue top-up...
+17:39:02,565  INFO SmileOneBot:283 - Closing Browser Now
+17:39:02,566  INFO SmileOneBot:305 - Process finished with response:
+{
+    "voucher": {
+        "denom": "86",
+        "playerId": "1266066872632"
+    },
+    "trxId": "0931",
+    "status": "Error"
+}
+17:39:02,567  INFO SmileOneBot:309 - Saving to Outbox with inbox_id : 179
+17:39:02,567  INFO SmileOneBot:312 - Saving Request to Outbox
+17:39:49,350  INFO SmileOneBot:304 - Process finished with response:
+{
+    "message": "Trx id Sudah terdapat di Dababase",
+    "status": "Error"
+}
+17:39:54,108  INFO SmileOneBot:162 - Incoming Request with URI: /trx/1266066872632/86/90900900
+17:39:54,109  INFO SmileOneBot:168 - Saving Request to Inbox
+17:39:54,142  INFO SmileOneBot:177 - Starting Browser : chrome
+17:40:00,991  INFO SmileOneBot:183 - /*-------------START LOGIN PROCESS-----------------*/
+17:40:03,882  INFO SmileOneBot:397 - Selecting Login Method: vk
+17:40:09,423  INFO SmileOneBot:197 - /*-------------LOGIN PROCESS FINISHED---------------*/
+17:40:09,423  INFO SmileOneBot:201 - Logged in. Navigating to MLBB Page
+17:40:10,416  INFO SmileOneBot:204 - /*-------------START TOP-UP PROCESS---------------*/
+17:40:12,547  INFO SmileOneBot:219 - Selecting Denom
+17:40:12,620  INFO SmileOneBot:222 - Inserting Player ID
+17:40:12,688  INFO SmileOneBot:224 - Inserting Zone ID
+17:40:12,765  INFO SmileOneBot:226 - Selecting Payment Type
+17:40:13,665  INFO SmileOneBot:229 - Finished Inputs.. Now Processing Top-up...
+17:40:28,828  INFO SmileOneBot:247 - Player 126606687 (2632) exists. Countinue top-up...
+17:40:30,852  INFO SmileOneBot:282 - Closing Browser Now
+17:40:30,853  INFO SmileOneBot:304 - Process finished with response:
+{
+    "voucher": {
+        "denom": "86",
+        "playerId": "1266066872632"
+    },
+    "trxId": "90900900",
+    "status": "Error"
+}
+17:40:30,854  INFO SmileOneBot:308 - Saving to Outbox with inbox_id : 180
+17:40:30,854  INFO SmileOneBot:311 - Saving Request to Outbox
+17:57:14,621  INFO SmileOneBot:162 - Incoming Request with URI: /trx/1266066872631/86/898989
+17:57:14,621  INFO SmileOneBot:168 - Saving Request to Inbox
+17:57:14,624  INFO SmileOneBot:177 - Starting Browser : chrome
+17:57:21,234  INFO SmileOneBot:183 - /*-------------START LOGIN PROCESS-----------------*/
+17:57:24,411  INFO SmileOneBot:397 - Selecting Login Method: vk
+17:57:30,197  INFO SmileOneBot:197 - /*-------------LOGIN PROCESS FINISHED---------------*/
+17:57:30,197  INFO SmileOneBot:201 - Logged in. Navigating to MLBB Page
+17:57:31,402  INFO SmileOneBot:204 - /*-------------START TOP-UP PROCESS---------------*/
+17:57:33,546  INFO SmileOneBot:219 - Selecting Denom
+17:57:33,633  INFO SmileOneBot:222 - Inserting Player ID
+17:57:33,701  INFO SmileOneBot:224 - Inserting Zone ID
+17:57:33,817  INFO SmileOneBot:226 - Selecting Payment Type
+17:57:34,779  INFO SmileOneBot:229 - Finished Inputs.. Now Processing Top-up...
+17:57:35,979  INFO SmileOneBot:242 - Found Alert with message : USER ID não existe
+17:57:35,980  INFO SmileOneBot:243 - Player 126606687(2631) Does Not Exist
+17:57:37,990  INFO SmileOneBot:282 - Closing Browser Now
+17:57:37,990  INFO SmileOneBot:304 - Process finished with response:
+{
+    "voucher": {
+        "denom": "86",
+        "playerId": "1266066872631"
+    },
+    "message": "Akun Player tidak di temukan",
+    "trxId": "898989",
+    "status": "Error"
+}
+17:57:37,990  INFO SmileOneBot:308 - Saving to Outbox with inbox_id : 181
+17:57:37,990  INFO SmileOneBot:311 - Saving Request to Outbox
+18:08:14,496  INFO SmileOneBot:322 - Process finished with response:
+{
+    "message": "Trx id Sudah terdapat di Dababase",
+    "status": "Error"
+}
+18:08:15,676  INFO SmileOneBot:162 - Incoming Request with URI: /trx/1266066872632/86/8989891
+18:08:15,677  INFO SmileOneBot:168 - Saving Request to Inbox
+18:08:15,706  INFO SmileOneBot:177 - Starting Browser : chrome
+18:08:23,684  INFO SmileOneBot:185 - /*-------------START LOGIN PROCESS-----------------*/
+18:08:26,616  INFO SmileOneBot:415 - Selecting Login Method: vk
+18:08:32,154  INFO SmileOneBot:199 - /*-------------LOGIN PROCESS FINISHED---------------*/
+18:08:32,155  INFO SmileOneBot:203 - Logged in. Navigating to MLBB Page
+18:08:33,165  INFO SmileOneBot:206 - /*-------------START TOP-UP PROCESS---------------*/
+18:08:35,298  INFO SmileOneBot:221 - Selecting Denom
+18:08:35,359  INFO SmileOneBot:224 - Inserting Player ID
+18:08:35,414  INFO SmileOneBot:226 - Inserting Zone ID
+18:08:35,491  INFO SmileOneBot:228 - Selecting Payment Type
+18:08:36,182  INFO SmileOneBot:231 - Finished Inputs.. Now Processing Top-up...
+18:08:36,207  INFO SmileOneBot:245 - Player 126606687(2632) Does Not Exist
+18:08:36,207  INFO SmileOneBot:261 - Player 126606687(2632) Does Not Exist
+18:08:38,211  INFO SmileOneBot:300 - Closing Browser Now
+18:08:38,211  INFO SmileOneBot:322 - Process finished with response:
+{
+    "voucher": {
+        "denom": "86",
+        "playerId": "1266066872632"
+    },
+    "message": "Akun Player tidak di temukan",
+    "trxId": "8989891",
+    "status": "Error"
+}
+18:08:38,212  INFO SmileOneBot:326 - Saving to Outbox with inbox_id : 182
+18:08:38,212  INFO SmileOneBot:329 - Saving Request to Outbox
+18:11:27,223  INFO SmileOneBot:162 - Incoming Request with URI: /trx/1266066872632/86/8989809
+18:11:27,225  INFO SmileOneBot:168 - Saving Request to Inbox
+18:11:27,256  INFO SmileOneBot:177 - Starting Browser : chrome
+18:11:34,942  INFO SmileOneBot:185 - /*-------------START LOGIN PROCESS-----------------*/
+18:11:39,164  INFO SmileOneBot:415 - Selecting Login Method: vk
+18:11:44,602  INFO SmileOneBot:199 - /*-------------LOGIN PROCESS FINISHED---------------*/
+18:11:44,603  INFO SmileOneBot:203 - Logged in. Navigating to MLBB Page
+18:11:45,674  INFO SmileOneBot:206 - /*-------------START TOP-UP PROCESS---------------*/
+18:11:47,798  INFO SmileOneBot:221 - Selecting Denom
+18:11:47,863  INFO SmileOneBot:224 - Inserting Player ID
+18:11:48,053  INFO SmileOneBot:226 - Inserting Zone ID
+18:11:48,162  INFO SmileOneBot:228 - Selecting Payment Type
+18:11:49,219  INFO SmileOneBot:231 - Finished Inputs.. Now Processing Top-up...
+18:11:49,247  INFO SmileOneBot:245 - Player 126606687(2632) Does Not Exist
+18:11:49,248  INFO SmileOneBot:261 - Player 126606687(2632) Does Not Exist
+18:11:51,259  INFO SmileOneBot:300 - Closing Browser Now
+18:11:51,263  INFO SmileOneBot:322 - Process finished with response:
+{
+    "voucher": {
+        "denom": "86",
+        "playerId": "1266066872632"
+    },
+    "message": "Akun Player tidak di temukan",
+    "trxId": "8989809",
+    "status": "Error"
+}
+18:11:51,264  INFO SmileOneBot:326 - Saving to Outbox with inbox_id : 183
+18:11:51,264  INFO SmileOneBot:329 - Saving Request to Outbox
+18:14:03,330  INFO SmileOneBot:162 - Incoming Request with URI: /trx/1266066872632/86/89898121
+18:14:03,332  INFO SmileOneBot:168 - Saving Request to Inbox
+18:14:03,367  INFO SmileOneBot:177 - Starting Browser : chrome
+18:14:10,227  INFO SmileOneBot:183 - /*-------------START LOGIN PROCESS-----------------*/
+18:14:13,532  INFO SmileOneBot:398 - Selecting Login Method: vk
+18:14:18,908  INFO SmileOneBot:197 - /*-------------LOGIN PROCESS FINISHED---------------*/
+18:14:18,908  INFO SmileOneBot:201 - Logged in. Navigating to MLBB Page
+18:14:19,948  INFO SmileOneBot:204 - /*-------------START TOP-UP PROCESS---------------*/
+18:14:22,063  INFO SmileOneBot:219 - Selecting Denom
+18:14:22,128  INFO SmileOneBot:222 - Inserting Player ID
+18:14:22,179  INFO SmileOneBot:224 - Inserting Zone ID
+18:14:22,261  INFO SmileOneBot:226 - Selecting Payment Type
+18:14:23,146  INFO SmileOneBot:229 - Finished Inputs.. Now Processing Top-up...
+18:14:33,160  INFO SmileOneBot:248 - Player 126606687 (2632) exists. Countinue top-up...
+18:17:35,636  INFO SmileOneBot:162 - Incoming Request with URI: /trx/1266066872632/86/8989811221
+18:17:35,639  INFO SmileOneBot:168 - Saving Request to Inbox
+18:17:35,678  INFO SmileOneBot:177 - Starting Browser : chrome
+18:17:43,440  INFO SmileOneBot:183 - /*-------------START LOGIN PROCESS-----------------*/
+18:17:47,370  INFO SmileOneBot:399 - Selecting Login Method: vk
+18:17:52,955  INFO SmileOneBot:197 - /*-------------LOGIN PROCESS FINISHED---------------*/
+18:17:52,955  INFO SmileOneBot:201 - Logged in. Navigating to MLBB Page
+18:17:54,198  INFO SmileOneBot:204 - /*-------------START TOP-UP PROCESS---------------*/
+18:17:56,319  INFO SmileOneBot:219 - Selecting Denom
+18:17:56,383  INFO SmileOneBot:222 - Inserting Player ID
+18:17:56,479  INFO SmileOneBot:224 - Inserting Zone ID
+18:17:56,655  INFO SmileOneBot:226 - Selecting Payment Type
+18:17:57,360  INFO SmileOneBot:229 - Finished Inputs.. Now Checking if Exist...
+18:18:07,383  INFO SmileOneBot:249 - Player 126606687 (2632) exists. Now Processing top-up...
+18:18:09,409  INFO SmileOneBot:284 - Closing Browser Now
+18:18:09,413  INFO SmileOneBot:306 - Process finished with response:
+{
+    "voucher": {
+        "denom": "86",
+        "playerId": "1266066872632"
+    },
+    "trxId": "8989811221",
+    "status": "Error"
+}
+18:18:09,414  INFO SmileOneBot:310 - Saving to Outbox with inbox_id : 185
+18:18:09,414  INFO SmileOneBot:313 - Saving Request to Outbox
+11:24:41,195  INFO SmileOneBot:44 - /*-------------START LOGIN PROCESS-----------------*/
+11:24:51,020  INFO SmileOneBot:74 - /*-------------LOGIN PROCESS FINISHED---------------*/
+11:24:52,337  INFO SmileOneBot:83 - /*-------------START PURCHASE PROCESS---------------*/
+11:24:54,392  INFO SmileOneBot:108 - FOUND DIAMOND DENOM.. MLBB PAGE IS LOADED CONFIRMED
+11:24:54,392  INFO SmileOneBot:143 - /*-------------PRODUCT CHECKING START---------------*/
+11:24:55,830  INFO SmileOneBot:152 - /*-------------PURCHASE PROCESS FINISHED---------------*/
+11:26:56,479  INFO SmileOneBot:44 - /*-------------START LOGIN PROCESS-----------------*/
+13:06:29,447  INFO SmileOneBot:44 - /*-------------START LOGIN PROCESS-----------------*/
+13:08:33,342  INFO SmileOneBot:309 - Process finished with response:
+{
+    "message": "Trx id Sudah terdapat di Dababase",
+    "status": "Error"
+}
+13:08:37,703  INFO SmileOneBot:309 - Process finished with response:
+{
+    "message": "Trx id Sudah terdapat di Dababase",
+    "status": "Error"
+}
+13:08:42,320  INFO SmileOneBot:162 - Incoming Request with URI: /trx/1266066872632/86/4444199
+13:08:42,320  INFO SmileOneBot:168 - Saving Request to Inbox
+13:08:42,454  INFO SmileOneBot:177 - Starting Browser : chrome
+13:08:49,783  INFO SmileOneBot:183 - /*-------------START LOGIN PROCESS-----------------*/
+13:08:52,817  INFO SmileOneBot:402 - Selecting Login Method: vk
+13:08:59,191  INFO SmileOneBot:197 - /*-------------LOGIN PROCESS FINISHED---------------*/
+13:08:59,191  INFO SmileOneBot:201 - Logged in. Navigating to MLBB Page
+13:09:00,352  INFO SmileOneBot:204 - /*-------------START TOP-UP PROCESS---------------*/
+13:09:02,472  INFO SmileOneBot:219 - Selecting Denom
+13:09:02,538  INFO SmileOneBot:222 - Inserting Player ID
+13:09:02,594  INFO SmileOneBot:224 - Inserting Zone ID
+13:09:02,667  INFO SmileOneBot:226 - Selecting Payment Type
+13:09:03,343  INFO SmileOneBot:229 - Finished Inputs.. Now Checking if Exist...
+13:09:08,376  INFO SmileOneBot:258 - Player 126606687 (2632) exists. Now Processing top-up...
+13:09:15,396  INFO SmileOneBot:287 - Closing Browser Now
+13:09:15,396  INFO SmileOneBot:309 - Process finished with response:
+{
+    "voucher": {
+        "denom": "86",
+        "playerId": "1266066872632"
+    },
+    "trxId": "4444199",
+    "status": "Error"
+}
+13:09:15,396  INFO SmileOneBot:313 - Saving to Outbox with inbox_id : 186
+13:09:15,396  INFO SmileOneBot:316 - Saving Request to Outbox
+15:22:15,943  INFO SmileOneBot:482 - INVALID DENOM IN CURRENT REQUEST : 5
+15:22:15,951  INFO SmileOneBot:304 - Process finished with response:
+{
+    "message": "Denom tidak valid",
+    "status": "Error"
+}
+15:26:32,704  INFO SmileOneBot:482 - INVALID DENOM IN CURRENT REQUEST : 5
+15:26:32,704  INFO SmileOneBot:304 - Process finished with response:
+{
+    "message": "Denom tidak valid",
+    "status": "Error"
+}
+15:26:36,321  INFO SmileOneBot:482 - INVALID DENOM IN CURRENT REQUEST : 5
+15:26:36,321  INFO SmileOneBot:304 - Process finished with response:
+{
+    "message": "Denom tidak valid",
+    "status": "Error"
+}
+15:26:41,811  INFO SmileOneBot:163 - Incoming Request with URI: /trx/2423739715/86/7777666111
+15:26:41,811  INFO SmileOneBot:169 - Saving Request to Inbox
+15:26:41,842  INFO SmileOneBot:178 - Starting Browser : chrome
+15:26:47,985  INFO SmileOneBot:184 - /*-------------START LOGIN PROCESS-----------------*/
+15:26:51,273  INFO SmileOneBot:397 - Selecting Login Method: vk
+15:26:56,889  INFO SmileOneBot:198 - /*-------------LOGIN PROCESS FINISHED---------------*/
+15:26:56,890  INFO SmileOneBot:202 - Logged in. Navigating to MLBB Page
+15:26:57,951  INFO SmileOneBot:205 - /*-------------START TOP-UP PROCESS---------------*/
+15:27:00,078  INFO SmileOneBot:220 - Selecting Denom
+15:27:00,142  INFO SmileOneBot:223 - Inserting Player ID
+15:27:00,207  INFO SmileOneBot:225 - Inserting Zone ID
+15:27:00,412  INFO SmileOneBot:227 - Selecting Payment Type
+15:27:01,279  INFO SmileOneBot:230 - Finished Inputs.. Now Checking if Exist...
+15:27:01,293  INFO SmileOneBot:244 - Player 242373 (9715) exists. Now Processing top-up...
+15:27:06,313  INFO SmileOneBot:276 - Error Found during purchase.
+15:27:06,313  INFO SmileOneBot:282 - Closing Browser Now
+15:27:06,314  INFO SmileOneBot:304 - Process finished with response:
+{
+    "voucher": {},
+    "trxId": "7777666111",
+    "status": "Error"
+}
+15:27:06,314  INFO SmileOneBot:308 - Saving to Outbox with inbox_id : 187
+15:27:06,314  INFO SmileOneBot:311 - Saving Request to Outbox
+16:16:58,424  INFO SmileOneBot:163 - Incoming Request with URI: /trx/1266066872632/86/889889898
+16:16:58,427  INFO SmileOneBot:169 - Saving Request to Inbox
+16:16:58,454  INFO SmileOneBot:178 - Starting Browser : chrome
+16:17:05,528  INFO SmileOneBot:184 - /*-------------START LOGIN PROCESS-----------------*/
+16:17:08,620  INFO SmileOneBot:397 - Selecting Login Method: vk
+16:17:14,273  INFO SmileOneBot:198 - /*-------------LOGIN PROCESS FINISHED---------------*/
+16:17:14,274  INFO SmileOneBot:202 - Logged in. Navigating to MLBB Page
+16:17:15,301  INFO SmileOneBot:205 - /*-------------START TOP-UP PROCESS---------------*/
+16:17:17,442  INFO SmileOneBot:220 - Selecting Denom
+16:17:17,514  INFO SmileOneBot:223 - Inserting Player ID
+16:17:17,574  INFO SmileOneBot:225 - Inserting Zone ID
+16:17:17,658  INFO SmileOneBot:227 - Selecting Payment Type
+16:17:18,372  INFO SmileOneBot:230 - Finished Inputs.. Now Checking if Exist...
+16:17:21,496  INFO SmileOneBot:244 - Player 126606687 (2632) exists. Now Processing top-up...
+16:17:28,511  INFO SmileOneBot:282 - Closing Browser Now
+16:17:28,518  INFO SmileOneBot:304 - Process finished with response:
+{
+    "voucher": {},
+    "trxId": "889889898",
+    "status": "Error"
+}
+16:17:28,520  INFO SmileOneBot:308 - Saving to Outbox with inbox_id : 188
+16:17:28,520  INFO SmileOneBot:311 - Saving Request to Outbox
+16:17:51,953  INFO SmileOneBot:163 - Incoming Request with URI: /trx/1266066872631/86/8921821
+16:17:51,954  INFO SmileOneBot:169 - Saving Request to Inbox
+16:17:51,958  INFO SmileOneBot:178 - Starting Browser : chrome
+16:17:57,870  INFO SmileOneBot:184 - /*-------------START LOGIN PROCESS-----------------*/
+16:18:00,641  INFO SmileOneBot:397 - Selecting Login Method: vk
+16:18:02,816  INFO SmileOneBot:276 - Error Found during purchase.
+16:18:02,817  INFO SmileOneBot:282 - Closing Browser Now
+16:18:02,817  INFO SmileOneBot:304 - Process finished with response:
+{
+    "voucher": {},
+    "trxId": "8921821",
+    "status": "Error"
+}
+16:18:02,818  INFO SmileOneBot:308 - Saving to Outbox with inbox_id : 189
+16:18:02,818  INFO SmileOneBot:311 - Saving Request to Outbox
+16:18:13,361  INFO SmileOneBot:163 - Incoming Request with URI: /trx/1266066872631/86/88776677
+16:18:13,362  INFO SmileOneBot:169 - Saving Request to Inbox
+16:18:13,365  INFO SmileOneBot:178 - Starting Browser : chrome
+16:18:18,901  INFO SmileOneBot:184 - /*-------------START LOGIN PROCESS-----------------*/
+16:18:22,095  INFO SmileOneBot:397 - Selecting Login Method: vk
+16:18:27,531  INFO SmileOneBot:198 - /*-------------LOGIN PROCESS FINISHED---------------*/
+16:18:27,532  INFO SmileOneBot:202 - Logged in. Navigating to MLBB Page
+16:18:28,498  INFO SmileOneBot:205 - /*-------------START TOP-UP PROCESS---------------*/
+16:18:30,608  INFO SmileOneBot:220 - Selecting Denom
+16:18:30,674  INFO SmileOneBot:223 - Inserting Player ID
+16:18:30,733  INFO SmileOneBot:225 - Inserting Zone ID
+16:18:30,811  INFO SmileOneBot:227 - Selecting Payment Type
+16:18:31,669  INFO SmileOneBot:230 - Finished Inputs.. Now Checking if Exist...
+16:18:32,721  INFO SmileOneBot:239 - Found Alert with message : USER ID não existe
+16:18:32,721  INFO SmileOneBot:240 - Player 126606687(2631) Does Not Exist
+16:18:34,729  INFO SmileOneBot:282 - Closing Browser Now
+16:18:34,732  INFO SmileOneBot:304 - Process finished with response:
+{
+    "voucher": {},
+    "message": "Akun Player tidak di temukan",
+    "trxId": "88776677",
+    "status": "Error"
+}
+16:18:34,733  INFO SmileOneBot:308 - Saving to Outbox with inbox_id : 190
+16:18:34,734  INFO SmileOneBot:311 - Saving Request to Outbox
+16:23:04,139  INFO SmileOneBot:163 - Incoming Request with URI: /trx/1266066872631/86/0099001322
+16:23:04,141  INFO SmileOneBot:169 - Saving Request to Inbox
+16:23:04,169  INFO SmileOneBot:178 - Starting Browser : chrome
+16:23:10,867  INFO SmileOneBot:184 - /*-------------START LOGIN PROCESS-----------------*/
+16:23:13,808  INFO SmileOneBot:398 - Selecting Login Method: vk
+16:23:19,558  INFO SmileOneBot:198 - /*-------------LOGIN PROCESS FINISHED---------------*/
+16:23:19,558  INFO SmileOneBot:202 - Logged in. Navigating to MLBB Page
+16:23:20,523  INFO SmileOneBot:205 - /*-------------START TOP-UP PROCESS---------------*/
+16:23:22,662  INFO SmileOneBot:220 - Selecting Denom
+16:23:22,741  INFO SmileOneBot:223 - Inserting Player ID
+16:23:22,803  INFO SmileOneBot:225 - Inserting Zone ID
+16:23:22,877  INFO SmileOneBot:227 - Selecting Payment Type
+16:23:23,751  INFO SmileOneBot:230 - Finished Inputs.. Now Checking if Exist...
+16:23:24,768  INFO SmileOneBot:239 - Found Alert with message : USER ID não existe
+16:23:24,768  INFO SmileOneBot:240 - Player 126606687(2631) Does Not Exist
+16:23:26,776  INFO SmileOneBot:283 - Closing Browser Now
+16:23:26,781  INFO SmileOneBot:305 - Process finished with response:
+{
+    "voucher": {},
+    "message": "Akun Player tidak di temukan",
+    "trxId": "0099001322",
+    "status": "Error"
+}
+16:23:26,782  INFO SmileOneBot:309 - Saving to Outbox with inbox_id : 191
+16:23:26,782  INFO SmileOneBot:312 - Saving Request to Outbox
+16:23:35,584  INFO SmileOneBot:163 - Incoming Request with URI: /trx/1266066872632/86/00990013229
+16:23:35,585  INFO SmileOneBot:169 - Saving Request to Inbox
+16:23:35,588  INFO SmileOneBot:178 - Starting Browser : chrome
+16:23:41,138  INFO SmileOneBot:184 - /*-------------START LOGIN PROCESS-----------------*/
+16:23:44,232  INFO SmileOneBot:398 - Selecting Login Method: vk
+16:23:50,145  INFO SmileOneBot:198 - /*-------------LOGIN PROCESS FINISHED---------------*/
+16:23:50,146  INFO SmileOneBot:202 - Logged in. Navigating to MLBB Page
+16:23:51,282  INFO SmileOneBot:205 - /*-------------START TOP-UP PROCESS---------------*/
+16:23:53,392  INFO SmileOneBot:220 - Selecting Denom
+16:23:53,457  INFO SmileOneBot:223 - Inserting Player ID
+16:23:53,526  INFO SmileOneBot:225 - Inserting Zone ID
+16:23:53,600  INFO SmileOneBot:227 - Selecting Payment Type
+16:23:54,341  INFO SmileOneBot:230 - Finished Inputs.. Now Checking if Exist...
+16:23:57,425  INFO SmileOneBot:244 - Player 126606687 (2632) exists. Now Processing top-up...
+16:24:14,496  INFO SmileOneBot:283 - Closing Browser Now
+16:24:14,496  INFO SmileOneBot:305 - Process finished with response:
+{
+    "voucher": {},
+    "trxId": "00990013229",
+    "status": "Error"
+}
+16:24:14,496  INFO SmileOneBot:309 - Saving to Outbox with inbox_id : 192
+16:24:14,496  INFO SmileOneBot:312 - Saving Request to Outbox
+16:25:45,954  INFO SmileOneBot:163 - Incoming Request with URI: /trx/1266066872632/86/00998877
+16:25:45,956  INFO SmileOneBot:169 - Saving Request to Inbox
+16:25:45,981  INFO SmileOneBot:178 - Starting Browser : chrome
+16:25:53,098  INFO SmileOneBot:184 - /*-------------START LOGIN PROCESS-----------------*/
+16:25:56,149  INFO SmileOneBot:398 - Selecting Login Method: vk
+16:26:01,595  INFO SmileOneBot:198 - /*-------------LOGIN PROCESS FINISHED---------------*/
+16:26:01,595  INFO SmileOneBot:202 - Logged in. Navigating to MLBB Page
+16:26:02,625  INFO SmileOneBot:205 - /*-------------START TOP-UP PROCESS---------------*/
+16:26:04,732  INFO SmileOneBot:220 - Selecting Denom
+16:26:04,798  INFO SmileOneBot:223 - Inserting Player ID
+16:26:04,870  INFO SmileOneBot:225 - Inserting Zone ID
+16:26:04,939  INFO SmileOneBot:227 - Selecting Payment Type
+16:26:05,696  INFO SmileOneBot:230 - Finished Inputs.. Now Checking if Exist...
+16:26:08,744  INFO SmileOneBot:244 - Player 126606687 (2632) exists. Now Processing top-up...
+16:26:13,780  INFO SmileOneBot:252 - Insufficient Balance
+16:26:15,785  INFO SmileOneBot:283 - Closing Browser Now
+16:26:15,790  INFO SmileOneBot:305 - Process finished with response:
+{
+    "voucher": {},
+    "message": "Saldo tidak mencukupi",
+    "trxId": "00998877",
+    "status": "Error"
+}
+16:26:15,791  INFO SmileOneBot:309 - Saving to Outbox with inbox_id : 193
+16:26:15,791  INFO SmileOneBot:312 - Saving Request to Outbox
+17:22:02,381  INFO SmileOneBot:163 - Incoming Request with URI: /trx/1266066872632/86/009918921
+17:22:02,385  INFO SmileOneBot:169 - Saving Request to Inbox
+17:22:02,519  INFO SmileOneBot:178 - Starting Browser : chrome
+17:22:09,219  INFO SmileOneBot:184 - /*-------------START LOGIN PROCESS-----------------*/
+17:22:12,357  INFO SmileOneBot:401 - Selecting Login Method: vk
+17:22:17,830  INFO SmileOneBot:198 - /*-------------LOGIN PROCESS FINISHED---------------*/
+17:22:17,830  INFO SmileOneBot:202 - Logged in. Navigating to MLBB Page
+17:22:18,812  INFO SmileOneBot:205 - /*-------------START TOP-UP PROCESS---------------*/
+17:22:20,961  INFO SmileOneBot:220 - Selecting Denom
+17:22:21,050  INFO SmileOneBot:223 - Inserting Player ID
+17:22:21,156  INFO SmileOneBot:225 - Inserting Zone ID
+17:22:21,304  INFO SmileOneBot:227 - Selecting Payment Type
+17:22:22,295  INFO SmileOneBot:230 - Finished Inputs.. Now Checking if Exist...
+17:22:25,456  INFO SmileOneBot:245 - Player 126606687 (2632) exists. Now Processing top-up...
+17:22:25,471  INFO SmileOneBot:254 - Insufficient Balance
+17:22:27,484  INFO SmileOneBot:286 - Closing Browser Now
+17:22:28,156  INFO SmileOneBot:308 - Process finished with response:
+{
+    "voucher": {},
+    "message": "Saldo tidak mencukupi",
+    "trxId": "009918921",
+    "status": "Error"
+}
+17:22:28,156  INFO SmileOneBot:312 - Saving to Outbox with inbox_id : 194
+17:22:28,156  INFO SmileOneBot:315 - Saving Request to Outbox
+17:22:39,223  INFO SmileOneBot:163 - Incoming Request with URI: /trx/12660668726321/86/0099189211
+17:22:39,225  INFO SmileOneBot:169 - Saving Request to Inbox
+17:22:39,251  INFO SmileOneBot:178 - Starting Browser : chrome
+17:22:50,692  INFO SmileOneBot:184 - /*-------------START LOGIN PROCESS-----------------*/
+17:22:56,467  INFO SmileOneBot:401 - Selecting Login Method: vk
+17:23:06,430  INFO SmileOneBot:198 - /*-------------LOGIN PROCESS FINISHED---------------*/
+17:23:06,434  INFO SmileOneBot:202 - Logged in. Navigating to MLBB Page
+17:23:09,647  INFO SmileOneBot:205 - /*-------------START TOP-UP PROCESS---------------*/
+17:23:12,671  INFO SmileOneBot:220 - Selecting Denom
+17:23:14,398  INFO SmileOneBot:223 - Inserting Player ID
+17:23:15,003  INFO SmileOneBot:225 - Inserting Zone ID
+17:23:15,843  INFO SmileOneBot:227 - Selecting Payment Type
+17:23:17,695  INFO SmileOneBot:230 - Finished Inputs.. Now Checking if Exist...
+17:23:18,456  INFO SmileOneBot:240 - Found Alert with message : USER ID ou Zone ID não exist
+17:23:18,458  INFO SmileOneBot:241 - Player 126606687(26321) Does Not Exist
+17:23:20,463  INFO SmileOneBot:286 - Closing Browser Now
+17:23:22,079  INFO SmileOneBot:308 - Process finished with response:
+{
+    "voucher": {},
+    "message": "Akun Player tidak di temukan",
+    "trxId": "0099189211",
+    "status": "Error"
+}
+17:23:22,082  INFO SmileOneBot:312 - Saving to Outbox with inbox_id : 195
+17:23:22,084  INFO SmileOneBot:315 - Saving Request to Outbox
+17:25:07,927  INFO SmileOneBot:163 - Incoming Request with URI: /trx/12660668726321/86/0099889900
+17:25:07,952  INFO SmileOneBot:169 - Saving Request to Inbox
+17:25:08,356  INFO SmileOneBot:178 - Starting Browser : chrome
+17:25:29,883  INFO SmileOneBot:184 - /*-------------START LOGIN PROCESS-----------------*/
+17:25:34,975  INFO SmileOneBot:401 - Selecting Login Method: vk
+17:25:45,278  INFO SmileOneBot:198 - /*-------------LOGIN PROCESS FINISHED---------------*/
+17:25:45,281  INFO SmileOneBot:202 - Logged in. Navigating to MLBB Page
+17:25:48,649  INFO SmileOneBot:205 - /*-------------START TOP-UP PROCESS---------------*/
+17:25:52,254  INFO SmileOneBot:220 - Selecting Denom
+17:25:53,063  INFO SmileOneBot:223 - Inserting Player ID
+17:25:53,648  INFO SmileOneBot:225 - Inserting Zone ID
+17:25:54,407  INFO SmileOneBot:227 - Selecting Payment Type
+17:25:56,300  INFO SmileOneBot:230 - Finished Inputs.. Now Checking if Exist...
+17:25:57,007  INFO SmileOneBot:240 - Found Alert with message : USER ID ou Zone ID não exist
+17:25:57,009  INFO SmileOneBot:241 - Player 126606687(26321) Does Not Exist
+17:25:59,017  INFO SmileOneBot:286 - Closing Browser Now
+17:26:01,131  INFO SmileOneBot:308 - Process finished with response:
+{
+    "voucher": {},
+    "message": "Akun Player tidak di temukan",
+    "trxId": "0099889900",
+    "status": "Error"
+}
+17:26:01,135  INFO SmileOneBot:312 - Saving to Outbox with inbox_id : 196
+17:26:01,139  INFO SmileOneBot:315 - Saving Request to Outbox
+17:26:09,125  INFO SmileOneBot:163 - Incoming Request with URI: /trx/1266066872632/86/00998899001
+17:26:09,128  INFO SmileOneBot:169 - Saving Request to Inbox
+17:26:09,158  INFO SmileOneBot:178 - Starting Browser : chrome
+17:26:21,620  INFO SmileOneBot:184 - /*-------------START LOGIN PROCESS-----------------*/
+17:26:27,727  INFO SmileOneBot:401 - Selecting Login Method: vk
+17:26:37,701  INFO SmileOneBot:198 - /*-------------LOGIN PROCESS FINISHED---------------*/
+17:26:37,703  INFO SmileOneBot:202 - Logged in. Navigating to MLBB Page
+17:26:41,120  INFO SmileOneBot:205 - /*-------------START TOP-UP PROCESS---------------*/
+17:26:45,171  INFO SmileOneBot:220 - Selecting Denom
+17:26:46,050  INFO SmileOneBot:223 - Inserting Player ID
+17:26:46,605  INFO SmileOneBot:225 - Inserting Zone ID
+17:26:47,534  INFO SmileOneBot:227 - Selecting Payment Type
+17:26:49,855  INFO SmileOneBot:230 - Finished Inputs.. Now Checking if Exist...
+17:26:53,333  INFO SmileOneBot:245 - Player 126606687 (2632) exists. Now Processing top-up...
+17:27:03,670  INFO SmileOneBot:258 - 
+17:27:05,700  INFO SmileOneBot:286 - Closing Browser Now
+17:27:07,479  INFO SmileOneBot:308 - Process finished with response:
+{
+    "voucher": {
+        "denom": "86",
+        "playerId": "1266066872632"
+    },
+    "message": "Top-up Berhasil",
+    "trxId": "00998899001",
+    "status": "Success"
+}
+17:27:07,482  INFO SmileOneBot:312 - Saving to Outbox with inbox_id : 197
+17:27:07,484  INFO SmileOneBot:315 - Saving Request to Outbox
