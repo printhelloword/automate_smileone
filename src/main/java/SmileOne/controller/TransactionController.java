@@ -230,45 +230,45 @@ public class TransactionController {
                             SmileOneBot.logger.info("Finished Inputs.. Now Checking if Exist...");
 
 //                            if (driver.getCurrentUrl().equalsIgnoreCase("https://www.smile.one/merchant/mobilelegends?source=other")) {
-                                WebDriverWait wait = new WebDriverWait(driver, 3);
-                                /*Next try catch try to validates whether alert is present(player id does not exist) / payment is success or failed */
-                                try {
-                                    wait.until(ExpectedConditions.alertIsPresent());
+                            WebDriverWait wait = new WebDriverWait(driver, 3);
+                            /*Next try catch try to validates whether alert is present(player id does not exist) / payment is success or failed */
+                            try {
+                                wait.until(ExpectedConditions.alertIsPresent());
 //                                    driver.switchTo().alert();
-                                    String alrt = driver.switchTo().alert().getText();
-                                    driver.switchTo().alert().accept();
-                                    SmileOneBot.logger.info("Found Alert with message : " + alrt);
-                                    SmileOneBot.logger.info("Player " + accountId + "(" + zoneId + ") Does Not Exist");
-                                    responseMsg = "Akun Player tidak di temukan";
-                                } catch (Exception e) {
+                                String alrt = driver.switchTo().alert().getText();
+                                driver.switchTo().alert().accept();
+                                SmileOneBot.logger.info("Found Alert with message : " + alrt);
+                                SmileOneBot.logger.info("Player " + accountId + "(" + zoneId + ") Does Not Exist");
+                                responseMsg = "Akun Player tidak di temukan";
+                            } catch (Exception e) {
 //                                    SmileOneBot.logger.info("Player: "+accountId+" ("+zoneId+") di temukan. Melanjutkan top-up...");
-                                    SmileOneBot.logger.info("Player " + accountId + " (" + zoneId + ") exists. Now Processing top-up...");
-                                    /*this statement validates if balance is insufficient*/
+                                SmileOneBot.logger.info("Player " + accountId + " (" + zoneId + ") exists. Now Processing top-up...");
+                                /*this statement validates if balance is insufficient*/
 //                                    Thread.sleep(Integer.parseInt(waitToPurchase));
 //                                    Thread.sleep(5000);
 //                                    try {
 //                                        if (driver.findElements(By.cssSelector(".myreddem-account")).size() != 0) {
 //                                    if (driver.getCurrentUrl().equalsIgnoreCase("https://www.smile.one/customer/recharge")) {
 //                                    if (driver.findElements(By.cssSelector(".myreddem-account")).size() != 0) {
-                                    if (!driver.findElements(By.cssSelector(".myreddem-account")).isEmpty()) {
-                                        SmileOneBot.logger.info("Insufficient Balance");
-                                        responseMsg = "Saldo tidak mencukupi";
+                                if (!driver.findElements(By.cssSelector(".myreddem-account")).isEmpty()) {
+                                    SmileOneBot.logger.info("Insufficient Balance");
+                                    responseMsg = "Saldo tidak mencukupi";
 //                                    } else if (driver.getCurrentUrl().equalsIgnoreCase("https://www.smile.one/message/success")) {
-                                    } else if (!driver.findElements(By.cssSelector(".btnsuccess > span")).isEmpty()) {
-                                        SmileOneBot.logger.info("");
-                                        responseMsg = "Top-up Berhasil";
-                                        responseStatus = status00;
-                                        voucherPojo.setPlayerId(playerId);
-                                        voucherPojo.setDenom(denom);
-                                    }
+                                } else if (!driver.findElements(By.cssSelector(".btnsuccess > span")).isEmpty()) {
+                                    SmileOneBot.logger.info("");
+                                    responseMsg = "Top-up Berhasil";
+                                    responseStatus = status00;
+                                    voucherPojo.setPlayerId(playerId);
+                                    voucherPojo.setDenom(denom);
+                                }
 //                                        }
 //                                    }catch(Exception ex){
 //                                        ex.printStackTrace();
 //                                    }
-                                    /*this statement validates if purchase is successful*/
+                                /*this statement validates if purchase is successful*/
 
-                                    e.printStackTrace();
-                                }
+                                e.printStackTrace();
+                            }
 //                            }
 
                             /* Create Json Response (success purchase) */
@@ -400,7 +400,7 @@ public class TransactionController {
     private void processLogin(String loginMethod, String userName, String userPwd) {
         SmileOneBot.logger.log(Level.INFO, "Selecting Login Method: " + loginMethod);
 
-        if (loginMethod.equalsIgnoreCase("vk")) {
+        if (browserName.equalsIgnoreCase("chrome") && loginMethod.equalsIgnoreCase("vk")) {
             driver.findElement(By.cssSelector(".vk > .login_method_p2")).click(); // vk login
 
             /*SWITCH & HANDLE POPUP LOGIN WINDOWS*/
@@ -413,9 +413,9 @@ public class TransactionController {
             driver.findElement(By.name("email")).sendKeys(userName);
             driver.findElement(By.name("pass")).sendKeys(userPwd);
             driver.findElement(By.name("pass")).sendKeys(Keys.ENTER);
-        } else if (loginMethod.equalsIgnoreCase("google")) {
+        } else if (browserName.equalsIgnoreCase("firefox")) {
             if (firefoxMode.equalsIgnoreCase(FIREFOX_SESSION_PRIVATE)) {
-                SmileOneBot.logger.info("Start Firefox in Profile Mode");
+                SmileOneBot.logger.info("Start Firefox in Private Mode");
                 driver.findElement(By.cssSelector(".google")).click(); //google login
 
                 /*SWITCH & HANDLE POPUP LOGIN WINDOWS*/
@@ -430,9 +430,13 @@ public class TransactionController {
                 driver.findElement(By.name("password")).sendKeys(userPwd);
                 driver.findElement(By.name("password")).sendKeys(Keys.ENTER);
             } else if (firefoxMode.equalsIgnoreCase(FIREFOX_SESSION_PROFILE)) {
-                SmileOneBot.logger.info("Start Firefox in Private Mode");
-                waitForWindow(4000);
-                driver.findElement(By.cssSelector(".google")).click();
+                SmileOneBot.logger.info("Start Firefox in Profiled Mode");
+                waitForWindow(2000);
+
+                if (loginMethod.equalsIgnoreCase("google"))
+                    driver.findElement(By.cssSelector(".google")).click();
+                else if (loginMethod.equalsIgnoreCase("vk"))
+                    driver.findElement(By.cssSelector(".vk > .login_method_p2")).click(); // vk login
 
                 /*SWITCH & HANDLE POPUP LOGIN WINDOWS*/
                 vars.put("win2423", waitForWindow(2000));
