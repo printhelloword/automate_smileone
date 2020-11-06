@@ -9237,3 +9237,34 @@
 10:24:03,519  INFO SmileOneBot:163 - Incoming Request with URI: /trx/1266066872632/86/1231211122421
 10:24:03,542  INFO SmileOneBot:169 - Saving Request to Inbox
 10:24:03,585  INFO SmileOneBot:178 - Starting Browser : firefox
+10:24:49,848  INFO SmileOneBot:308 - Process finished with response:
+{
+    "message": "Trx id Sudah terdapat di Dababase",
+    "status": "Error"
+}
+10:24:55,859  INFO SmileOneBot:163 - Incoming Request with URI: /trx/1266066872632/86/54735099
+10:24:55,860  INFO SmileOneBot:169 - Saving Request to Inbox
+10:24:56,132  INFO SmileOneBot:178 - Starting Browser : firefox
+10:26:23,959  INFO SmileOneBot:184 - /*-------------START LOGIN PROCESS-----------------*/
+10:26:24,763  INFO SmileOneBot:401 - Selecting Login Method: vk
+10:26:24,764  INFO SmileOneBot:433 - Start Firefox in Profiled Mode
+10:26:29,281  INFO SmileOneBot:198 - /*-------------LOGIN PROCESS FINISHED---------------*/
+10:26:29,282  INFO SmileOneBot:202 - Logged in. Navigating to MLBB Page
+10:26:30,617  INFO SmileOneBot:205 - /*-------------START TOP-UP PROCESS---------------*/
+10:26:32,929  INFO SmileOneBot:220 - Selecting Denom
+10:26:33,193  INFO SmileOneBot:223 - Inserting Player ID
+10:26:33,248  INFO SmileOneBot:225 - Inserting Zone ID
+10:26:33,285  INFO SmileOneBot:227 - Selecting Payment Type
+10:26:34,512  INFO SmileOneBot:230 - Finished Inputs.. Now Checking if Exist...
+10:26:37,596  INFO SmileOneBot:245 - Player 126606687 (2632) exists. Now Processing top-up...
+10:26:37,613  INFO SmileOneBot:254 - Insufficient Balance
+10:26:39,621  INFO SmileOneBot:286 - Closing Browser Now
+10:26:40,867  INFO SmileOneBot:308 - Process finished with response:
+{
+    "voucher": {},
+    "message": "Saldo tidak mencukupi",
+    "trxId": "54735099",
+    "status": "Error"
+}
+10:26:40,868  INFO SmileOneBot:312 - Saving to Outbox with inbox_id : 199
+10:26:40,868  INFO SmileOneBot:315 - Saving Request to Outbox

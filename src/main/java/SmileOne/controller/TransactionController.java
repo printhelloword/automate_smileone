@@ -439,7 +439,7 @@ public class TransactionController {
                     driver.findElement(By.cssSelector(".vk > .login_method_p2")).click(); // vk login
 
                 /*SWITCH & HANDLE POPUP LOGIN WINDOWS*/
-                vars.put("win2423", waitForWindow(2000));
+                vars.put("win2423", waitForWindow(5000));
                 vars.put("root", driver.getWindowHandle());
                 driver.switchTo().window(vars.get("win2423").toString());
                 /*END SWITCH & HANDLE POPUP LOGIN WINDOWS*/
