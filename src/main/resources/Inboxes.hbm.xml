@@ -1,27 +1,28 @@
-<?xml version="1.0"?>
-<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
-"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
-<!-- Generated Sep 14, 2020 10:34:28 AM by Hibernate Tools 4.3.1 -->
+<?xml version='1.0' encoding='utf-8'?>
+<!DOCTYPE hibernate-mapping PUBLIC
+    "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+    "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
 <hibernate-mapping>
-    <class name="SmileOne.model.Inboxes" table="inboxes" catalog="smile_one" optimistic-lock="version">
-        <id name="id" type="int">
-            <column name="id" />
+
+    <class name="bot.smileone.model.Inboxes" table="inboxes" schema="republic_gg">
+        <id name="id">
+            <column name="id" sql-type="int(11)"/>
             <generator class="identity" />
         </id>
-        <property name="message" type="string">
-            <column name="message" />
+        <property name="message">
+            <column name="message" sql-type="varchar(255)" not-null="true"/>
         </property>
-        <property name="sender" type="string">
-            <column name="sender" />
+        <property name="sender">
+            <column name="sender" sql-type="varchar(255)" not-null="true"/>
         </property>
-        <property name="status" type="java.lang.Integer">
-            <column name="status" />
+        <property name="status">
+            <column name="status" sql-type="int(11)" not-null="true"/>
         </property>
-        <property name="createDate" type="timestamp">
-            <column name="create_date" length="19" />
+        <property name="createDate">
+            <column name="create_date" sql-type="timestamp" not-null="true"/>
         </property>
-        <property name="trxId" type="string">
-            <column name="trx_id" />
+        <property name="trxId">
+            <column name="trx_id" sql-type="varchar(255)" not-null="true"/>
         </property>
     </class>
 </hibernate-mapping>
