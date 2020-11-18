@@ -233,7 +233,7 @@ public class TransactionController {
         denomsMap.put("9288", ".PcliEig-em2");
         denomsMap.put("twilight", ".PcliEle-em2");
         denomsMap.put("starlight", ".PcliNin-em2");
-        denomsMap.put("starlightplus", ".PcliTwem2");
+        denomsMap.put("starlightplus", ".PcliTwl-em2");
 
         return denomsMap;
     }

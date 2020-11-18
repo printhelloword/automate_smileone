@@ -121,10 +121,11 @@ public class SmileOneBot {
         try {
             processTopUp();
         } catch (Exception e) {
-            e.printStackTrace();
+//            e.printStackTrace();
+            SmileOneApplication.logger.info("SmileOne Bot Found Exception" +e.getMessage());
         } finally {
             SmileOneApplication.logger.info("SmileOne Bot Finised");
-//            driver.quit();
+            driver.quit();
         }
 
         transactionStatus.put(status, message);
@@ -162,7 +163,7 @@ public class SmileOneBot {
             options.addArguments(BOT_CHROME_PRIVATE_PROPERTY);
             return options;
         } else if (botSession.equalsIgnoreCase(BOT_SESSION_MODE_PROFILED)) {
-            options.addArguments("user-data-dir=" +chromeProfiler);
+            options.addArguments("user-data-dir=" + chromeProfiler);
             return options;
         } else
             return options;
@@ -186,12 +187,12 @@ public class SmileOneBot {
         url = getGeneratedUrl();
     }
 
-    private String getGeneratedUrl() {
+    private String getGeneratedUrl() throws Exception {
         if (botSession.equalsIgnoreCase(BOT_SESSION_MODE_PRIVATE))
             return URL_BASE_LOGIN;
         else if (botSession.equalsIgnoreCase(BOT_SESSION_MODE_PROFILED))
             return URL_BASE_PURCHASE_DIAMONDS_MLBB;
-        else return null;
+        else return URL_BASE_PURCHASE_DIAMONDS_MLBB;
     }
 
     private void updateTransactionStatusAndMessage(boolean status, String message) {
@@ -200,7 +201,6 @@ public class SmileOneBot {
     }
 
     private void processTopUp() throws Exception {
-
         setUrl();
         startBrowserAndNavigateToPage();
         inputVoucherDetails();
@@ -208,79 +208,57 @@ public class SmileOneBot {
         processPayment();
         sleep(1);
 
-        checkAndUpdatePaymentResult();
+        updateStatusByPlayerExistence();
+        updateStatusByBalanceSufficiency();
     }
 
-    private void checkAndUpdatePaymentResult() throws Exception {
-        String alert = getAlertText();
-        String generatedMessage = checkPostPaymentAndGetStatus();
-        if (alert != null) {
-            SmileOneApplication.logger.info(">>>>ALERT EXIST");
-            updateTransactionStatusAndMessage(false, MESSAGE_ERROR_PLAYER_DOES_NOT_EXIST);
-            printAndCloseAlert(alert);
-        } else {
-            SmileOneApplication.logger.info(">>>>ALERT DOES NOT EXIST");
-            if (generatedMessage != null) {
-                if (generatedMessage.equalsIgnoreCase(STATUS_FALSE))
-                    updateTransactionStatusAndMessage(false, MESSAGE_ERROR_INSUFFICIENT_BALANCE);
-                else
-                    updateTransactionStatusAndMessage(true, MESSAGE_SUCCESS_TRANSACTION);
-            }
-        }
-    }
 
-    private String checkPostPaymentAndGetStatus() {
-        String message = null;
+    private void updateStatusByPlayerExistence() {
         try {
-            if (!driver.findElements(By.cssSelector(ELEMENT_STATUS_INSUFFICIENT_BALANCE)).isEmpty()) {
-                SmileOneApplication.logger.info("Insufficient Balance");
-                message = STATUS_FALSE;
-            } else if (!driver.findElements(By.cssSelector(ELEMENT_STATUS_SUCCESS)).isEmpty()) {
-                SmileOneApplication.logger.info("Payment Successful");
-                message = STATUS_TRUE;
-            }
-        }catch (Exception e){
-            SmileOneApplication.logger.info("NOT REDIRECTED");
-
+            updateStatusForUnredirectedPage();
+        } catch (Exception e) {
+            SmileOneApplication.logger.info("Player Exist -> " + e.getMessage());
         }
-        return message;
     }
 
-    private void printAndCloseAlert(String alert) {
-        SmileOneApplication.logger.info("Found Alert w/ Message : " + alert);
-//        driver.switchTo().alert().accept();
+    private void updateStatusByBalanceSufficiency() {
+        try {
+            updateMessageStatusForRedirectedPage();
+        } catch (Exception e) {
+            SmileOneApplication.logger.info("Player Does Not Exist -> " + e.getMessage());
+        }
     }
 
-    private String getAlertText() {
-        String alert = null;
+    private void updateStatusForUnredirectedPage() throws Exception {
         WebDriverWait wait = new WebDriverWait(driver, 3);
-        /*Next try catch try to validates whether alert is present(player id does not exist) / payment is success or failed */
-        try{
-            wait.until(ExpectedConditions.alertIsPresent());
-            alert = driver.switchTo().alert().getText();
-        }catch (Exception e){
-            SmileOneApplication.logger.info("FAIL GETTING ALERT");
-        }
+        wait.until(ExpectedConditions.alertIsPresent());
+        updateTransactionStatusAndMessage(false, MESSAGE_ERROR_PLAYER_DOES_NOT_EXIST);
+    }
 
-        return alert;
+    private void updateMessageStatusForRedirectedPage() throws Exception {
+        if (!driver.findElements(By.cssSelector(ELEMENT_STATUS_INSUFFICIENT_BALANCE)).isEmpty()) {
+            SmileOneApplication.logger.info("Insufficient Balance");
+            updateTransactionStatusAndMessage(false, MESSAGE_ERROR_INSUFFICIENT_BALANCE);
+        } else if (!driver.findElements(By.cssSelector(ELEMENT_STATUS_SUCCESS)).isEmpty()) {
+            updateTransactionStatusAndMessage(false, MESSAGE_SUCCESS_TRANSACTION);
+            message = STATUS_TRUE;
+        }
     }
 
     private void processPayment() throws Exception {
         printPerformedAction("Click", ELEMENT_BUTTON_BUY_NOW);
         driver.findElement(By.id(ELEMENT_BUTTON_BUY_NOW)).click();
-
     }
 
     private void startBrowserAndNavigateToPage() throws Exception {
         printPerformedAction("Navigating", url);
         driver.get(url);
+        driver.manage().window().setSize(new Dimension(1126, 725));
     }
 
     private void inputVoucherDetails() throws Exception {
         SmileOneApplication.logger.info("Input Player ID And Zone ID");
         sleep(2);
-
-        SmileOneApplication.logger.info("Selecting Denom w/ Element : "+voucher.getDenomLocator());
 
         driver.findElement(By.id(ELEMENT_FORM_USER_ID)).click();
 
@@ -296,8 +274,8 @@ public class SmileOneBot {
         printPerformedAction("Click", ELEMENT_FORM_PAYMENT_METHOD);
     }
 
-    private void printPerformedAction(String action, String element){
-        SmileOneApplication.logger.info("Action :" +action+ " | Target : "+element);
+    private void printPerformedAction(String action, String element) {
+        SmileOneApplication.logger.info("[Action]:" +action+ " | [Target]->" +element);
     }
 
     private void sleep(Integer time) {
