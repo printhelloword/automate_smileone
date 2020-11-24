@@ -10,7 +10,7 @@ public class InputValidator {
             Long.parseLong(input);
             status = true;
         } catch (Exception e) {
-            SmileOneApplication.logger.info(e.getMessage());
+            SmileOneApplication.logger.info("Error Input -> " +e.getMessage());
         }
         return status;
     }

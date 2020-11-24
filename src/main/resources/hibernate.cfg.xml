@@ -5,7 +5,7 @@
 <hibernate-configuration>
   <session-factory>
     <property name="hibernate.dialect">org.hibernate.dialect.MySQLDialect</property>
-    <property name="connection.url">jdbc:mysql://localhost:3306/republic_gg?zeroDateTimeBehavior=convertToNull&amp;serverTimezone=UTC</property>
+    <property name="connection.url">jdbc:mysql://localhost:3306/smile_one?zeroDateTimeBehavior=convertToNull&amp;serverTimezone=UTC</property>
     <property name="connection.driver_class">com.mysql.cj.jdbc.Driver</property>
 
     <property name="connection.username">root</property>
@@ -14,7 +14,6 @@
       <mapping resource="Inboxes.hbm.xml"/>
       <mapping resource="Outboxes.hbm.xml"/>
       <mapping class="bot.smileone.model.Outboxes"/>
-
 
     <!-- DB schema will be updated if needed -->
     <!-- <property name="hibernate.hbm2ddl.auto">update</property> -->

@@ -67,9 +67,6 @@ public class SmileOneBot {
     private static final String URL_BASE_LOGIN = "https://www.smile.one/customer/account/login";
     private static final String URL_BASE_PURCHASE_DIAMONDS_MLBB = "https://www.smile.one/merchant/mobilelegends?source=other";
 
-    private static final String VOUCHER_TYPE_DIAMOND = "diamond";
-    private static final String VOUCHER_TYPE_MEMBER = "member";
-
     private static final String BOT_BROWSER_CHROME = "chrome";
     private static final String BOT_BROWSER_FIREFOX = "firefox";
 
@@ -86,6 +83,7 @@ public class SmileOneBot {
     private static final String ELEMENT_FORM_PAYMENT_METHOD = ".section-nav:nth-child(1) .smilecoin > .cartao-name";
 
     private static final String ELEMENT_BUTTON_BUY_NOW = "Nav-btnpc";
+    private static final String ELEMENT_NICKNAME = "#ppay > #mnickname";
 
     private static final String ELEMENT_STATUS_INSUFFICIENT_BALANCE = ".myreddem-account";
     private static final String ELEMENT_STATUS_SUCCESS = ".btnsuccess > span";
@@ -94,13 +92,11 @@ public class SmileOneBot {
     private static final String MESSAGE_ERROR_INSUFFICIENT_BALANCE = "Saldo Tidak Mencukupi";
     private static final String MESSAGE_SUCCESS_TRANSACTION = "Top-up Berhasil";
 
-    private static final String STATUS_TRUE = "true";
-    private static final String STATUS_FALSE = "false";
-
     private Voucher voucher;
     private String url;
     String message = "";
     boolean status = false;
+    private String nickname = "";
 
     private Map<Boolean, String> transactionStatus = new HashMap<>();
 
@@ -115,14 +111,12 @@ public class SmileOneBot {
 
     public Map<Boolean, String> processTopTupAndGetMessage() {
         initSystemDriverProperties();
-
         setUpBot();
 
         try {
             processTopUp();
         } catch (Exception e) {
-//            e.printStackTrace();
-            SmileOneApplication.logger.info("SmileOne Bot Found Exception" +e.getMessage());
+            SmileOneApplication.logger.info("SmileOne Bot Found Exception" + e.getMessage());
         } finally {
             SmileOneApplication.logger.info("SmileOne Bot Finised");
             driver.quit();
@@ -179,7 +173,7 @@ public class SmileOneBot {
 
     private static void initSystemDriverProperties() {
         System.setProperty("webdriver.chrome.driver", "webdrivers\\chromedriver86.0.424.exe");
-        System.setProperty("webdriver.gecko.driver", "webdrivers\\geckodriver28.exe");
+        System.setProperty("webdriver.gecko.driver", "webdrivers\\geckodriver.exe");
         System.setProperty("webdriver.ie.driver", "webdrivers\\IEDriverServer.exe");
     }
 
@@ -240,42 +234,65 @@ public class SmileOneBot {
             SmileOneApplication.logger.info("Insufficient Balance");
             updateTransactionStatusAndMessage(false, MESSAGE_ERROR_INSUFFICIENT_BALANCE);
         } else if (!driver.findElements(By.cssSelector(ELEMENT_STATUS_SUCCESS)).isEmpty()) {
-            updateTransactionStatusAndMessage(false, MESSAGE_SUCCESS_TRANSACTION);
-            message = STATUS_TRUE;
+            updateTransactionStatusAndMessage(true, MESSAGE_SUCCESS_TRANSACTION + " - " +nickname);
         }
     }
 
     private void processPayment() throws Exception {
-        printPerformedAction("Click", ELEMENT_BUTTON_BUY_NOW);
-        driver.findElement(By.id(ELEMENT_BUTTON_BUY_NOW)).click();
+        doClickById(ELEMENT_BUTTON_BUY_NOW);
     }
 
     private void startBrowserAndNavigateToPage() throws Exception {
         printPerformedAction("Navigating", url);
         driver.get(url);
-        driver.manage().window().setSize(new Dimension(1126, 725));
+    }
+
+    private void doClickById(String locator) {
+        printPerformedAction("Click", locator);
+        driver.findElement(By.id(locator)).click();
+    }
+
+    private void doClickByCssSelector(String locator) throws Exception {
+        printPerformedAction("Click", locator);
+        driver.findElement(By.cssSelector(locator)).click();
+    }
+
+    private void doInputByCssSelector(String locator, String value) throws Exception {
+        printPerformedAction("Input", value);
+        driver.findElement(By.cssSelector(locator)).sendKeys(value);
+    }
+
+    private void doInputById(String locator, String value) throws Exception {
+        printPerformedAction("Input", value);
+        driver.findElement(By.id(locator)).sendKeys(value);
     }
 
     private void inputVoucherDetails() throws Exception {
         SmileOneApplication.logger.info("Input Player ID And Zone ID");
         sleep(2);
 
-        driver.findElement(By.id(ELEMENT_FORM_USER_ID)).click();
+        doClickById(ELEMENT_FORM_USER_ID);
+        doInputById(ELEMENT_FORM_USER_ID, voucher.getPlayer().getPlayerId());
+        doInputById(ELEMENT_FORM_ZONE_ID, voucher.getPlayer().getZoneId());
+        doClickByCssSelector(voucher.getDenomLocator());
 
-        driver.findElement(By.id(ELEMENT_FORM_USER_ID)).sendKeys(voucher.getPlayer().getPlayerId());
-        printPerformedAction("Input", voucher.getPlayer().getPlayerId());
+        getNicknameIfExists();
 
-        driver.findElement(By.id(ELEMENT_FORM_ZONE_ID)).sendKeys(voucher.getPlayer().getZoneId());
-        printPerformedAction("Input", voucher.getPlayer().getZoneId());
+        doClickByCssSelector(ELEMENT_FORM_PAYMENT_METHOD);
 
-        driver.findElement(By.cssSelector(voucher.getDenomLocator())).click();
+    }
 
-        driver.findElement(By.cssSelector(ELEMENT_FORM_PAYMENT_METHOD)).click();
-        printPerformedAction("Click", ELEMENT_FORM_PAYMENT_METHOD);
+    private void getNicknameIfExists() {
+        try {
+            nickname = driver.findElement(By.cssSelector(ELEMENT_NICKNAME)).getText();
+            SmileOneApplication.logger.info("----------NICKNAME: "+nickname);
+        } catch (Exception e) {
+            SmileOneApplication.logger.info(e.getMessage());
+        }
     }
 
     private void printPerformedAction(String action, String element) {
-        SmileOneApplication.logger.info("[Action]:" +action+ " | [Target]->" +element);
+        SmileOneApplication.logger.info("[Action]:" + action + " | [Target]->" + element);
     }
 
     private void sleep(Integer time) {
