@@ -78,6 +78,7 @@ public class SmileOneBot {
 
     //ELEMENT LOCATORS
 //    private static final String ELEMENT_FORM_DENOM = ;
+    private static final String ELEMENT_MODAL_EVENT = "iconsing";
     private static final String ELEMENT_FORM_USER_ID = "puseid";
     private static final String ELEMENT_FORM_ZONE_ID = "pserverid";
     private static final String ELEMENT_FORM_PAYMENT_METHOD = ".section-nav:nth-child(1) .smilecoin > .cartao-name";
@@ -234,7 +235,7 @@ public class SmileOneBot {
             SmileOneApplication.logger.info("Insufficient Balance");
             updateTransactionStatusAndMessage(false, MESSAGE_ERROR_INSUFFICIENT_BALANCE);
         } else if (!driver.findElements(By.cssSelector(ELEMENT_STATUS_SUCCESS)).isEmpty()) {
-            updateTransactionStatusAndMessage(true, MESSAGE_SUCCESS_TRANSACTION + " - " +nickname);
+            updateTransactionStatusAndMessage(true, MESSAGE_SUCCESS_TRANSACTION + " - " + nickname);
         }
     }
 
@@ -272,20 +273,41 @@ public class SmileOneBot {
         sleep(2);
 
         doClickById(ELEMENT_FORM_USER_ID);
+        driver.findElement(By.id(ELEMENT_FORM_USER_ID)).clear();
         doInputById(ELEMENT_FORM_USER_ID, voucher.getPlayer().getPlayerId());
+        driver.findElement(By.id(ELEMENT_FORM_ZONE_ID)).clear();
         doInputById(ELEMENT_FORM_ZONE_ID, voucher.getPlayer().getZoneId());
         doClickByCssSelector(voucher.getDenomLocator());
 
         getNicknameIfExists();
-
         doClickByCssSelector(ELEMENT_FORM_PAYMENT_METHOD);
+    }
 
+    private void handleEventModal() {
+        try {
+            clickElementIfExists();
+        } catch (Exception e) {
+            SmileOneApplication.logger.info(e.getMessage());
+        }
+    }
+
+    private void clickElementIfExists()throws Exception{
+        waitForElement(ELEMENT_MODAL_EVENT);
+        doClickById(ELEMENT_MODAL_EVENT);
+        sleep(1);
+        doClickById(ELEMENT_MODAL_EVENT);
+    }
+
+    private void waitForElement(String locator) throws Exception {
+        WebDriverWait wait = new WebDriverWait(driver, 30);  // you can reuse this one
+        WebElement firstResult = driver.findElement(By.id(locator));
+        wait.until(ExpectedConditions.elementToBeClickable(firstResult));
     }
 
     private void getNicknameIfExists() {
         try {
             nickname = driver.findElement(By.cssSelector(ELEMENT_NICKNAME)).getText();
-            SmileOneApplication.logger.info("----------NICKNAME: "+nickname);
+            SmileOneApplication.logger.info("----------NICKNAME: " + nickname);
         } catch (Exception e) {
             SmileOneApplication.logger.info(e.getMessage());
         }
